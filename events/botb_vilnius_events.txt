@@ -42,6 +42,8 @@ vilnius.0001 = {
     }
 
 }
+
+# Vilnius must be built!
 vilnius.0002 = {
     type = character_event
     title = vilnius.0002.t
@@ -50,11 +52,9 @@ vilnius.0002 = {
     }
     theme = realm
     immediate = {
-        cp:councillor_court_chaplain = {
-            save_scope_as = lizdeika
-        }
-        title:b_vilnius = {
-            save_scope_as = vilnius_location_for_event
+        set_global_variable = {
+            name = lizdeika
+            value = cp:councillor_court_chaplain
         }
     }
     left_portrait = {
@@ -76,6 +76,42 @@ vilnius.0002 = {
 
         ai_chance = {
             base = 100
+        }
+    }
+
+}
+
+# Vilnius has been built!
+vilnius.0003 = {
+    type = character_event
+    title = vilnius.0003.t
+    desc = {
+        desc = vilnius.0003.desc
+    }
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_honorable
+        camera = camera_center_large
+    }
+
+    option = { # Vilnius must be a capital of trade!
+        name = vilnius.0003.a
+        ai_chance = {
+            base = 50
+        }
+        title:b_vilnius.title_province = {
+            add_building = market_villages_02
+        }
+    }
+    option = { # Vilnius must be a capital of war!
+        name = vilnius.0003.b
+        ai_chance = {
+            base = 50
+        }
+        title:b_vilnius.title_province = {
+            add_building = war_camps_02
         }
     }
 

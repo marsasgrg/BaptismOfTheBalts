@@ -1,0 +1,51 @@
+﻿# Dream Of A Capital
+create_vilnius = {
+    picture = {
+		reference = "gfx/interface/illustrations/event_scenes/market_tribal.dds"
+	}
+    decision_group_type = major
+    ai_goal = yes
+    sort_order = 1000
+
+    is_shown = {
+        has_character_flag = a_dream_of_the_wolf
+        title:c_kernave.holder = this
+        title:b_vilnius.title_province = {
+            has_holding = no
+        }
+        OR = {
+            is_independent_ruler = yes
+            highest_held_title_tier >= tier_kingdom
+        }
+    }
+    is_valid = {
+        title:c_kernave.holder = this
+        title:b_vilnius.title_province = {
+            has_holding = no
+        }
+    }
+    cost = {
+        gold = 600
+        prestige = 1000
+    }
+    ai_potential = {always = yes}
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        remove_character_flag = a_dream_of_the_wolf
+
+        title:b_vilnius.title_province = {
+            set_holding_type = tribal_holding
+            add_building = tribe_02
+        }
+        title:b_vilnius = {
+            set_capital_barony = yes
+        }
+        set_realm_capital = title:b_vilnius
+        custom_tooltip = create_vilnius_bonus_choice
+        trigger_event = vilnius.0003
+    }
+
+}
