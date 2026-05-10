@@ -1,0 +1,10 @@
+﻿vilnius_trade_capital_modifier = {
+    icon = stewardship_positive
+    tax_mult = 0.4
+    development_growth = 1
+}
+vilnius_war_capital_modifier = {
+    icon = martial_positive
+    levy_size = 0.6
+    development_growth = 0.6
+}

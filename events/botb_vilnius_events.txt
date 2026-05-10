@@ -24,12 +24,15 @@ vilnius.0001 = {
     option = { # Consult priest - starts Vilnius event chain
         name = vilnius.0001.a
         add_character_flag = a_dream_of_the_wolf_begins
-
+        trigger_event = {
+            id = vilnius.0002
+            days = {14 30}
+        }
         ai_chance = {
             base = 100
         }
     }
-    option = { # Character loses ability to start event chain in their lifetime
+    option = { # no way!
         name = vilnius.0001.b
         add_character_flag = rejected_wolf_dream
         ai_chance = {
@@ -104,6 +107,12 @@ vilnius.0003 = {
         title:b_vilnius.title_province = {
             add_building = market_villages_02
         }
+        title:c_kernave = {
+            add_county_modifier = {
+                modifier = vilnius_trade_capital_modifier
+                years = 100
+            }
+        }
     }
     option = { # Vilnius must be a capital of war!
         name = vilnius.0003.b
@@ -112,6 +121,12 @@ vilnius.0003 = {
         }
         title:b_vilnius.title_province = {
             add_building = war_camps_02
+        }
+        title:c_kernave = {
+            add_county_modifier = {
+                modifier = vilnius_war_capital_modifier
+                years = 100
+            }
         }
     }
 

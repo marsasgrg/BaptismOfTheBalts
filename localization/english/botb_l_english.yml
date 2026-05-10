@@ -3,10 +3,10 @@
   vilnius.0001.desc: "After our hunt, while resting in a forest, I saw a wolf in my dreams. This wolf was howling with an unbearably strong sound. The wolf had no fur, as it was made out of iron - as if it was some statue or beast of legend. The creature was standing on a tall hill, and it was shining. After waking up, I felt uneasy - what could this dream mean?"
   vilnius.0001.kingly_comment: "Should a kingly figure like me even bother with such dreams?"
   vilnius.0001.a: "I should consult my head priest about this."
-  vilnius.0001.b: "Nonsense! Such nightmares do not fit a mighty ruler."
+  vilnius.0001.b: "Nonsense! A ruler should not bother with such nightmares!"
 
   vilnius.0002.t: "Dream Of A... City?"
-  vilnius.0002.desc: "My priest, [GetGlobalVariable('lizdeika').Char.GetName], tells me that the wolf symbolizes a city. The wolf is a sign of power, and it was standing upon a hill - therefore, surely, this means that a powerful city must be built upon a hill. He also proclaims that, apparently, the horrifyingly loud sound of the wolf's howl is a good thing - this means the city will be so famous the entirety of Europe will talk about it! Additionaly, from the details of the dream, he has deciphered the location in which the city must be built - and apparently, it is [GetTitleByKey('b_vilnius').GetNameNoTier]. We must begin building it right away!"
+  vilnius.0002.desc: "My priest, [GetGlobalVariable('lizdeika').Char.GetName], tells me that the wolf symbolizes a city. The wolf is a sign of power, and it was standing upon a hill - therefore, surely, this means that a powerful city must be built upon a hill. He also proclaims that, apparently, the horrifyingly loud sound of the wolf's howl is a good thing - this means the city will be so famous the entirety of Europe will talk about it! Additionaly, from the details of the dream, the priest has deciphered the location in which the city must be built - and apparently, it is [GetTitleByKey('b_vilnius').GetNameNoTier]. We must begin building it right away!"
   vilnius.0002.a: "If this is the will of Perkūnas..."
   vilnius.0002.tt: "You will be able to [GetDecisionWithKey('create_vilnius').GetName]."
 
@@ -14,7 +14,10 @@
   create_vilnius_confirm: "The Howl of the Iron Wolf commands it!"
   create_vilnius_desc: "Some time ago, I saw in a dream a wolf, and [GetGlobalVariable('lizdeika').Char.GetName] told me that this wolf is a symbol of a capital which shall be the mightiest in Europe. Now, I can realise this dream."
   create_vilnius_tooltip: "Build [GetTitleByKey('b_vilnius').GetNameNoTier], a city that shall be the new capital of [GetTitleByKey('k_lithuania').GetNameNoTier]."
-  create_vilnius_bonus_choice: "You will be able to choose between making [GetTitleByKey('b_vilnius').GetNameNoTier] focus either on trade or on warfare"
+  create_vilnius_bonus_choice: "You will be able to choose between making [GetTitleByKey('b_vilnius').GetNameNoTier] focus either on trade, giving [GetModifier('vilnius_trade_capital_modifier').GetNameWithTooltip] and [GetBuilding('market_villages_02').GetName]  or on warfare, giving [GetModifier('vilnius_war_capital_modifier').GetNameWithTooltip] and [GetBuilding('war_camps_02').GetName]."
+
+  vilnius_trade_capital_modifier: "Trade Capital of [GetTitleByKey('k_lithuania').GetNameNoTier]"
+  vilnius_war_capital_modifier: "War-focused Capital of [GetTitleByKey('k_lithuania').GetNameNoTier]"
 
   vilnius.0003.t: "Dream Fullfiled"
   vilnius.0003.desc: "The dream I saw has come to life - Vilnius now stands, a proud capital for [GetTitleByKey('k_lithuania').GetNameNoTier]. The prophecy of [GetGlobalVariable('lizdeika').Char.GetName] has been fullfilled. The city howls across the land like an iron wolf. Yet, it seems rather empty today. I will invite people to live here - but who should these people be? One option is merchants from the west, to which I could send letters to. Another option is brave soldiers of the faith, which could gather from all across the Baltic and defend us from foreign threats. Either way, the city will prosper."
