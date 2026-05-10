@@ -49,7 +49,14 @@ vilnius.0002 = {
         desc = vilnius.0002.desc
     }
     theme = realm
-
+    immediate = {
+        cp:councillor_court_chaplain = {
+            save_scope_as = lizdeika
+        }
+        title:b_vilnius = {
+            save_scope_as = vilnius_location_for_event
+        }
+    }
     left_portrait = {
         character = root
         animation = personality_rational
@@ -61,7 +68,9 @@ vilnius.0002 = {
 
 
     option = { # Vilnius must be built!
+
         name = vilnius.0002.a
+        custom_tooltip = vilnius.0002.tt
         remove_character_flag = a_dream_of_the_wolf_begins
         add_character_flag = a_dream_of_the_wolf
 
