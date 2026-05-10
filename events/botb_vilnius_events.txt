@@ -1,0 +1,44 @@
+﻿namespace = vilnius
+
+vilnius.0001 = {
+    type = character_event
+    title = vilnius.0001.t
+    desc = {
+        desc = vilnius.0001.desc
+        triggered_desc = {
+            trigger = {
+                title:k_lithuania.holder = this
+            }
+            desc = vilnius.0001.kingly_comment           
+        }
+    }
+    theme = hunting
+
+    left_portrait = {
+        character = root
+        camera = camera_center_large
+        animation = shock 
+    }
+
+
+    option = { # Consult priest - starts Vilnius event chain
+        name = vilnius.0001.a
+        add_character_flag = a_dream_of_the_wolf
+
+        ai_chance = {
+            base = 100
+        }
+    }
+    option = { # Character loses ability to start event chain in their lifetime
+        name = vilnius.0001.b
+        add_character_flag = rejected_wolf_dream
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 100
+                has_trait = cynical
+            }
+        }
+    }
+
+}
