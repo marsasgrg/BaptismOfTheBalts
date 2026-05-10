@@ -23,7 +23,7 @@ vilnius.0001 = {
 
     option = { # Consult priest - starts Vilnius event chain
         name = vilnius.0001.a
-        add_character_flag = a_dream_of_the_wolf
+        add_character_flag = a_dream_of_the_wolf_begins
 
         ai_chance = {
             base = 100
@@ -38,6 +38,35 @@ vilnius.0001 = {
                 add = 100
                 has_trait = cynical
             }
+        }
+    }
+
+}
+vilnius.0002 = {
+    type = character_event
+    title = vilnius.0002.t
+    desc = {
+        desc = vilnius.0002.desc
+    }
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+    right_portrait = {
+        character = cp:councillor_court_chaplain 
+        animation = personality_zealous
+    }
+
+
+    option = { # Vilnius must be built!
+        name = vilnius.0002.a
+        remove_character_flag = a_dream_of_the_wolf_begins
+        add_character_flag = a_dream_of_the_wolf
+
+        ai_chance = {
+            base = 100
         }
     }
 

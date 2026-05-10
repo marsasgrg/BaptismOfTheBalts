@@ -1,34 +1,70 @@
 ﻿on_travel_activity_complete = { on_actions = { dreams_of_the_wolf } }
 
-dreams_of_the_wolf = {
-  effect = {
-    if = {
-        limit = {
-            involved_activity ?= { has_activity_type = activity_hunt }
-            culture = culture:lithuanian
-            title:c_kernave.holder = this
-            title:b_vilnius.title_province = {
-                has_holding = no
-            }
-            religion = religion:baltic_religion
-            highest_held_title_tier >= tier_duchy
-            OR = {
-                is_independent_ruler = yes
-                highest_held_title_tier >= tier_kingdom
-            }
-            NOT = {
-                OR = {
-                    has_character_flag = a_dream_of_the_wolf
-                    has_character_flag = rejected_wolf_dream
+on_travel_plan_complete = {
+    on_actions = { dreams_of_the_wolf_consultation }
+}
 
-                }
+dreams_of_the_wolf = {
+    trigger = {
+        involved_activity ?= { has_activity_type = activity_hunt }
+        culture = culture:lithuanian
+        title:c_kernave.holder = this
+        title:b_vilnius.title_province = {
+            has_holding = no
+        }
+        religion = religion:baltic_religion
+        highest_held_title_tier >= tier_duchy
+        OR = {
+            is_independent_ruler = yes
+            highest_held_title_tier >= tier_kingdom
+        }
+        NOT = {
+            OR = {
+                has_character_flag = a_dream_of_the_wolf_begins
+                has_character_flag = a_dream_of_the_wolf
+                has_character_flag = rejected_wolf_dream
+
             }
         }
+    }
+    effect = {
         random = {
             chance = 100
-            trigger_event = vilnius.0001
+            trigger_event = {
+                id = vilnius.0001
+                days = 1
+            } 
         }
-      
+    
+    
     }
-  }
+}
+
+dreams_of_the_wolf_consultation = {
+    trigger = {
+		is_ruler = yes
+        is_available_travelling = yes
+		is_landed = yes
+		is_travelling = yes
+		NOT = {
+			involved_activity ?= {
+				has_activity_type = activity_tour
+			}
+		}
+		current_travel_plan = {
+			is_aborted = no
+		}
+        is_landed_or_landless_administrative = yes
+        location = capital_province
+
+
+        has_character_flag = a_dream_of_the_wolf_begins
+	}
+    effect = {
+        trigger_event = {
+            id = vilnius.0002
+            days = 7
+        }
+    }
+
 }
