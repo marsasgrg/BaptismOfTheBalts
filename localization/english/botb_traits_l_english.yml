@@ -1,0 +1,4 @@
+﻿l_english:
+  trait_palemonid: "Palemonid"
+  trait_palemonid_desc: "The Blood of [GetScriptedCharacterByHistoryID('82140').GetFirstName], a legendary Roman refugee to Lithuania, flows through the veins of this person."
+  trait_palemonid_character_desc: "The Blood of [GetScriptedCharacterByHistoryID('82140').GetFirstName], a legendary Roman refugee to Lithuania, flows through the veins of [ROOT.GetCharacter.GetFirstNameNoTooltip]."

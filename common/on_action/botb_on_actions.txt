@@ -42,6 +42,16 @@ dreams_of_the_wolf = {
     }
 }
 
+on_game_start = {on_actions = {botb_game_start} }
+
+botb_game_start = {
+    effect = {
+        character:82140 = {
+            apply_palemonic_lineage_to_kids = yes
+        }
+    }
+}
+
 # dreams_of_the_wolf_consultation = {
 #     trigger = {
 # 		is_ruler = yes

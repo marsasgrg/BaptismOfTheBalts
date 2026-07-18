@@ -1,0 +1,25 @@
+﻿palemonid = {
+	category = fame
+	
+	monthly_prestige = 0.25
+    icon = divine_blood.dds
+    shown_in_ruler_designer = no
+	
+	ruler_designer_cost = 25
+	
+	name = trait_palemonid
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_palemonid_desc
+			}
+			desc = trait_palemonid_character_desc
+		}
+	}
+
+	inherit_chance = 100
+	parent_inheritance_sex = male
+	inherit_from_real_father = no
+}

@@ -1,0 +1,46 @@
+﻿apply_palemonic_lineage_to_kids = {
+    every_child = {
+        even_if_dead = yes
+        add_trait = palemonid
+        if = {
+            limit = {
+                is_female = no
+            }
+            apply_palemonic_lineage_to_kids = yes
+        }
+    }
+}
+
+#MAKES INCOMPATIBLE WITH MODS THAT ADD TRAITS REMOVED FROM BASTARDS
+remove_inherited_descendent_traits_effect = {
+	if = {
+		limit = {
+			has_trait = sayyid
+			exists = scope:real_father
+			NOT = {
+				scope:real_father = { has_trait = sayyid }
+			}
+		}
+		remove_trait = sayyid
+	}
+	if = {
+		limit = {
+			has_trait = golden_lineage
+			exists = scope:real_father
+			NOT = {
+				scope:real_father = { has_trait = golden_lineage }
+			}
+		}
+		remove_trait = golden_lineage
+	}
+    if = {
+		limit = {
+			has_trait = palemonid
+			exists = scope:real_father
+			NOT = {
+				scope:real_father = { has_trait = palemonid }
+			}
+		}
+		remove_trait = palemonid
+	}
+}
