@@ -891,7 +891,7 @@
 	religion = "baltic_pagan"
 	culture = "lithuanian"
 	father = 194115
-
+	trait = palemonid
 	825.1.1 = {
 		birth = "825.1.1"
 	}
