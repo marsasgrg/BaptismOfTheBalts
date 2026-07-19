@@ -47,6 +47,7 @@ on_game_start = {on_actions = {botb_game_start} }
 botb_game_start = {
     effect = {
         character:82140 = {
+            add_trait = palemonid
             apply_palemonic_lineage_to_kids = yes
         }
     }

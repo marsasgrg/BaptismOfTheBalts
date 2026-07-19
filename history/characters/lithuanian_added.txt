@@ -1,0 +1,92 @@
+﻿kriwe_1 = {
+	name = "Lizdeika_name"
+	dynasty = 9116
+	religion = baltic_pagan
+	culture = lithuanian
+	father = 194113
+	trait = bastard
+	775.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+}
+
+
+kriwe_2 = {
+	name = "Jotva"
+	dynasty = 9117
+	religion = baltic_pagan
+	culture = lithuanian
+	father = 6893
+	trait = bastard
+	828.1.1 = {
+		birth = yes
+	}
+	926.1.1 = {
+		death = yes
+	}
+}
+
+kriwe_3 = {
+	name = "Lizdeika_name"
+	father = 82276
+	dynasty = 9126
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	trait = bastard
+	900.1.1 = {
+		birth = yes
+	}
+	1002.1.1 = {
+		death = yes
+	}
+}
+kriwe_4 = {
+	name = "Gimbutas"
+	dynasty = 9116
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	father = 82166 #Montvilas son of Gimbutas
+	trait = bastard
+	971.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death =  yes
+	}
+}
+
+kriwe_5 = {
+	name = "Vykintas"
+	dynasty = 9116
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	father = 82175 #Zivinbudas son of Vykintas
+	trait = bastard
+	1040.1.1 = {
+		birth = yes
+	}
+	1140.1.1 = {
+		death = yes
+	}
+}
+
+
+kriwe_6 = {
+	name = "Lizdeika_name"
+	father = 82286
+	dynasty = 9126
+	religion = "baltic_pagan"
+	culture = "lithuanian"
+	trait = bastard
+	1116.1.1 = {
+		birth = yes
+	}
+	1236.1.1 = {
+		death = yes
+	}
+
+
+}
