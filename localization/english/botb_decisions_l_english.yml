@@ -1,0 +1,10 @@
+﻿l_english:
+  subsume_ruthenian_duchy: "Subsume Ruthenian Duchy"
+  subsume_ruthenian_duchy_confirm: "They shall become a part of Lithuania"
+  subsume_ruthenian_duchy_desc: "We have gained possesion of a county within the former Ruthenian lands, we must integrate it!"
+  subsume_ruthenian_duchy_tooltip: "Absorb a duchy into Lithuania"
+  border_belarus_duchy_is_controlled: "A de jure duchy in [GetTitleByKey('k_white_rus').GetName] is controlled and borders the de jure lands of Lithuania"
+  belarus_is_unheld: "[GetTitleByKey('k_white_rus').GetName] does not exist"
+  border_ukraine_duchy_is_controlled: "A de jure duchy in [GetTitleByKey('k_ruthenia').GetName] is controlled and borders the de jure lands of Lithuania"
+  ukraine_is_unheld: "[GetTitleByKey('k_ruthenia').GetName] does not exist"
+  

@@ -19,7 +19,7 @@ create_vilnius = {
         }
     }
     is_valid = {
-        title:c_kernave.holder = this
+        has_title = title:c_kernave
         title:b_vilnius.title_province = {
             has_holding = no
         }
@@ -47,5 +47,97 @@ create_vilnius = {
         custom_tooltip = create_vilnius_bonus_choice
         trigger_event = vilnius.0003
     }
+
+}
+
+subsume_ruthenian_duchy = {
+    decision_group_type = major
+    ai_goal = yes
+    sort_order = 10
+
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+
+    is_shown = {
+        OR = {
+            AND = {
+                this.culture = {
+                    has_cultural_pillar = heritage_baltic
+                }
+                has_title = title:k_lithuania 
+            }
+            has_primary_title = title:k_lithuania
+        }
+        OR = {
+            title:k_white_rus = {
+                is_titular = no
+            }
+            title:k_ruthenia = {
+                is_titular = no
+            }
+        }
+    }
+    is_valid = {
+        save_temporary_scope_as = decision_taker
+        OR = {
+            AND = {
+                title:k_white_rus = {
+                    custom_tooltip = {
+                        text = border_belarus_duchy_is_controlled
+                        any_direct_de_jure_vassal_title = {
+                            scope:decision_taker = {
+                                completely_controls = PREV
+                            }
+                            any_de_jure_county = {
+                                any_title_to_title_neighboring_and_across_water_county = {
+                                    kingdom = title:k_lithuania
+                                }
+                            }
+                        }
+                    }
+                }
+                OR = {
+                    custom_tooltip = {
+                        text = belarus_is_unheld
+                    
+                        NOT = {
+                            exists = title:k_white_rus.holder
+                        }
+                    }
+                    has_title = title:k_white_rus
+                }
+            }
+            AND = {
+                title:k_ruthenia = {
+                    custom_tooltip = {
+                        text = border_ukraine_duchy_is_controlled
+                        any_direct_de_jure_vassal_title = {
+                            scope:decision_taker = {
+                                completely_controls = PREV
+                            }
+                            any_de_jure_county = {
+                                any_title_to_title_neighboring_and_across_water_county = {
+                                    kingdom = title:k_lithuania
+                                }
+                            }
+                        }
+                    }
+                }
+                OR = {
+                    custom_tooltip = {
+                        text = ukraine_is_unheld
+                    
+                        NOT = {
+                            exists = title:k_ruthenia.holder
+                        }
+                    }
+                    has_title = title:k_ruthenia
+                }
+            }
+
+        }
+    }
+    cooldown = { years = 5 }
 
 }
