@@ -6,7 +6,7 @@ d_high_kriwe={
 	colored_emblem={
 		color1=red
 		color2=red
-		texture="ce_antler_pale.dds"
+		texture="ce_religion_pagan_romuva.dds"
 		instance={
 			position={ 0.500000 0.480000 }
 		}
