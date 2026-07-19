@@ -203,3 +203,96 @@ subsume_ruthenian_duchy = {
         }
     }
 }
+
+
+subsume_ruthenian_duchy_poland = {
+    decision_group_type = major
+    ai_goal = yes
+    sort_order = 10
+
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+
+    is_shown = {
+        OR = {
+            AND = {
+                this.culture = {
+                    has_cultural_pillar = heritage_west_slavic
+                }
+                has_title = title:k_poland 
+            }
+            has_primary_title = title:k_poland
+        }
+        title:k_galicia-volhynia = {
+            is_titular = no
+        } 
+    }
+    is_valid = {
+        save_temporary_scope_as = decision_taker
+
+        title:k_galicia-volhynia = {
+            custom_tooltip = {
+                text = border_galician_duchy_is_controlled
+                any_direct_de_jure_vassal_title = {
+                    scope:decision_taker = {
+                        completely_controls = PREV
+                    }
+                    any_de_jure_county = {
+                        any_title_to_title_neighboring_and_across_water_county = {
+                            kingdom = title:k_poland
+                        }
+                    }
+                }
+            }
+        }
+        OR = {
+            custom_tooltip = {
+                text = galicia_is_unheld
+            
+                NOT = {
+                    exists = title:k_galicia-volhynia.holder
+                }
+            }
+            has_title = title:k_galicia-volhynia
+        }
+
+    }
+    cooldown = { years = 15 }
+    effect = {
+        save_temporary_scope_as = decision_taker
+        if = {
+            limit = {                    
+                OR = {
+                    NOT = {
+                        exists = title:k_galicia-volhynia.holder
+                    }
+                    has_title = title:k_galicia-volhynia
+                }
+            }
+            title:k_galicia-volhynia = {
+                every_direct_de_jure_vassal_title = {
+                    if = {
+                        limit = {
+                            scope:decision_taker = {
+                                completely_controls = PREV
+                            }
+                            any_de_jure_county = {
+                                any_title_to_title_neighboring_and_across_water_county = {
+                                    kingdom = title:k_poland
+                                }
+                            }
+                        }
+                        add_to_list = duchies_that_will_be_integrated
+                    }
+                }
+            } 
+        }
+
+        
+        every_in_list = {
+            list = duchies_that_will_be_integrated
+            set_de_jure_liege_title = title:k_poland
+        }
+    }
+}
