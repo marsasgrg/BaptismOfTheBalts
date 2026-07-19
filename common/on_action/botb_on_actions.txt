@@ -53,6 +53,35 @@ botb_game_start = {
     }
 }
 
+# on_faith_created = {
+#     on_actions = {on_faith_reformed_balts_may_maintain_kriwe}
+# }
+
+# on_faith_reformed_balts_may_maintain_kriwe = {
+#     effect = {
+#         if = {
+#             limit = {
+#                 scope:old_faith = faith:baltic_pagan
+#                 faith = {
+#                     has_doctrine = doctrine:doctrine_spiritual_head
+#                 }
+#             }
+#             faith = {
+#                 set_religious_head_title = scope:old_faith.religious_head_title
+#                 if = {
+#                     limit = {
+#                         exists = scope:old_faith.religious_head_title.holder
+#                     }
+#                     scope:old_faith.religious_head_title.holder = {
+#                         set_character_faith_history = PREV
+#                     }
+#                 }
+#             }
+#         }
+#     }
+# }
+
+
 # dreams_of_the_wolf_consultation = {
 #     trigger = {
 # 		is_ruler = yes
