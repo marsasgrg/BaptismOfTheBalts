@@ -1,7 +1,7 @@
 ﻿@always_primary_score = 1000
 
 d_high_kriwe = {
-    capital = c_malbork
+    capital = c_torun
 	landless = yes
 	definite_form = yes
 	ruler_uses_title_name = no
