@@ -138,6 +138,68 @@ subsume_ruthenian_duchy = {
 
         }
     }
-    cooldown = { years = 5 }
+    cooldown = { years = 15 }
+    effect = {
+        save_temporary_scope_as = decision_taker
+        if = {
+            limit = {                    
+                OR = {
+                    NOT = {
+                        exists = title:k_ruthenia.holder
+                    }
+                    has_title = title:k_ruthenia
+                }
+            }
+            title:k_ruthenia = {
+                every_direct_de_jure_vassal_title = {
+                    if = {
+                        limit = {
+                            scope:decision_taker = {
+                                completely_controls = PREV
+                            }
+                            any_de_jure_county = {
+                                any_title_to_title_neighboring_and_across_water_county = {
+                                    kingdom = title:k_lithuania
+                                }
+                            }
+                        }
+                        add_to_list = duchies_that_will_be_integrated
+                    }
+                }
+            } 
+        }
 
+        if = {
+            limit = {                    
+                OR = {
+                    NOT = {
+                        exists = title:k_white_rus.holder
+                    }
+                    has_title = title:k_white_rus
+                }
+            }
+            title:k_white_rus = {
+                every_direct_de_jure_vassal_title = {
+                    if = {
+                        limit = {
+                            scope:decision_taker = {
+                                completely_controls = PREV
+                            }
+                            any_de_jure_county = {
+                                any_title_to_title_neighboring_and_across_water_county = {
+                                    kingdom = title:k_lithuania
+                                }
+                            }
+                        }
+                        add_to_list = duchies_that_will_be_integrated
+                    }
+                }
+            } 
+        }
+
+        every_in_list = {
+            list = duchies_that_will_be_integrated
+            set_de_jure_liege_title = title:k_lithuania
+        }
+    }
 }
