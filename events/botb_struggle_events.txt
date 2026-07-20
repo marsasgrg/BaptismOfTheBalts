@@ -13,27 +13,61 @@ botb_struggle.1001 = {
 
     option = { 
         name = botb_struggle.1001.a
-        
+        add_prestige = 2000
+
         ai_chance = {
             base = 100
         }
     }
 	after = {
-		# Notify & End Struggle
-		# save_scope_as = fp2_loc_struggle_ender # Loc used to use root, this fixes it
-		# every_player = {
-		# 	limit = { fp2_does_this_player_care_about_the_fate_of_iberia = yes } # Needs to be checked before the struggle ends due to race condition issues
-		# 	add_to_list = player_to_notify # Making a list so stuff is tiggered after the struggle ends, to make extra sure I don't break anything.
-		# }
 
-		# struggle:iberian_struggle = { end_struggle = struggle_iberia_ending_hostility_decision }
-		# every_in_list = { # Then we *actually* notify palyers, making sure the struggle has already ended
-		# 	list = player_to_notify
-		# 	trigger_event = fp2_struggle.0910
-		# }
-
+        baltic_struggle_ending_involved_list_effect = yes
+        every_player = {
+            limit = {
+                does_this_player_care_about_baltic = yes
+            }
+            add_to_list = players_to_notify
+        }
         struggle:baltic_struggle = {
             end_struggle = baltic_struggle_new_ways_decision_ending
         }
+        every_in_list = {
+            list = players_to_notify
+            trigger_event = botb_struggle.1011
+        }
+	}
+}
+
+botb_struggle.1011 = {
+    type = character_event
+	window = fullscreen_event
+	title = botb_struggle.1011.t
+	desc = {
+		first_valid = {
+		    triggered_desc = {
+		        trigger = { is_in_list = struggle_involvees }
+		        desc = botb_struggle.1011.opening.involved
+		    }
+		    desc = botb_struggle.1011.opening
+		}
+		desc = botb_struggle.1011.desc
+        desc = botb_struggle.1011.closing.combined
+
+	}
+	theme = court
+	override_background = { reference = botb_throneroom_fullscreen }
+
+	# Ok
+	option = {
+		name = {
+			text = botb_struggle.1011.a
+			trigger = { is_in_list = struggle_involvees }
+		}
+		name = {
+			text = botb_struggle.1011.b
+			trigger = {
+				NOT = { is_in_list = struggle_involvees }
+			}
+		}
 	}
 }

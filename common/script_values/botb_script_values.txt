@@ -1,0 +1,28 @@
+﻿struggle_sub_realm_size = {
+    save_temporary_scope_as = holder
+
+    # prev is the struggle
+    prev = {
+        every_involved_county = {
+            if = {
+                limit = { 
+                    OR = {
+                        holder = scope:holder
+                        holder = {
+                            is_vassal_or_below_of = scope:holder
+                        }
+                    }    
+                    
+                }
+            
+                add = 1
+            }
+            
+            
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,3 @@
+﻿savior_of_the_baltic = {
+    opinion = 30
+}

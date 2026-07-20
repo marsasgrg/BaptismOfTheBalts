@@ -43,9 +43,12 @@
                     completely_controls = title:k_esthonia
                 }
             }
-            NOT = {
+            NOR = {
                 any_involved_ruler = {
                     max_military_strength > scope:decision_taker.max_military_strength
+                }
+                any_involved_ruler = {
+                    struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
                 }
             }
             any_county_in_region = {
@@ -68,9 +71,7 @@
 		hegemony = 36
 	}
     effect = {
-        faith = {
-            save_temporary_scope_as = winner_faith
-        }
+        
         # later - legends
 
         dynasty = {add_dynasty_prestige = 5000}
@@ -78,9 +79,23 @@
             zealous = medium_stress_impact_loss
             cynical = medium_stress_impact_gain
         }
-        add_prestige = 1000
+        add_prestige = 2500
         
         trigger_event = botb_struggle.1001
+        add_piety = 3000
+        faith = {
+            religious_head ?= {
+                add_prestige = 1000
+                add_piety = 1000
+                dynasty = {
+                    add_dynasty_prestige = 500
+                }
+                add_opinion = {
+                    target = scope:decision_taker
+                    modifier = savior_of_the_baltic
+                }
+            }
+        }
     }
 
 	ai_potential = { always = yes }

@@ -18,3 +18,11 @@
   botb_struggle.0001.t: "Victory of the New Ways" 
   botb_struggle.0001.desc: "The righteous beliefs of [ROOT.Char.GetFaith().GetName()] have triumphed in the Baltic region, all thanks to me. Believers flock to me and my messengers. This victory will be known for centuries."
   botb_struggle.1001.a: "In the name of [Root.Char.GetFaith().HighGodName()]!"
+
+  botb_struggle.1011.t: "Victory of [struggle_ender.GetFaith.GetName] in the Baltic"
+  botb_struggle.1011.opening.involved:0 "Though it comes from another realm, deliverance from the uncertainty that has engulfed our region for many years may now be at hand..."
+  botb_struggle.1011.opening:0 "Word of recent developments on the coasts of Baltic sea has reached our court, promising an end to the conflicts that have plagued the region."
+  botb_struggle.1011.desc:0 "\n\n[struggle_ender.GetName], who now controls the majority of the region, has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion by the religious differences of the region.\n\n"
+  botb_struggle.1011.closing.combined:0 "[struggle_ender.GetSheHe|U] has proclaimed the Baltic lands to belong to [struggle_ender.GetFaith.HighGodName] and [struggle_ender.GetFaith.HighGodName] alone..."
+  botb_struggle.1011.a:0 "This is not over."
+  botb_struggle.1011.b:0 "Most interesting."

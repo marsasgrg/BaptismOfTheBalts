@@ -44,3 +44,62 @@ remove_inherited_descendent_traits_effect = {
 		remove_trait = palemonid
 	}
 }
+
+baltic_struggle_ending_culture_list_effect = {
+	every_culture_global = {		
+		limit = {
+			save_temporary_scope_as = this_culture
+			struggle:baltic_struggle = { is_culture_involved_in_struggle = scope:this_culture }
+			culture_number_of_counties > 0
+		}
+		save_scope_as = culture_scope
+		add_to_global_variable_list = {
+			name = baltic_struggle_ending_culture_list
+			target = scope:culture_scope
+		}
+	}
+}
+
+# Add all Involved independent rulers to a list
+baltic_struggle_ending_involved_list_effect = {
+	save_scope_as = struggle_ender
+	struggle:baltic_struggle = {
+		every_involved_ruler = {
+			limit = {
+				top_liege = this
+				primary_title = { is_mercenary_company = no }
+			}
+			add_to_list = struggle_involvees
+		}
+	}
+	# Add all involved cultures with counties to a list, for war checks
+	baltic_struggle_ending_culture_list_effect = yes
+	# Add all involved faiths with counties to a list, for marriage and holy war checks
+	baltic_struggle_ending_faith_list_effect = yes
+}
+
+### Hostility
+
+# Add all Involved faiths with counties to a list
+baltic_struggle_ending_faith_list_effect = {
+	every_religion_global = {
+		limit = {
+			any_faith = {
+				save_temporary_scope_as = this_faith
+				struggle:baltic_struggle = { is_faith_involved_in_struggle = scope:this_faith }
+				num_county_followers > 0
+			}
+		}
+		every_faith = {
+			limit = {
+				struggle:baltic_struggle = { is_faith_involved_in_struggle = prev }
+				num_county_followers > 0
+			}
+			save_scope_as = faith_scope
+			add_to_global_variable_list = {
+				name = baltic_struggle_ending_faith_list
+				target = scope:faith_scope
+			}
+		}
+	}
+}

@@ -17,7 +17,7 @@
     regions = {
         baltic_struggle_region
     }
-    involvement_prerequisite_percentage = 0.5
+    involvement_prerequisite_percentage = 0.01
     transition_state_duration = {months = 1}
 
     start_phase = struggle_baltic_baptism

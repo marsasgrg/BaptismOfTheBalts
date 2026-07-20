@@ -1,0 +1,7 @@
+﻿does_this_player_care_about_baltic = {
+    this != root
+    OR = {
+		struggle:baltic_struggle = { is_culture_involved_in_struggle = prev.culture }
+		struggle:baltic_struggle = { is_faith_involved_in_struggle = prev.faith }
+	}
+}
