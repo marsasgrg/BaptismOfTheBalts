@@ -1,0 +1,88 @@
+﻿baltic_struggle_new_ways_decision_ending = {
+    decision_group_type = major
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_castle_view.dds"
+    }
+    extra_picture = "gfx/interface/illustrations/decisions/decision_castle_view.dds"
+    is_invisible = yes
+    sort_order = 100
+    is_valid_showing_failures_only = {
+		is_available_adult = yes
+		# Independent
+		top_liege = this
+        NOT = {
+            faith = {
+                has_doctrine = unreformed_faith_doctrine
+            }
+        }
+       
+        
+        custom_tooltip = {
+            text = culture_is_native  
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_baltic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_balto_finnic
+                }
+            }
+        }
+	 
+    }
+    is_valid = {
+        save_temporary_scope_as = decision_taker
+        any_character_struggle = {
+            involvement = involved
+            is_struggle_type = baltic_struggle
+            OR = {
+                is_struggle_phase = struggle_baltic_baptism
+                is_struggle_phase = struggle_baltic_negotiation
+                scope:decision_taker = {
+                    completely_controls = title:k_lithuania
+                    completely_controls = title:k_esthonia
+                }
+            }
+            NOT = {
+                any_involved_ruler = {
+                    max_military_strength > scope:decision_taker.max_military_strength
+                }
+            }
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.75
+                faith = scope:decision_taker.faith 
+            }
+            
+        }
+        highest_held_title_tier >= tier_kingdom
+
+    }
+
+    ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 36
+		empire = 36
+		hegemony = 36
+	}
+    effect = {
+        faith = {
+            save_temporary_scope_as = winner_faith
+        }
+        # later - legends
+
+        dynasty = {add_dynasty_prestige = 5000}
+        stress_impact = {
+            zealous = medium_stress_impact_loss
+            cynical = medium_stress_impact_gain
+        }
+        add_prestige = 1000
+        
+        trigger_event = botb_struggle.1001
+    }
+
+	ai_potential = { always = yes }
+	ai_will_do = { base = 100 }
+}

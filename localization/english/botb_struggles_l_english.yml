@@ -7,3 +7,14 @@
   struggle_baltic_conquest_desc: "Swords and bows clash, the swamps burn. Surely no god, neither Christ nor the Eternal One, could have wanted this to happen?"
   struggle_baltic_negotiation: "Negotiation"
   struggle_baltic_negotiation_desc: "Dukes and diacons pause fighting for a second and talk. Dioceses are opened to tribal bands, which come not to plunder, but to trade. Dare I say, perhaps the beliefs will coexist."
+
+  culture_is_native: "Your culture must be [GetCulturePillar('heritage_baltic').GetName()] or  [GetCulturePillar('heritage_balto_finnic').GetName()]"
+  baltic_struggle_new_ways_decision_ending: "Triumph of the New Ways"
+  baltic_struggle_new_ways_decision_ending_confirm: "Perhaps it\'s better this way..."
+  baltic_struggle_new_ways_decision_ending_tooltip: "Bring new ways to your people"
+  baltic_struggle_new_ways_decision_ending_desc: "New beliefs of [GetPlayer().GetFaith().GetName()] have gained prominence among my people. It\'s time to entrench them."
+
+
+  botb_struggle.0001.t: "Victory of the New Ways" 
+  botb_struggle.0001.desc: "The righteous beliefs of [ROOT.Char.GetFaith().GetName()] have triumphed in the Baltic region, all thanks to me. Believers flock to me and my messengers. This victory will be known for centuries."
+  botb_struggle.1001.a: "In the name of [Root.Char.GetFaith().HighGodName()]!"

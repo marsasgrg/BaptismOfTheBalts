@@ -1,0 +1,8 @@
+﻿botb_throneroom_fullscreen = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/throne.dds"
+        environment = "environment_frontend_tribal_main"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_tribal_pagan"
+	
+	}
+}

@@ -47,9 +47,9 @@
                 }
             }
             ending_decisions = {
-                baltic_struggle_old_ways_decision_ending
+               # baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
-                baltic_struggle_colonial_decision_ending
+              #  baltic_struggle_colonial_decision_ending
             }
         }
         struggle_baltic_conquest = {
@@ -76,9 +76,9 @@
                 }
             }
             ending_decisions = {
-                baltic_struggle_old_ways_decision_ending
+                #baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
-                baltic_struggle_colonial_decision_ending
+                #baltic_struggle_colonial_decision_ending
             }        
         }
         struggle_baltic_negotiation = {
@@ -110,9 +110,9 @@
                 }
             }
             ending_decisions = {
-                baltic_struggle_old_ways_decision_ending
+                #baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
-                baltic_struggle_colonial_decision_ending
+                #baltic_struggle_colonial_decision_ending
             }
         }
     }
