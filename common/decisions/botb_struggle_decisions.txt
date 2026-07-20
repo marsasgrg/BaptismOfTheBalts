@@ -81,7 +81,7 @@
         }
         add_prestige = 2500
         
-        trigger_event = botb_struggle.1001
+        trigger_event = baltic_struggle.1001
         add_piety = 3000
         faith = {
             religious_head ?= {

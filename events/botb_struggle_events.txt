@@ -1,11 +1,11 @@
-﻿namespace = botb_struggle
+﻿namespace = baltic_struggle
 
-botb_struggle.0501 = {
+baltic_struggle.0501 = {
 	type = character_event
 	window = fullscreen_event
-	title = botb_struggle.0501.t
+	title = baltic_struggle.0501.t
 	desc = {
-		desc = botb_struggle.0501.desc
+		desc = baltic_struggle.0501.desc
 		first_valid = {
 			triggered_desc = {
 				trigger = {
@@ -14,7 +14,7 @@ botb_struggle.0501 = {
 						is_struggle_type = baltic_struggle
 					}
 				}
-				desc = botb_struggle.0501.desc.involved
+				desc = baltic_struggle.0501.desc.involved
 			}
 			triggered_desc = {
 				trigger = {
@@ -23,7 +23,7 @@ botb_struggle.0501 = {
 						is_struggle_type = baltic_struggle
 					}
 				}
-				desc = botb_struggle.0501.desc.interloper
+				desc = baltic_struggle.0501.desc.interloper
 			}
 		}
 	}
@@ -51,15 +51,15 @@ botb_struggle.0501 = {
 		}
 	}
 	option = {
-		name = botb_struggle.0501.a
+		name = baltic_struggle.0501.a
 	}
 }
 
-botb_struggle.1001 = {
+baltic_struggle.1001 = {
     type = character_event
     window = fullscreen_event
-    title = botb_struggle.0001.t
-    desc = botb_struggle.0001.desc
+    title = baltic_struggle.0001.t
+    desc = baltic_struggle.0001.desc
     
     theme = faith
     override_background = {reference = botb_throneroom_fullscreen}
@@ -68,7 +68,7 @@ botb_struggle.1001 = {
 
 
     option = { 
-        name = botb_struggle.1001.a
+        name = baltic_struggle.1001.a
         add_prestige = 2000
 
         ai_chance = {
@@ -89,25 +89,25 @@ botb_struggle.1001 = {
         }
         every_in_list = {
             list = players_to_notify
-            trigger_event = botb_struggle.1011
+            trigger_event = baltic_struggle.1011
         }
 	}
 }
 
-botb_struggle.1011 = {
+baltic_struggle.1011 = {
     type = character_event
 	window = fullscreen_event
-	title = botb_struggle.1011.t
+	title = baltic_struggle.1011.t
 	desc = {
 		first_valid = {
 		    triggered_desc = {
 		        trigger = { is_in_list = struggle_involvees }
-		        desc = botb_struggle.1011.opening.involved
+		        desc = baltic_struggle.1011.opening.involved
 		    }
-		    desc = botb_struggle.1011.opening
+		    desc = baltic_struggle.1011.opening
 		}
-		desc = botb_struggle.1011.desc
-        desc = botb_struggle.1011.closing.combined
+		desc = baltic_struggle.1011.desc
+        desc = baltic_struggle.1011.closing.combined
 
 	}
 	theme = court
@@ -116,11 +116,11 @@ botb_struggle.1011 = {
 	# Ok
 	option = {
 		name = {
-			text = botb_struggle.1011.a
+			text = baltic_struggle.1011.a
 			trigger = { is_in_list = struggle_involvees }
 		}
 		name = {
-			text = botb_struggle.1011.b
+			text = baltic_struggle.1011.b
 			trigger = {
 				NOT = { is_in_list = struggle_involvees }
 			}

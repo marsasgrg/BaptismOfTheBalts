@@ -128,7 +128,7 @@
 				is_ai = no
 			}
 
-			trigger_event = botb_struggle.0501
+			trigger_event = baltic_struggle.0501
 		}
     }
 }
