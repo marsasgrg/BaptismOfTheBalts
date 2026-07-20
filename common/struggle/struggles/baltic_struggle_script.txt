@@ -1,0 +1,119 @@
+﻿baltic_struggle = {
+    illustration = "gfx/interface/illustrations/event_story/forest.dds"
+    cultures = {
+        # Baltic indigenous
+        lithuanian
+        latgalian
+        prussian
+        # Baltofinnic indigenous
+        estonian
+    }
+    faiths = {
+        baltic_pagan
+        catholic
+        orthodox
+    }
+
+    regions = {
+        baltic_struggle_region
+    }
+    involvement_prerequisite_percentage = 0.5
+    transition_state_duration = {months = 1}
+
+    start_phase = struggle_baltic_baptism
+
+    phase_list = {
+        struggle_baltic_baptism = {
+            future_phases = {
+                struggle_baltic_negotiation = {
+                    catalysts = {
+						catalyst_passing_of_time = medium_struggle_catalyst_over_time_gain
+						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain
+						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain
+						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
+						catalyst_learned_new_language_important = minor_struggle_catalyst_gain
+						catalyst_new_building_in_city = minor_struggle_catalyst_gain
+						catalyst_sign_truce_outside_war = minor_struggle_catalyst_gain
+						catalyst_formed_interreligious_alliance_with_important_character = minor_struggle_catalyst_gain
+						catalyst_ransom_important = medium_struggle_catalyst_gain
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = medium_struggle_catalyst_gain
+						catalyst_invite_diff_faith_culture_to_feast = medium_struggle_catalyst_gain
+						catalyst_independence_from_non_dejure_vassal = major_struggle_catalyst_gain
+						catalyst_grant_land_local_noble = major_struggle_catalyst_gain
+						catalyst_became_best_friend_soulmate_with_very_important_character = major_struggle_catalyst_gain
+						catalyst_convert_local_culture_faith = major_struggle_catalyst_gain
+						catalyst_release_important = massive_struggle_catalyst_gain                        
+                    }
+                }
+            }
+            ending_decisions = {
+                baltic_struggle_old_ways_decision_ending
+                baltic_struggle_new_ways_decision_ending
+                baltic_struggle_colonial_decision_ending
+            }
+        }
+        struggle_baltic_conquest = {
+            future_phases = {
+                struggle_baltic_negotiation = {
+                    catalysts = {
+						catalyst_passing_of_time = medium_struggle_catalyst_over_time_gain
+						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain
+						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain
+						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
+						catalyst_learned_new_language_important = minor_struggle_catalyst_gain
+						catalyst_new_building_in_city = minor_struggle_catalyst_gain
+						catalyst_sign_truce_outside_war = minor_struggle_catalyst_gain
+						catalyst_formed_interreligious_alliance_with_important_character = minor_struggle_catalyst_gain
+						catalyst_ransom_important = medium_struggle_catalyst_gain
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = medium_struggle_catalyst_gain
+						catalyst_invite_diff_faith_culture_to_feast = medium_struggle_catalyst_gain
+						catalyst_independence_from_non_dejure_vassal = major_struggle_catalyst_gain
+						catalyst_grant_land_local_noble = major_struggle_catalyst_gain
+						catalyst_became_best_friend_soulmate_with_very_important_character = major_struggle_catalyst_gain
+						catalyst_convert_local_culture_faith = major_struggle_catalyst_gain
+						catalyst_release_important = massive_struggle_catalyst_gain                        
+                    }
+                }
+            }
+            ending_decisions = {
+                baltic_struggle_old_ways_decision_ending
+                baltic_struggle_new_ways_decision_ending
+                baltic_struggle_colonial_decision_ending
+            }        
+        }
+        struggle_baltic_negotiation = {
+            future_phases = {
+                struggle_baltic_baptism = {
+                    catalysts = {
+						catalyst_passing_of_time = massive_struggle_catalyst_over_time_gain
+                        catalyst_forced_conversion = medium_struggle_catalyst_gain
+                        catalyst_convert_local_culture_faith = medium_struggle_catalyst_gain
+                        catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion = medium_struggle_catalyst_gain
+                        catalyst_revealed_secret_faith_non_islam = medium_struggle_catalyst_gain
+                        catalyst_demanding_important_conversion = major_struggle_catalyst_gain
+                    }
+                }
+                struggle_baltic_conquest = {
+                    catalysts = {
+						catalyst_passing_of_time = massive_struggle_catalyst_over_time_gain
+						catalyst_gain_claim_on_title_fp2 = minor_struggle_catalyst_gain
+						catalyst_win_any_war_within_the_region = minor_struggle_catalyst_gain # Good
+						catalyst_new_building_in_castle = minor_struggle_catalyst_gain # How to do AI?
+						catalyst_becomes_rival_with_involved = major_struggle_catalyst_gain # Good
+						catalyst_using_a_hook_on_very_important_character = medium_struggle_catalyst_gain # good
+						catalyst_unnatural_death_important_character = medium_struggle_catalyst_gain
+						catalyst_usurp_title_fp2 = major_struggle_catalyst_gain # good
+						catalyst_reveal_secret_important = major_struggle_catalyst_gain
+						catalyst_broke_truce_against_important_character = massive_struggle_catalyst_gain # Cannot motivate the AI to do that without code support
+
+                    }
+                }
+            }
+            ending_decisions = {
+                baltic_struggle_old_ways_decision_ending
+                baltic_struggle_new_ways_decision_ending
+                baltic_struggle_colonial_decision_ending
+            }
+        }
+    }
+}
