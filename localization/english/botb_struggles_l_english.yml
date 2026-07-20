@@ -26,3 +26,10 @@
   botb_struggle.1011.closing.combined:0 "[struggle_ender.GetSheHe|U] has proclaimed the Baltic lands to belong to [struggle_ender.GetFaith.HighGodName] and [struggle_ender.GetFaith.HighGodName] alone..."
   botb_struggle.1011.a:0 "This is not over."
   botb_struggle.1011.b:0 "Most interesting."
+
+  botb_struggle.0501.a:0 "Take hold of the Baltic!"
+  botb_struggle.0501.t:1 "The $baltic_struggle$"
+  botb_struggle.0501.desc:1 "The Baltic region is in turmoil, a conflict born of religious differences. Outsiders covet the land and the great powers of foregin beliefs seek to sway its people. But those who live and die on its soil will ultimately determine its fate.\n\n"
+  botb_struggle.0501.desc.involved:0 "I will not let slip my vision for my homeland. By [ROOT.Char.GetFaith.HighGodName], House [ROOT.Char.GetHouse.GetNameNoTooltip] will weather the storm and see my will fulfilled.\n\n"
+  botb_struggle.0501.desc.interloper:0 "The time has come for me to take hold of the situation and my destiny. I see all the pieces laid out on the board. I know the way forward, and there will be no stopping House [ROOT.Char.GetHouse.GetNameNoTooltip].\n\n"
+  botb_struggle.0501.desc.mottocall:0 "[ROOT.Char.GetHouse.GetMotto]!"

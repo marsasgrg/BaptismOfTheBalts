@@ -17,7 +17,7 @@
     regions = {
         baltic_struggle_region
     }
-    involvement_prerequisite_percentage = 0.01
+    involvement_prerequisite_percentage = 0.001
     transition_state_duration = {months = 1}
 
     start_phase = struggle_baltic_baptism
@@ -115,5 +115,20 @@
                 #baltic_struggle_colonial_decision_ending
             }
         }
+    }
+
+
+    on_start = {
+		# Starting Events
+		trigger_event = { on_action = baltic_struggle_starting_events }
+	}
+    on_join = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+
+			trigger_event = botb_struggle.0501
+		}
     }
 }

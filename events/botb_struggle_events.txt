@@ -1,10 +1,66 @@
 ﻿namespace = botb_struggle
 
+botb_struggle.0501 = {
+	type = character_event
+	window = fullscreen_event
+	title = botb_struggle.0501.t
+	desc = {
+		desc = botb_struggle.0501.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = involved
+						is_struggle_type = baltic_struggle
+					}
+				}
+				desc = botb_struggle.0501.desc.involved
+			}
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = interloper
+						is_struggle_type = baltic_struggle
+					}
+				}
+				desc = botb_struggle.0501.desc.interloper
+			}
+		}
+	}
+	theme = realm
+	trigger = { # we need to prevent this from firing for all players when a new player joins in MP
+		is_ai = no
+		NOT = { has_character_flag = baltic_struggle_intro_event_flag }
+		any_character_struggle = {
+			is_struggle_type = baltic_struggle
+		}
+ 	}
+	override_background = { reference = botb_forest_fullscreen }
+
+	cooldown = { years = 100 }
+	immediate = {
+		
+		add_character_flag = baltic_struggle_intro_event_flag
+	}
+	widgets = {
+		widget = {
+ 			gui = "event_window_widget_struggle_info"
+ 			container = "dynamic_content_widget"
+ 			controller = struggle_info
+ 			setup_scope = { struggle:baltic_struggle = { save_scope_as = struggle } }
+		}
+	}
+	option = {
+		name = botb_struggle.0501.a
+	}
+}
+
 botb_struggle.1001 = {
     type = character_event
     window = fullscreen_event
     title = botb_struggle.0001.t
     desc = botb_struggle.0001.desc
+    
     theme = faith
     override_background = {reference = botb_throneroom_fullscreen}
 

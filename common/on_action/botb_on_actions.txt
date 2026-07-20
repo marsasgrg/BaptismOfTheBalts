@@ -53,6 +53,12 @@ botb_game_start = {
     }
 }
 
+baltic_struggle_starting_events = {
+	events = {
+		neutral_struggle.0001
+	}
+}
+
 # on_faith_created = {
 #     on_actions = {on_faith_reformed_balts_may_maintain_kriwe}
 # }
