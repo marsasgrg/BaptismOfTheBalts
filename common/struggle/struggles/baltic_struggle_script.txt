@@ -27,7 +27,7 @@
             future_phases = {
                 struggle_baltic_negotiation = {
                     catalysts = {
-						catalyst_passing_of_time = medium_struggle_catalyst_over_time_gain
+						catalyst_passing_of_time = massive_struggle_catalyst_over_time_gain
 						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain
 						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain
 						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
@@ -46,8 +46,11 @@
                     }
                 }
             }
+            duration = {
+                points = 250
+            }
             ending_decisions = {
-               # baltic_struggle_old_ways_decision_ending
+                 baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
               #  baltic_struggle_colonial_decision_ending
             }
@@ -56,7 +59,7 @@
             future_phases = {
                 struggle_baltic_negotiation = {
                     catalysts = {
-						catalyst_passing_of_time = medium_struggle_catalyst_over_time_gain
+						catalyst_passing_of_time = massive_struggle_catalyst_over_time_gain
 						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain
 						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain
 						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
@@ -75,8 +78,11 @@
                     }
                 }
             }
+            duration = {
+                points = 250
+            }
             ending_decisions = {
-                #baltic_struggle_old_ways_decision_ending
+                baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
                 #baltic_struggle_colonial_decision_ending
             }        
@@ -110,9 +116,12 @@
                 }
             }
             ending_decisions = {
-                #baltic_struggle_old_ways_decision_ending
+                baltic_struggle_old_ways_decision_ending
                 baltic_struggle_new_ways_decision_ending
                 #baltic_struggle_colonial_decision_ending
+            }
+            duration = {
+                points = 250
             }
         }
     }

@@ -28,13 +28,16 @@
                 }
             }
         }
-	 
-    }
-    is_valid = {
-        save_temporary_scope_as = decision_taker
         any_character_struggle = {
             involvement = involved
             is_struggle_type = baltic_struggle
+        }
+    }
+    is_valid = {
+        save_temporary_scope_as = decision_taker
+        
+
+        struggle:baltic_struggle ?= {
             OR = {
                 is_struggle_phase = struggle_baltic_baptism
                 is_struggle_phase = struggle_baltic_negotiation
@@ -43,12 +46,15 @@
                     completely_controls = title:k_esthonia
                 }
             }
-            NOR = {
-                any_involved_ruler = {
-                    max_military_strength > scope:decision_taker.max_military_strength
-                }
-                any_involved_ruler = {
-                    struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
+            custom_tooltip = {
+                text = baltic_struggle_all_rulers_weaker
+                NOR = {
+                    any_involved_ruler = {
+                        max_military_strength > scope:decision_taker.max_military_strength
+                    }
+                    any_involved_ruler = {
+                        struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
+                    }
                 }
             }
             any_county_in_region = {
@@ -87,7 +93,130 @@
             religious_head ?= {
                 add_prestige = 1000
                 add_piety = 1000
-                dynasty = {
+                dynasty ?= {
+                    add_dynasty_prestige = 500
+                }
+                add_opinion = {
+                    target = scope:decision_taker
+                    modifier = savior_of_the_baltic
+                }
+            }
+        }
+    }
+
+	ai_potential = { always = yes }
+	ai_will_do = { base = 100 }
+}
+
+baltic_struggle_old_ways_decision_ending = {
+    decision_group_type = major
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_tale.dds"
+    }
+    extra_picture = "gfx/interface/illustrations/decisions/decision_tale.dds"
+    is_invisible = yes
+    sort_order = 100
+    is_valid_showing_failures_only = {
+		is_available_adult = yes
+		# Independent
+		top_liege = this
+        
+        faith = {
+            has_doctrine = unreformed_faith_doctrine
+        }
+    
+       
+        
+        custom_tooltip = {
+            text = culture_is_native  
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_baltic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_balto_finnic
+                }
+            }
+        }
+        any_character_struggle = {
+            involvement = involved
+            is_struggle_type = baltic_struggle
+        }
+    }
+    is_valid = {
+        save_temporary_scope_as = decision_taker
+        
+
+        struggle:baltic_struggle ?= {
+            OR = {
+                is_struggle_phase = struggle_baltic_conquest
+                scope:decision_taker = {
+                    completely_controls = title:k_lithuania
+                    completely_controls = title:k_esthonia
+                }
+            }
+            custom_tooltip = {
+                text = baltic_struggle_all_rulers_weaker
+                NOR = {
+                    any_involved_ruler = {
+                        max_military_strength > scope:decision_taker.max_military_strength
+                    }
+                    any_involved_ruler = {
+                        struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
+                    }
+                }
+            }
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.5
+                faith = scope:decision_taker.faith 
+            }
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.95
+                faith = {
+                    has_doctrine = unreformed_faith_doctrine
+                }
+            }
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.6
+                holder.top_liege = scope:decision_taker 
+            }
+            
+        }
+        highest_held_title_tier >= tier_kingdom
+
+    }
+
+    ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 36
+		empire = 36
+		hegemony = 36
+	}
+    effect = {
+        
+        # later - legends
+
+        dynasty = {add_dynasty_prestige = 5000}
+        stress_impact = {
+            zealous = medium_stress_impact_loss
+            cynical = medium_stress_impact_gain
+        }
+        add_prestige = 2500
+        
+        trigger_event = baltic_struggle.1002
+        add_piety = 3500
+        faith = {
+            remove_doctrine = unreformed_faith_doctrine
+            add_doctrine = tenet_warmonger
+            religious_head ?= {
+                add_prestige = 1000
+                add_piety = 1000
+                dynasty ?= {
                     add_dynasty_prestige = 500
                 }
                 add_opinion = {

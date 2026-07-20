@@ -58,8 +58,8 @@ baltic_struggle.0501 = {
 baltic_struggle.1001 = {
     type = character_event
     window = fullscreen_event
-    title = baltic_struggle.0001.t
-    desc = baltic_struggle.0001.desc
+    title = baltic_struggle.1001.t
+    desc = baltic_struggle.1001.desc
     
     theme = faith
     override_background = {reference = botb_throneroom_fullscreen}
@@ -86,6 +86,44 @@ baltic_struggle.1001 = {
         }
         struggle:baltic_struggle = {
             end_struggle = baltic_struggle_new_ways_decision_ending
+        }
+        every_in_list = {
+            list = players_to_notify
+            trigger_event = baltic_struggle.1011
+        }
+	}
+}
+baltic_struggle.1002 = {
+    type = character_event
+    window = fullscreen_event
+    title = baltic_struggle.1002.t
+    desc = baltic_struggle.1002.desc
+    
+    theme = faith
+    override_background = {reference = botb_throneroom_fullscreen}
+
+   
+
+
+    option = { 
+        name = baltic_struggle.1002.a
+        add_prestige = 2000
+
+        ai_chance = {
+            base = 100
+        }
+    }
+	after = {
+
+        baltic_struggle_ending_involved_list_effect = yes
+        every_player = {
+            limit = {
+                does_this_player_care_about_baltic = yes
+            }
+            add_to_list = players_to_notify
+        }
+        struggle:baltic_struggle = {
+            end_struggle = baltic_struggle_old_ways_decision_ending
         }
         every_in_list = {
             list = players_to_notify
@@ -127,3 +165,4 @@ baltic_struggle.1011 = {
 		}
 	}
 }
+
