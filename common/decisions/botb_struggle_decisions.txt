@@ -37,6 +37,7 @@
         save_temporary_scope_as = decision_taker
         
 
+        highest_held_title_tier >= tier_kingdom
         struggle:baltic_struggle ?= {
             OR = {
                 is_struggle_phase = struggle_baltic_baptism
@@ -64,7 +65,6 @@
             }
             
         }
-        highest_held_title_tier >= tier_kingdom
 
     }
 
@@ -148,6 +148,7 @@ baltic_struggle_old_ways_decision_ending = {
     is_valid = {
         save_temporary_scope_as = decision_taker
         
+        highest_held_title_tier >= tier_kingdom
 
         struggle:baltic_struggle ?= {
             OR = {
@@ -192,7 +193,6 @@ baltic_struggle_old_ways_decision_ending = {
             }
             
         }
-        highest_held_title_tier >= tier_kingdom
 
     }
 
