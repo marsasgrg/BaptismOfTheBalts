@@ -12,7 +12,7 @@ d_high_kriwe = {
 	}
 
 	#color = { 150 90 30 }
-	color = { 183 60 155 }
+	color = { 153 100 80 }
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
