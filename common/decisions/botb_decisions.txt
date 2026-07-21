@@ -79,14 +79,14 @@ subsume_ruthenian_duchy = {
         }
     }
     is_valid = {
-        save_temporary_scope_as = decision_taker
+        
         OR = {
             AND = {
                 title:k_white_rus = {
                     custom_tooltip = {
                         text = border_belarus_duchy_is_controlled
                         any_direct_de_jure_vassal_title = {
-                            scope:decision_taker = {
+                            root = {
                                 completely_controls = PREV
                             }
                             any_de_jure_county = {
@@ -113,7 +113,7 @@ subsume_ruthenian_duchy = {
                     custom_tooltip = {
                         text = border_ukraine_duchy_is_controlled
                         any_direct_de_jure_vassal_title = {
-                            scope:decision_taker = {
+                            root = {
                                 completely_controls = PREV
                             }
                             any_de_jure_county = {
@@ -140,7 +140,7 @@ subsume_ruthenian_duchy = {
     }
     cooldown = { years = 15 }
     effect = {
-        save_temporary_scope_as = decision_taker
+        
         if = {
             limit = {                    
                 OR = {
@@ -154,7 +154,7 @@ subsume_ruthenian_duchy = {
                 every_direct_de_jure_vassal_title = {
                     if = {
                         limit = {
-                            scope:decision_taker = {
+                            root = {
                                 completely_controls = PREV
                             }
                             any_de_jure_county = {
@@ -182,7 +182,7 @@ subsume_ruthenian_duchy = {
                 every_direct_de_jure_vassal_title = {
                     if = {
                         limit = {
-                            scope:decision_taker = {
+                            root = {
                                 completely_controls = PREV
                             }
                             any_de_jure_county = {
@@ -229,13 +229,13 @@ subsume_ruthenian_duchy_poland = {
         } 
     }
     is_valid = {
-        save_temporary_scope_as = decision_taker
+        
 
         title:k_galicia-volhynia = {
             custom_tooltip = {
                 text = border_galician_duchy_is_controlled
                 any_direct_de_jure_vassal_title = {
-                    scope:decision_taker = {
+                    root = {
                         completely_controls = PREV
                     }
                     any_de_jure_county = {
@@ -260,7 +260,7 @@ subsume_ruthenian_duchy_poland = {
     }
     cooldown = { years = 15 }
     effect = {
-        save_temporary_scope_as = decision_taker
+        
         if = {
             limit = {                    
                 OR = {
@@ -274,7 +274,7 @@ subsume_ruthenian_duchy_poland = {
                 every_direct_de_jure_vassal_title = {
                     if = {
                         limit = {
-                            scope:decision_taker = {
+                            root = {
                                 completely_controls = PREV
                             }
                             any_de_jure_county = {

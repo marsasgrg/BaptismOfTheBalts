@@ -1,0 +1,4 @@
+﻿# struggle_named_script_value_greater_than = { # For some reason ck3 wanted this
+#     third = YEARS_SINCE_STRUGGLE_GREATER_THAN
+# }
+

@@ -130,6 +130,11 @@
 
     on_start = {
 		# Starting Events
+        set_variable = {
+            name = struggle_start_date 
+            value = current_date
+        }
+
 		trigger_event = { on_action = baltic_struggle_starting_events }
 	}
     on_join = {

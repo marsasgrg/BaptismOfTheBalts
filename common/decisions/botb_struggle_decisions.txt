@@ -34,15 +34,19 @@
         }
     }
     is_valid = {
-        save_temporary_scope_as = decision_taker
+        
         
 
         highest_held_title_tier >= tier_kingdom
         struggle:baltic_struggle ?= {
+            custom_tooltip = {
+                text = baltic_struggle_started_ago_50
+                years_since_struggle_start > 50
+            }
             OR = {
                 is_struggle_phase = struggle_baltic_baptism
                 is_struggle_phase = struggle_baltic_negotiation
-                scope:decision_taker = {
+                root = {
                     completely_controls = title:k_lithuania
                     completely_controls = title:k_esthonia
                 }
@@ -51,10 +55,10 @@
                 text = baltic_struggle_all_rulers_weaker
                 NOR = {
                     any_involved_ruler = {
-                        max_military_strength > scope:decision_taker.max_military_strength
+                        max_military_strength > root.max_military_strength
                     }
                     any_involved_ruler = {
-                        struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
+                        struggle_sub_realm_size > root.struggle_sub_realm_size
                     }
                 }
             }
@@ -62,7 +66,7 @@
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.75
-                faith = scope:decision_taker.faith 
+                faith = root.faith 
             }
             
         }
@@ -79,7 +83,7 @@
 	}
     effect = {
         
-        save_temporary_scope_as = decision_taker
+        
         
         # later - legends
 
@@ -100,7 +104,7 @@
                     add_dynasty_prestige = 500
                 }
                 add_opinion = {
-                    target = scope:decision_taker
+                    target = root
                     modifier = savior_of_the_baltic
                 }
             }
@@ -147,33 +151,37 @@ baltic_struggle_old_ways_decision_ending = {
         }
     }
     is_valid = {
-        save_temporary_scope_as = decision_taker
+        
         
         highest_held_title_tier >= tier_kingdom
 
         struggle:baltic_struggle ?= {
             OR = {
                 is_struggle_phase = struggle_baltic_conquest
-                scope:decision_taker = {
+                root = {
                     completely_controls = title:k_lithuania
                     completely_controls = title:k_esthonia
                 }
             }
             custom_tooltip = {
+                text = baltic_struggle_started_ago_100
+                years_since_struggle_start > 100
+            }
+            custom_tooltip = {
                 text = baltic_struggle_all_rulers_weaker
                 NOR = {
                     any_involved_ruler = {
-                        max_military_strength > scope:decision_taker.max_military_strength
+                        max_military_strength > root.max_military_strength
                     }
                     any_involved_ruler = {
-                        struggle_sub_realm_size > scope:decision_taker.struggle_sub_realm_size
+                        struggle_sub_realm_size > root.struggle_sub_realm_size
                     }
                 }
             }
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.5
-                faith = scope:decision_taker.faith 
+                faith = root.faith 
             }
             any_county_in_region = {
                 region = baltic_struggle_region
@@ -185,10 +193,10 @@ baltic_struggle_old_ways_decision_ending = {
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.6
-                OR = {
-                    holder = scope:decision_taker
-                    holder = {
-                        is_vassal_or_below_of = scope:decision_taker
+                custom_tooltip = {
+                    text = in_your_realm
+                    root = {
+                        completely_controls = prev
                     }
                 }
             }
@@ -206,7 +214,7 @@ baltic_struggle_old_ways_decision_ending = {
 		hegemony = 36
 	}
     effect = {
-        save_temporary_scope_as = decision_taker
+        
         
         # later - legends
 
@@ -231,7 +239,7 @@ baltic_struggle_old_ways_decision_ending = {
                     add_dynasty_prestige = 500
                 }
                 add_opinion = {
-                    target = scope:decision_taker
+                    target = root
                     modifier = savior_of_the_baltic
                 }
             }

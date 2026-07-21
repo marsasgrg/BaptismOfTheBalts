@@ -123,9 +123,9 @@ on_game_start = {
 
 botb_on_game_start = {
 	effect = {
-		start_struggle = {
-            struggle_type = baltic_struggle
-            start_phase = struggle_baltic_baptism
-        }
+		# start_struggle = {
+        #     struggle_type = baltic_struggle
+        #     start_phase = struggle_baltic_baptism
+        # }
 	}
 }

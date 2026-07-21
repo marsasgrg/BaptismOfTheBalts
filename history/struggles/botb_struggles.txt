@@ -1,0 +1,9 @@
+﻿1177.1.1 = {
+    effect = {
+            start_struggle = {
+                struggle_type = baltic_struggle
+                start_phase = struggle_baltic_baptism 
+            }
+        
+    }
+}

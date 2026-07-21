@@ -1,4 +1,12 @@
 ﻿l_english:
+  baltic_struggle_started_ago_first_half: "[GetStruggle('baltic_struggle').GetName] started more than"
+  baltic_struggle_started_ago_second_half: "years ago #weak (Currently [GetStruggle('baltic_struggle').MakeScope.ScriptValue('years_since_struggle_start')])#!"
+  baltic_struggle_started_ago_25: "$baltic_struggle_started_ago_first_half$ 25 $baltic_struggle_started_ago_second_half$"
+  baltic_struggle_started_ago_50: "$baltic_struggle_started_ago_first_half$ 50 $baltic_struggle_started_ago_second_half$"
+  baltic_struggle_started_ago_100: "$baltic_struggle_started_ago_first_half$ 100 $baltic_struggle_started_ago_second_half$"
+  
+  
+  in_your_realm: "In your realm"
   baltic_struggle: "Baptism of the Balts"
   baltic_struggle_desc: "The old ways are being threatened by the beliefs of foreign missonaries and crusaders... Will the ancestors prevail?"
   struggle_baltic_baptism: "Baptism"

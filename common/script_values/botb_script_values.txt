@@ -24,5 +24,13 @@
 
 }
 
+days_since_struggle_start = {
+    add = current_date
+    subtract = var:start_date
+}
 
 
+years_since_struggle_start = {
+    add = days_since_struggle_start
+    divide = 365
+}
