@@ -1,0 +1,11 @@
+﻿perkunas_destiny = {
+	category = "special"
+
+	is_available_on_create = {
+		has_doctrine = perkunas_destiny_doctrine
+	}
+
+	doctrine_types = {
+		perkunas_destiny_doctrine
+	}
+}

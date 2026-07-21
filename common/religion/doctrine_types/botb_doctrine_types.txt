@@ -1,0 +1,18 @@
+﻿perkunas_destiny_doctrine = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+	}
+
+	parameters = {
+		divine_destiny_holy_war_cost_reduction = yes
+        conquest_cb_enabled = yes
+		invasion_cb_enabled = yes
+		great_holy_wars_active_if_reformed = yes
+		clergy_can_fight = yes
+	}
+    character_modifier = {
+		ai_war_chance = 0.5
+		ai_war_cooldown = -0.25
+		accolade_glory_gain_mult = 0.1
+	}
+}
