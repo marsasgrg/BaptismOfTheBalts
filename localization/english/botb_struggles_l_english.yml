@@ -8,6 +8,8 @@
   struggle_baltic_negotiation: "Negotiation"
   struggle_baltic_negotiation_desc: "Dukes and diacons pause fighting for a second and talk. Dioceses are opened to tribal bands, which come not to plunder, but to trade. Dare I say, perhaps the beliefs will coexist."
 
+  custom_tt_in_the_struggle_region: "In the [GetGeographicalRegion('baltic_struggle_region').GetName]:"
+
   culture_is_native: "Your culture must be [GetCulturePillar('heritage_baltic').GetName()] or  [GetCulturePillar('heritage_balto_finnic').GetName()]"
   baltic_struggle_new_ways_decision_ending: "Triumph of the New Ways"
   baltic_struggle_new_ways_decision_ending_confirm: "Perhaps it\'s better this way..."

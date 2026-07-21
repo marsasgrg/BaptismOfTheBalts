@@ -10,6 +10,7 @@
     }
     faiths = {
         baltic_pagan
+        finnish_pagan
         catholic
         orthodox
     }

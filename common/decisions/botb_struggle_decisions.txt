@@ -58,6 +58,7 @@
                     }
                 }
             }
+            
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.75
