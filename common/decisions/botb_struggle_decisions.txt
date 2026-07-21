@@ -39,8 +39,10 @@
 
         highest_held_title_tier >= tier_kingdom
         struggle:baltic_struggle ?= {
-            custom_tooltip = {
-                text = baltic_struggle_started_ago_50
+
+            custom_description = {
+                text = years_since_struggle_start
+                value = 50
                 years_since_struggle_start > 50
             }
             OR = {
@@ -165,8 +167,9 @@ baltic_struggle_old_ways_decision_ending = {
                     completely_controls = title:k_esthonia
                 }
             }
-            custom_tooltip = {
-                text = baltic_struggle_started_ago_100
+            custom_description = {
+                text = years_since_struggle_start
+                value = 100
                 years_since_struggle_start > 100
             }
             custom_tooltip = {

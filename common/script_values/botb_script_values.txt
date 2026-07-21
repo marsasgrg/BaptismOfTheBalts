@@ -26,11 +26,14 @@
 
 days_since_struggle_start = {
     add = current_date
-    subtract = var:start_date
+    subtract = var:struggle_start_date
 }
 
 
 years_since_struggle_start = {
     add = days_since_struggle_start
     divide = 365
+    floor = yes
 }
+
+botb_century = 100
