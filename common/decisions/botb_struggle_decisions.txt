@@ -55,9 +55,11 @@
                 text = baltic_struggle_all_rulers_weaker
                 NOR = {
                     any_involved_ruler = {
+                        is_independent_ruler = yes
                         max_military_strength > root.max_military_strength
                     }
                     any_involved_ruler = {
+                        is_independent_ruler = yes
                         struggle_sub_realm_size > root.struggle_sub_realm_size
                     }
                 }
@@ -171,9 +173,13 @@ baltic_struggle_old_ways_decision_ending = {
                 text = baltic_struggle_all_rulers_weaker
                 NOR = {
                     any_involved_ruler = {
+                        
+                        is_independent_ruler = yes
                         max_military_strength > root.max_military_strength
                     }
                     any_involved_ruler = {
+                        
+                        is_independent_ruler = yes
                         struggle_sub_realm_size > root.struggle_sub_realm_size
                     }
                 }

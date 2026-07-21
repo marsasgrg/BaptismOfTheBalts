@@ -23,7 +23,7 @@
   baltic_struggle_new_ways_decision_ending_confirm: "Perhaps it\'s better this way..."
   baltic_struggle_new_ways_decision_ending_tooltip: "Bring new ways to your people"
   baltic_struggle_new_ways_decision_ending_desc: "New beliefs of [GetPlayer().GetFaith().GetName()] have gained prominence among my people. It\'s time to entrench them."
-  baltic_struggle_all_rulers_weaker: "All involved rulers must be weaker than you at their max military strength, and hold less land in the Baltic"
+  baltic_struggle_all_rulers_weaker: "All involved independent rulers must be weaker than you at their max military strength, and hold less land in the Baltic"
   any_county_in_region_percent:0 "$PARAMETERS$ of [GEOGRAPHICAL_REGION.GetName] counties in the relevant region:"
   baltic_struggle_region: "Baltic"
   baltic_struggle.1001.t: "Victory of the New Ways" 
