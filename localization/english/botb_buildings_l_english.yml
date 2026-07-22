@@ -1,0 +1,5 @@
+﻿l_english:
+    building_holy_site_great_romowe: "Great Romowe"
+    building_holy_site_great_romowe_desc: "The Great Romowe is the most sacred holy site in [GetFaithByKey('baltic_pagan').GetName()], a gathering place for both believers and priests."
+    building_type_holy_site_great_romowe: "Great Romowe"
+    building_type_holy_site_great_romowe_desc: "The Great Romowe is the most sacred holy site in [GetFaithByKey('baltic_pagan').GetName()], a gathering place for both believers and priests."

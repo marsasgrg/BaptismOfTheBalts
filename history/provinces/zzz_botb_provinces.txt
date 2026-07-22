@@ -1,0 +1,10 @@
+
+3198 = {	#ROMOWE
+	culture = prussian
+	religion = baltic_pagan
+	holding = tribal_holding
+    special_building_slot = holy_site_great_romowe
+	700.1.1 = {
+		special_building = holy_site_great_romowe
+	}
+}

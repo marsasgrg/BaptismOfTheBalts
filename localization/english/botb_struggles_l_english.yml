@@ -4,7 +4,7 @@
   # baltic_struggle_started_ago_25: "$baltic_struggle_started_ago_first_half$ 25 $baltic_struggle_started_ago_second_half$"
   # baltic_struggle_started_ago_50: "$baltic_struggle_started_ago_first_half$ 50 $baltic_struggle_started_ago_second_half$"
   # baltic_struggle_started_ago_100: "$baltic_struggle_started_ago_first_half$ 100 $baltic_struggle_started_ago_second_half$"
-  YEARS_SINCE_STRUGGLE_GREATER_THAN: "[STRUGGLE.GetName] started more than $VALUE|V$ years ago #weak (Currently [STRUGGLE.MakeScope.ScriptValue('years_since_struggle_start')])#!"
+  YEARS_SINCE_STRUGGLE_GREATER_THAN: "[STRUGGLE.GetName] started more than $VALUE|V0$ years ago #weak (Currently [STRUGGLE.MakeScope.ScriptValue('years_since_struggle_start')])#!"
   
   in_your_realm: "In your realm"
   baltic_struggle: "Baptism of the Balts"
