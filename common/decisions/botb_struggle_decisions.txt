@@ -42,8 +42,8 @@
 
             custom_description = {
                 text = years_since_struggle_start
-                value = 50
-                years_since_struggle_start > 50
+                value = 25
+                years_since_struggle_start > 25
             }
             OR = {
                 is_struggle_phase = struggle_baltic_baptism
@@ -182,8 +182,8 @@ baltic_struggle_old_ways_decision_ending = {
             }
             custom_description = {
                 text = years_since_struggle_start
-                value = 100
-                years_since_struggle_start > 100
+                value = 50
+                years_since_struggle_start > 50
             }
             custom_tooltip = {
                 text = baltic_struggle_all_rulers_weaker
