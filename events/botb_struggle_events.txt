@@ -132,6 +132,47 @@ baltic_struggle.1002 = {
 	}
 }
 
+baltic_struggle.1003 = {
+    type = character_event
+    window = fullscreen_event
+    title = baltic_struggle.1003.t
+    desc = baltic_struggle.1003.desc
+    
+    theme = faith
+    override_background = {reference = botb_devastation_fullscreen}
+
+   
+
+
+    option = { 
+        name = baltic_struggle.1003.a
+        add_prestige = 2000
+
+        ai_chance = {
+            base = 100
+        }
+    }
+	after = {
+
+        baltic_struggle_ending_involved_list_effect = yes
+        every_player = {
+            limit = {
+                does_this_player_care_about_baltic = yes
+            }
+            add_to_list = players_to_notify
+        }
+        struggle:baltic_struggle = {
+            end_struggle = baltic_struggle_colonial_decision_ending
+        }
+        every_in_list = {
+            list = players_to_notify
+            trigger_event = baltic_struggle.1013
+        }
+	}
+}
+
+
+
 baltic_struggle.1011 = {
     type = character_event
 	window = fullscreen_event
@@ -161,6 +202,44 @@ baltic_struggle.1011 = {
 			text = baltic_struggle.1011.b
 			trigger = {
 				NOT = { is_in_list = struggle_involvees }
+			}
+		}
+	}
+}
+
+baltic_struggle.1013 = {
+    type = character_event
+	window = fullscreen_event
+	title = baltic_struggle.1013.t
+	desc = {
+		first_valid = {
+		    triggered_desc = {
+		        trigger = { is_in_list = struggle_involvees }
+		        desc = baltic_struggle.1013.opening.involved
+		    }
+		    desc = baltic_struggle.1013.opening
+		}
+		desc = baltic_struggle.1013.desc
+        desc = baltic_struggle.1013.closing.combined
+
+	}
+	theme = court
+	override_background = { reference = botb_devastation_fullscreen }
+
+	# Ok
+	option = {
+		name = {
+			text = baltic_struggle.1013.a
+			trigger = { 
+				culture = scope:struggle_ender.culture
+			}
+		}
+		name = {
+			text = baltic_struggle.1013.b
+			trigger = {
+				NOT = { 
+					culture = scope:struggle_ender.culture
+				}
 			}
 		}
 	}

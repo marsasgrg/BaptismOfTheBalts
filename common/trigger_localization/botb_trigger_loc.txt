@@ -4,3 +4,6 @@
 held_or_adherent_to_faith = {
   global = HELD_OR_ADHERENT_TO_FAITH
 }
+held_or_adherent_to_culture = {
+  global = HELD_OR_ADHERENT_TO_CULTURE
+}

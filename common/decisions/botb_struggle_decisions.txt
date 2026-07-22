@@ -270,3 +270,123 @@ baltic_struggle_old_ways_decision_ending = {
 	ai_potential = { always = yes }
 	ai_will_do = { base = 100 }
 }
+
+baltic_struggle_colonial_decision_ending = {
+    decision_group_type = major
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/devastation.dds"
+    }
+    extra_picture = "gfx/interface/illustrations/decisions/devastation.dds"
+    is_invisible = yes
+    sort_order = 100
+    is_valid_showing_failures_only = {
+		is_available_adult = yes
+		# Independent
+		top_liege = this
+        NOT = {
+            faith = {
+                has_doctrine = unreformed_faith_doctrine
+            }
+        }
+       
+       
+        custom_tooltip = {
+            text = culture_isnt_native  
+            NOR = {
+                culture = {
+                    has_cultural_pillar = heritage_baltic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_balto_finnic
+                }
+            }
+        }
+    
+
+        NOR = {
+            faith.religion = faith:baltic_pagan.religion
+            faith.religion = faith:finnish_pagan.religion
+        }
+
+        any_character_struggle = {
+            involvement = involved
+            is_struggle_type = baltic_struggle
+        }
+    }
+    is_valid = {
+        
+        
+
+        highest_held_title_tier >= tier_kingdom
+        struggle:baltic_struggle ?= {
+
+            custom_description = {
+                text = years_since_struggle_start
+                value = 25
+                years_since_struggle_start > 25
+            }
+            OR = {
+                is_struggle_phase = struggle_baltic_conquest
+                root = {
+                    completely_controls = title:k_lithuania
+                    completely_controls = title:k_esthonia
+                }
+            }
+            custom_tooltip = {
+                text = baltic_struggle_all_rulers_weaker
+                NOR = {
+                    any_involved_ruler = {
+                        is_independent_ruler = yes
+                        max_military_strength > root.max_military_strength
+                    }
+                    any_involved_ruler = {
+                        is_independent_ruler = yes
+                        struggle_sub_realm_size > root.struggle_sub_realm_size
+                    }
+                }
+            }
+            
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.3
+                culture = root.culture 
+            }
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.75
+                
+                custom_tooltip = {
+                    text = HELD_OR_ADHERENT_TO_CULTURE
+                    held_or_adherent_to_culture = {
+                        CULTURE = root.culture
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 36
+		empire = 36
+		hegemony = 36
+	}
+    effect = {
+        
+        
+        
+        # later - legends
+
+        dynasty = {add_dynasty_prestige = 5000}
+        add_prestige = 5000
+        
+        trigger_event = baltic_struggle.1003
+    }
+
+	ai_potential = { always = yes }
+	ai_will_do = { base = 100 }
+}

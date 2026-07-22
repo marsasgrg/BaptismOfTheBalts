@@ -15,3 +15,11 @@ botb_forest_fullscreen = {
 	
 	}
 }
+
+botb_devastation_fullscreen = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/devastation.dds"
+		environment = "environment_ep3_constantinople_on_fire"
+		ambience = "event:/DLC/EP3/SFX/Events/Event_Images/ep3_evn_eventimage_rioting_constantinople"
+	}
+}

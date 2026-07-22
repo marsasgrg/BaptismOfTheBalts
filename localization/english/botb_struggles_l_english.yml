@@ -6,7 +6,9 @@
   # baltic_struggle_started_ago_100: "$baltic_struggle_started_ago_first_half$ 100 $baltic_struggle_started_ago_second_half$"
   YEARS_SINCE_STRUGGLE_GREATER_THAN: "[STRUGGLE.GetName] started more than $VALUE|V0$ years ago #weak (Currently [STRUGGLE.MakeScope.ScriptValue('years_since_struggle_start')])#!"
   HELD_OR_ADHERENT_TO_FAITH: "The county believes in [FAITH.GetName()] or is controlled by a [FAITH.GetAdherentName()]"
+  HELD_OR_ADHERENT_TO_CULTURE: "The county is of your culture or is controlled by your culture"
   
+
   in_your_realm: "In your realm"
   baltic_struggle: "Baptism of the Balts"
   baltic_struggle_desc: "The old ways are being threatened by the beliefs of foreign missonaries and crusaders... Will the ancestors prevail?"
@@ -19,7 +21,8 @@
 
   custom_tt_in_the_struggle_region: "In the [GetGeographicalRegion('baltic_struggle_region').GetName]:"
 
-  culture_is_native: "Your culture must be [GetCulturePillar('heritage_baltic').GetName()] or  [GetCulturePillar('heritage_balto_finnic').GetName()]"
+  culture_isnt_native: "Your culture must not be [GetCulturePillar('heritage_baltic').GetName()] or [GetCulturePillar('heritage_balto_finnic').GetName()]"
+  culture_is_native: "Your culture must be [GetCulturePillar('heritage_baltic').GetName()] or [GetCulturePillar('heritage_balto_finnic').GetName()]"
   baltic_struggle_new_ways_decision_ending: "Triumph of the New Ways"
   baltic_struggle_new_ways_decision_ending_confirm: "Perhaps it\'s better this way..."
   baltic_struggle_new_ways_decision_ending_tooltip: "Bring new ways to your people"
@@ -56,5 +59,21 @@
   baltic_struggle.0501.desc.interloper:0 "The time has come for me to take hold of the situation and my destiny. I see all the pieces laid out on the board. I know the way forward, and there will be no stopping House [ROOT.Char.GetHouse.GetNameNoTooltip].\n\n"
   baltic_struggle.0501.desc.mottocall:0 "[ROOT.Char.GetHouse.GetMotto]!"
 
+  baltic_struggle_colonial_decision_ending: "Triumph of the Outsiders"
+  baltic_struggle_colonial_decision_ending_confirm: "We will make better use of this land..."
+  baltic_struggle_colonial_decision_ending_tooltip: "Bring new people to the Baltic"
+  baltic_struggle_colonial_decision_ending_desc: "We the [GetPlayer().GetCulture().GetName()] people have taken over the Baltic. We must entrench our position."
+  
+  baltic_struggle.1013.t: "Victory of the [struggle_ender.GetCulture.GetName] colonists in the Baltic"
+  baltic_struggle.1013.opening.involved:0 "Smoke rises on the horizon..."
+  baltic_struggle.1013.opening:0 "Word of recent developments on the coasts of Baltic sea has reached our court, promising a horrifying end to the conflicts that have plagued the region."
+  baltic_struggle.1013.desc:0 "\n\n[struggle_ender.GetName], who now controls the majority of the region, has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion by the religious differences of the region, which later turned into a battle of cultures.\n\n"
+  baltic_struggle.1013.closing.combined:0 "[struggle_ender.GetSheHe|U] has proclaimed the Baltic lands to belong to the [struggle_ender.GetCulture.GetName] and [struggle_ender.GetCulture.GetName] alone..."
+  baltic_struggle.1013.a:0 "A blessed effort."
+  baltic_struggle.1013.b:0 "A horrifying turn of events."
 
   savior_of_the_baltic: "Savior of the Balts"
+  baltic_struggle.1003.t:0 "Baltic Extinction"
+  baltic_struggle.1003.desc: "We the [ROOT.Char.GetCulture().GetName()] people have now taken control over most of the Baltic region and expelled the original inhabitants. Cities burn, and the ashes are settled by us."
+  baltic_struggle.1003.a: "I am sure [ROOT.Char.GetFaith().HighGodName()] will forgive me for this..."
+  

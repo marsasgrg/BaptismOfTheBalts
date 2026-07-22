@@ -14,3 +14,11 @@ held_or_adherent_to_faith = {
 		}
 	}
 }
+held_or_adherent_to_culture = {
+	OR = {
+		culture = $CULTURE$
+		holder = {
+			culture = $CULTURE$
+		}
+	}
+}
