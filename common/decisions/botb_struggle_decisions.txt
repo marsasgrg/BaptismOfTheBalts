@@ -69,10 +69,22 @@
             
             any_county_in_region = {
                 region = baltic_struggle_region
-                percent > 0.75
+                percent > 0.3
                 faith = root.faith 
             }
-            
+            any_county_in_region = {
+                region = baltic_struggle_region
+                percent > 0.75
+                
+                custom_description = {
+                    text = held_or_adherent_to_faith
+                    object = root.faith
+                    held_or_adherent_to_faith = {
+                        FAITH = root.faith
+                    }
+                }
+
+            }
         }
 
     }

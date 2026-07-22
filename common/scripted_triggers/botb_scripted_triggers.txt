@@ -5,3 +5,12 @@
 		struggle:baltic_struggle = { is_faith_involved_in_struggle = prev.faith }
 	}
 }
+
+held_or_adherent_to_faith = {
+	OR = {
+		faith = $FAITH$
+		holder = {
+			faith = $FAITH$
+		}
+	}
+}

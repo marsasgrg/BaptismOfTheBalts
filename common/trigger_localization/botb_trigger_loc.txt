@@ -1,3 +1,6 @@
 ﻿years_since_struggle_start = {
   third = YEARS_SINCE_STRUGGLE_GREATER_THAN
 }
+held_or_adherent_to_faith = {
+  global = HELD_OR_ADHERENT_TO_FAITH
+}
