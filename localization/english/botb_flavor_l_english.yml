@@ -6,3 +6,11 @@
     baltic_flavor.0001.a: "I am sure [ROOT.Char.GetFaith().HighGodName] will forgive me..."
     baltic_flavor.0001.b: "I musn't risk the wrath of [ROOT.Char.GetFaith().HighGodName]."
     
+    baltic_flavor.0002.title: "An Unholy Dalliance"
+    baltic_flavor.0002.desc_female: "It turns out [birute.GetName()] was not as dedicated to her faith as I thought she would be. Needless to say, the following events were quite enjoyable, and left both us desiring more. However, now, having desecrated a priestess of [ROOT.Char.GetFaith().HighGodName], I am left with a question - what do I do now?"
+    baltic_flavor.0002.desc_male: "It turns out [birute.GetName()] was not as dedicated to his faith as I thought he would be. Needless to say, the following events were quite enjoyable. However, now, having desecrated a priestess of [ROOT.Char.GetFaith().HighGodName], I am left with a question - what do I do now?"
+    baltic_flavor.0002.a: "I will take [birute.GetHerHim] as my spouse, [ROOT.Char.GetFaith().GetName()] be damned!"
+    baltic_flavor.0002.b: "I will take [birute.GetHerHim] as my concubine, [ROOT.Char.GetFaith().GetName()] be damned!"
+    baltic_flavor.0002.c: "In secret, [birute.GetSheHe] will come with me to my court."
+    baltic_flavor.0002.d: "This was only a side activity."
+   

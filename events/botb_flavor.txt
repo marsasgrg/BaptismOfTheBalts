@@ -41,6 +41,12 @@ baltic_flavor.0001 = { #Birutė
             faith.religion = faith:baltic_pagan.religion
         }
     }
+    override_icon = {
+		reference = "gfx/interface/icons/event_types/type_seduction.dds"
+	}
+	override_header_background = {
+		reference = "gfx/interface/window_event/event_header_purple.dds"
+	}
     immediate = {
         random_held_county = {
             limit = {
@@ -81,9 +87,101 @@ baltic_flavor.0001 = { #Birutė
             CHARACTER = scope:birute
             PREGNANCY_CHANCE = seduce_pregnancy_chance
         }
+        trigger_event = {
+            id = baltic_flavor.0002
+            days = {1 1}
+        }
     }
     option = {
         name = baltic_flavor.0001.b
         add_piety = 100
     }
+}
+
+baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
+    type = character_event
+
+    title = baltic_flavor.0002.title
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    scope:birute = {
+                        is_female = yes
+                    }
+                }
+                desc = baltic_flavor.0002.desc_female
+            }
+            desc = baltic_flavor.0002.desc_male
+        }
+    }   
+    theme = intrigue_temptation_focus
+
+
+    left_portrait = {
+        character = root
+        animation = flirtation_left
+
+    }
+    right_portrait = {
+        character = scope:birute
+        animation = flirtation
+    }
+    option = {
+        trigger = {
+            gender_marriable = {
+                TARGET = scope:birute
+            }
+            can_marry_trigger = yes
+        }
+        name = baltic_flavor.0002.a
+        set_relation_lover = {
+            target = scope:birute
+        }
+        scope:birute = {
+            remove_trait = devoted
+        }
+        if = {
+            limit = {
+                is_female = yes
+            }
+            marry_matrilineal = scope:birute
+        }
+        else = {
+            marry = scope:birute
+        }
+        add_piety_level = -1
+    }
+    
+    option = {
+        trigger = {
+            gender_marriable = {
+                TARGET = scope:birute
+            }
+            can_marry_common_trigger = yes
+            allowed_concubines = yes
+            allowed_more_concubines = yes
+        }
+        name = baltic_flavor.0002.b
+        set_relation_lover = {
+            target = scope:birute
+        }
+        scope:birute = {
+            remove_trait = devoted
+        }
+        make_concubine = scope:birute
+        add_piety_level = -1
+    }
+    option = {
+        name = baltic_flavor.0002.c
+        add_courtier = scope:birute
+        set_relation_lover = {
+            target = scope:birute
+        }
+        add_piety = -100
+    }
+    option = {
+        name = baltic_flavor.0002.d
+    }
+
 }

@@ -22,3 +22,10 @@ held_or_adherent_to_culture = {
 		}
 	}
 }
+
+gender_marriable = {
+	OR = {
+		sex_opposite_of = $TARGET$
+		allowed_to_marry_same_sex_trigger = yes
+	}
+}
