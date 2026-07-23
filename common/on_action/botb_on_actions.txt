@@ -129,3 +129,53 @@ botb_on_game_start = {
         # }
 	}
 }
+
+random_yearly_playable_pulse = {
+    on_actions = {
+        botb_random_yearly_playable_pulse
+    }
+}
+
+
+botb_random_yearly_playable_pulse = {
+    trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+	}
+    random_on_action = {
+		chance_of_no_event = {
+			value = 20
+			if = {
+				limit = {
+					is_ai = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+				add = 30 # No need to waste performance here
+			}
+			else_if = {
+				limit = {
+					is_ai = yes
+					highest_held_title_tier >= tier_duchy
+				}
+				add = 70 # No need to waste performance here
+			}
+			else_if = {
+				limit = {
+					is_ai = yes
+				}
+				add = 95 # AI counts aren't particularly important
+			}
+		}
+        10 = baltic_flavor_yearly
+	}
+}
+
+baltic_flavor_yearly = {
+    trigger = {
+        botb_eligible_for_yearly_events = yes
+    }
+    random_events = {
+        chance_to_happen = 100
+
+        100 = baltic_flavor.0001
+    }
+}

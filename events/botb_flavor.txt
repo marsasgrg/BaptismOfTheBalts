@@ -34,6 +34,9 @@ baltic_flavor.0001 = { #Birutė
             is_attracted_to_women = yes
             is_attracted_to_men = yes
         }
+        NOT = {
+            has_character_flag = baltic_flavor.0001
+        }
         faith.religion = faith:baltic_pagan.religion
         is_landed = yes
         is_adult = yes
@@ -68,6 +71,7 @@ baltic_flavor.0001 = { #Birutė
                 set_sexuality = bisexual
             }
         }
+        add_character_flag = baltic_flavor.0001
     }
     theme = faith
 

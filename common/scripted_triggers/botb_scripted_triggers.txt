@@ -29,3 +29,23 @@ gender_marriable = {
 		allowed_to_marry_same_sex_trigger = yes
 	}
 }
+
+botb_eligible_for_yearly_events = {
+	OR = {
+		religion = faith:baltic_pagan.religion
+		religion = faith:finnish_pagan.religion
+		any_character_struggle = {
+			involvement = involved
+			is_struggle_type = baltic_struggle
+		}
+		culture = {
+			has_cultural_pillar = heritage_baltic
+		}
+		culture = {
+			has_cultural_pillar = heritage_balto_finnic
+		}
+		capital_province ?= {
+			geographical_region = baltic_struggle_region
+		}
+	}
+}
