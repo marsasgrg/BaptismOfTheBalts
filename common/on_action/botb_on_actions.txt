@@ -179,3 +179,15 @@ baltic_flavor_yearly = {
         100 = baltic_flavor.0001
     }
 }
+
+yearly_global_pulse = {
+    on_actions = {
+        botb_yearly_global_pulse
+    }
+}
+
+botb_yearly_global_pulse = {
+    effect = {
+        bruno_event_firing = yes
+    }
+}

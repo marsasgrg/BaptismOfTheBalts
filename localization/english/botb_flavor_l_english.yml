@@ -13,4 +13,18 @@
     baltic_flavor.0002.b: "I will take [birute.GetHerHim] as my concubine, [ROOT.Char.GetFaith().GetName()] be damned!"
     baltic_flavor.0002.c: "In secret, [birute.GetSheHe] will come with me to my court."
     baltic_flavor.0002.d: "This was only a side activity."
-   
+    
+    baltic_flavor.0011.title:0 "The Teachings of [bruno.GetName()]"
+    baltic_flavor.0011.desc:0 "A priest of [bruno.GetFaith().GetName()] named [bruno.GetName()] has arrived in [spawn_county.GetShortName()]. He barged into my court room, speaking about his faith, inviting me to convert to it. He survived walking through fire, and hopes this will convince me of the truth of his beliefs."
+    baltic_flavor.0011.a:0 "His words are true!"
+    baltic_flavor.0011.b:0 "\"Go elsewhere - maybe some fool will believe you\""
+    baltic_flavor.0011.c:0 "\"Will no one rid me of this turbulent priest?\""
+
+    baltic_flavor.0013.title:0 "The Martyrdom of [bruno.GetName()]"
+    baltic_flavor.0013.desc:0 "I am met with unfortunate news - it turns out [bruno.GetName()], the man who taught me the wonder of [bruno.GetFaith().GetName()], has been martyred by bandits in [bruno_murder_territory.GetName()]."
+    baltic_flavor.0013.a:0 "It's sad that this happened, but what can I do?"
+    
+    baltic_flavor.0014.title:0 "Priest of [bruno.GetFaith().GetName()] Murdered in My Land"
+    baltic_flavor.0014.desc:0 "I have received news that a fervent believer of [bruno.GetFaith().GetName()], [bruno.GetName()], has been murdered in my lands, within [bruno_murder_territory.GetName()]. He was hit on the head by a pagan's club,"
+    baltic_flavor.0014.a:0 "Disgusting pagans!"
+    baltic_flavor.0014.b:0 "Whatever."

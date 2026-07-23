@@ -1,5 +1,10 @@
 ﻿namespace = baltic_flavor
 
+# 000X - Birutė
+# 001X - St. Bruno
+# 002X - purchase of Riga, Talinn or Memel if baptism has not begun yet
+# 003X - Jadwiga
+
 baltic_flavor.0001 = { #Birutė
     type = character_event
 
@@ -188,4 +193,142 @@ baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
         name = baltic_flavor.0002.d
     }
 
+}
+
+
+baltic_flavor.0011 = { # St. Bruno arrives in Prussia
+    type = character_event
+
+    title = baltic_flavor.0011.title
+    desc = baltic_flavor.0011.desc
+
+    theme = faith
+
+    left_portrait = {
+        character = root
+        animation = interested_left
+    }
+    right_portrait = {
+        character = scope:bruno
+        animation = chaplain
+    }
+
+    immediate = {
+        add_character_flag = baltic_flavor.0011
+    }
+
+    option = { # Embrace beliefs
+        name = baltic_flavor.0011.a
+        set_character_faith_with_conversion = faith:catholic
+        add_piety = -250
+        trigger_event = {
+           id = baltic_flavor.0012
+           days = {7 14}
+        }
+    }
+    option = { # Exile
+        name = baltic_flavor.0011.b
+        trigger_event = {
+           id = baltic_flavor.0012
+           days = {7 14}
+        }
+    }
+    option = { # Kill
+        name = baltic_flavor.0011.c
+        scope:bruno = {
+            death = {
+                death_reason = death_martyrdom_killer
+                killer = root
+            }
+        }
+    }
+}
+
+baltic_flavor.0012 = { # Oops! Bruno gets martyred
+    hidden = yes
+    immediate = {
+        title:k_lithuania = {
+            random_de_jure_county = {
+                limit = {
+                    holder = {
+                        NOT = {
+                            top_liege = scope:netimer
+                        }
+                    }
+                }
+                holder.top_liege = {
+                    save_scope_as = notify_for_bruno_murder_in_your_territory
+                }
+                save_scope_as = bruno_murder_territory
+            }
+        }
+        scope:bruno = {
+            death = {
+                death_reason = death_martyrdom
+            }
+        }
+
+        if = {
+            limit = {
+                scope:netimer = {
+                    faith = faith:catholic
+                }
+            }
+            # notify netimer
+        }
+
+        scope:notify_for_bruno_murder_in_your_territory = {
+            # notify about bruno murder
+        }
+    }
+}
+
+baltic_flavor.0013 = { # Notify Netimer about Bruno
+    type = character_event
+    title = baltic_flavor.0013.title
+    desc = baltic_flavor.0013.desc
+    
+    theme = death
+
+    
+    right_portrait = {
+        character = scope:bruno
+        animation = dead
+    }
+
+    option = {
+        name = baltic_flavor.0013.a
+    }
+}
+
+baltic_flavor.0014 = { # Notify Bruno kill site holder about Bruno
+    type = character_event
+    title = baltic_flavor.0014.title
+    desc = baltic_flavor.0014.desc
+    
+    theme = death
+
+    
+    right_portrait = {
+        character = scope:bruno
+        animation = dead
+    }
+    
+    option = {
+        trigger = {
+            faith = faith:catholic
+        }
+        name = baltic_flavor.0014.a
+        add_piety = -50
+    }
+
+    option = {
+        trigger = {
+            NOT = {
+                faith = faith:catholic
+            }
+        }
+        add_piety = 50
+        name = baltic_flavor.0014.b
+    }
 }
