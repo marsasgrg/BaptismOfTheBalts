@@ -79,7 +79,7 @@ baltic_flavor.0001 = { #Birutė
         name = baltic_flavor.0001.a
         had_sex_with_effect = {
             CHARACTER = scope:birute
-            PREGNANCY_CHANCE = 100
+            PREGNANCY_CHANCE = seduce_pregnancy_chance
         }
     }
     option = {
