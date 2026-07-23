@@ -1,0 +1,89 @@
+﻿namespace = baltic_flavor
+
+baltic_flavor.0001 = { #Birutė
+    type = character_event
+
+    title = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    scope:birute = {
+                        is_female = no
+                    }
+                }
+                desc = baltic_flavor.0001.title_male
+            }
+            desc = baltic_flavor.0001.title_female
+        }   
+    }
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    scope:birute = {
+                        is_female = yes
+                    }
+                }
+                desc = baltic_flavor.0001.desc_female
+            }
+            desc = baltic_flavor.0001.desc_male
+        }
+    }
+    trigger = {
+        OR = {
+            is_attracted_to_women = yes
+            is_attracted_to_men = yes
+        }
+        faith.religion = faith:baltic_pagan.religion
+        is_landed = yes
+        is_adult = yes
+        any_held_county = {
+            faith.religion = faith:baltic_pagan.religion
+        }
+    }
+    immediate = {
+        random_held_county = {
+            limit = {
+                faith.religion = faith:baltic_pagan.religion
+            }
+            random_county_province = {
+                save_scope_as = event_province
+            }
+        }
+        create_character = {
+            template = beautiful_ungendered_character
+            gender_female_chance = root_attraction_based_female_chance
+            trait = devoted     
+            location = scope:event_province
+            save_scope_as = birute
+        }
+        hidden_effect = {
+            scope:birute = {
+                set_sexuality = bisexual
+            }
+        }
+    }
+    theme = faith
+
+    left_portrait = {
+        character = root
+        animation = flirtation_left
+
+    }
+    right_portrait = {
+        character = scope:birute
+        animation = flirtation
+    }
+
+    option = {
+        name = baltic_flavor.0001.a
+        had_sex_with_effect = {
+            CHARACTER = scope:birute
+            PREGNANCY_CHANCE = 100
+        }
+    }
+    option = {
+        name = baltic_flavor.0001.b
+        add_piety = 100
+    }
+}

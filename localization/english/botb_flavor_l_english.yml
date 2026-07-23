@@ -1,0 +1,8 @@
+﻿l_english:
+    baltic_flavor.0001.title_male: "A Captivating Vaidila"
+    baltic_flavor.0001.title_female: "A Captivating Vaidilutė"
+    baltic_flavor.0001.desc_female: "As I stroll through [event_province.GetName()], I spot a maiden most fair. It turns out she is [birute.GetName()], a priestess devoted to the beliefs of [ROOT.Char.GetFaith.GetName]. Yet, despite such a role, she acts rather flirtatiously..."
+    baltic_flavor.0001.desc_male: "As I stroll through [event_province.GetName()], I spot a man most fair. It turns out he is [birute.GetName()], a priest devoted to the beliefs of [ROOT.Char.GetFaith.GetName]. Yet, despite such a role, he acts rather flirtatiously..."
+    baltic_flavor.0001.a: "I am sure [ROOT.Char.GetFaith().HighGodName] will forgive me..."
+    baltic_flavor.0001.b: "I musn't risk the wrath of [ROOT.Char.GetFaith().HighGodName]."
+    
