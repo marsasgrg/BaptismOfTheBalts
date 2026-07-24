@@ -266,14 +266,56 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
         character = scope:bruno
         animation = chaplain
     }
-
+    trigger = {
+        NOT = {
+            has_character_flag = baltic_flavor.0011
+        }
+        capital_county.kingdom = {
+            OR = {
+                this = title:k_lithuania
+                this = title:k_esthonia
+            }
+        }
+        highest_held_title_tier = tier_duchy
+        faith = {
+            OR = {
+                this = faith:baltic_pagan
+                this = faith:finnish_pagan
+            }
+        }
+        NOR = {
+            completely_controls = title:k_lithuania
+            completely_controls = title:k_esthonia
+            faith.religious_head = this
+        }
+    }
     immediate = {
         add_character_flag = baltic_flavor.0011
+        capital_county = {
+            save_scope_as = spawn_county
+        }
+        save_scope_as = netimer
+        random_list = {
+            80 = {
+                create_character = {
+                    location = scope:spawn_county.title_province
+                    template = bruno_catholic
+                    save_scope_as = bruno
+                }
+            }
+            20 = {
+                create_character = {
+                    location = scope:spawn_county.title_province
+                    template = bruno_orthodox
+                    save_scope_as = bruno
+                }
+            }
+        }
     }
 
     option = { # Embrace beliefs
         name = baltic_flavor.0011.a
-        set_character_faith_with_conversion = faith:catholic
+        set_character_faith_with_conversion = scope:bruno.faith
         add_piety = -250
         trigger_event = {
            id = baltic_flavor.0012
@@ -281,9 +323,17 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
         }
 
         ai_chance = {
-			base = 200
+			base = -100
+            modifier = {
+                primary_title = title:d_prussia
+                
+                add = 300
+            }
 			ai_value_modifier = {
 				ai_zeal = -2
+			}
+            ai_value_modifier = {
+				ai_rationality = -1
 			}
         }
     }
@@ -316,7 +366,7 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
 baltic_flavor.0012 = { # Oops! Bruno gets martyred
     hidden = yes
     immediate = {
-        title:k_lithuania = {
+        scope:netimer.capital_county.kingdom = {
             random_de_jure_county = {
                 limit = {
                     holder = {
@@ -340,7 +390,7 @@ baltic_flavor.0012 = { # Oops! Bruno gets martyred
         if = {
             limit = {
                 scope:netimer = {
-                    faith = faith:catholic
+                    faith.religion = faith:catholic.religion
                 }
             }
             trigger_event = baltic_flavor.0013
@@ -387,7 +437,7 @@ baltic_flavor.0014 = { # Notify Bruno kill site holder about Bruno
     
     option = {
         trigger = {
-            faith = faith:catholic
+            faith.religion = faith:catholic.religion
         }
         name = baltic_flavor.0014.a
         add_piety = -50
@@ -396,7 +446,7 @@ baltic_flavor.0014 = { # Notify Bruno kill site holder about Bruno
     option = {
         trigger = {
             NOT = {
-                faith = faith:catholic
+                faith.religion = faith:catholic.religion
             }
         }
         add_piety = 50

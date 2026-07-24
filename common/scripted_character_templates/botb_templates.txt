@@ -74,3 +74,97 @@
 		max_template_high_skill
 	}
 }
+
+bruno_catholic = {
+	age = { 30 50 }
+	#Education
+	random_traits_list = {
+		count = 1
+		education_learning_1 = {
+			weight = { base = 10 }
+		}
+		education_learning_2 = {
+			weight = { base = 20 }
+		}
+		education_learning_3 = {
+			weight = { base = 30 }
+		}
+		education_learning_4 = {
+			weight = { base = 40 }
+		}
+	}
+	#Neutral Personality
+	random_traits_list = {
+		count = 1
+		zealous = {
+			weight = { base = 50 }
+		}
+		diligent = {
+			weight = { base = 30 }
+		}
+		gregarious = {
+			weight = { base = 20 }
+		}
+	}			
+	faith = faith:catholic
+	culture = culture:saxon
+	trait = devoted
+	random_traits_list = {
+		count = 2
+		compassionate = {}
+		chaste = {}
+		forgiving = {}
+	}
+	gender = male 
+	learning = {
+		min_template_high_skill
+		max_template_high_skill				
+	}
+}
+
+bruno_orthodox = {
+	age = { 30 50 }
+	#Education
+	random_traits_list = {
+		count = 1
+		education_learning_1 = {
+			weight = { base = 10 }
+		}
+		education_learning_2 = {
+			weight = { base = 20 }
+		}
+		education_learning_3 = {
+			weight = { base = 30 }
+		}
+		education_learning_4 = {
+			weight = { base = 40 }
+		}
+	}
+	#Neutral Personality
+	random_traits_list = {
+		count = 1
+		zealous = {
+			weight = { base = 50 }
+		}
+		diligent = {
+			weight = { base = 30 }
+		}
+		gregarious = {
+			weight = { base = 20 }
+		}
+	}			
+	faith = faith:orthodox
+	culture = culture:russian
+	trait = devoted
+	random_traits_list = {
+		count = 2
+		compassionate = {}
+		chaste = {}
+		forgiving = {}
+	}
+	gender = male 
+	learning = {
+		min_template_high_skill
+		max_template_high_skill				
+	}
+}

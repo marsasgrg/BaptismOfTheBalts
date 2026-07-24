@@ -29,17 +29,20 @@ vilnius.0001 = {
             days = {14 30}
         }
         ai_chance = {
-            base = 100
+            base = 150
+            
+            ai_value_modifier = {
+                ai_zeal = 2
+            }
         }
     }
     option = { # no way!
         name = vilnius.0001.b
         add_character_flag = rejected_wolf_dream
         ai_chance = {
-            base = 0
-            modifier = {
-                add = 100
-                has_trait = cynical
+            base = 50
+            ai_value_modifier = {
+                ai_zeal = -2
             }
         }
     }
@@ -55,7 +58,7 @@ vilnius.0002 = {
     }
     theme = realm
     immediate = {
-        set_global_variable = {
+        set_variable = {
             name = lizdeika
             value = cp:councillor_court_chaplain
         }
@@ -102,7 +105,13 @@ vilnius.0003 = {
     option = { # Vilnius must be a capital of trade!
         name = vilnius.0003.a
         ai_chance = {
-            base = 50
+            base = 100
+            ai_value_modifier = {
+                ai_boldness = -0.5
+            }
+            ai_value_modifier = {
+                ai_greed = 0.5
+            }
         }
         title:b_vilnius.title_province = {
             add_building = market_villages_02
@@ -117,7 +126,13 @@ vilnius.0003 = {
     option = { # Vilnius must be a capital of war!
         name = vilnius.0003.b
         ai_chance = {
-            base = 50
+            base = 100
+            ai_value_modifier = {
+                ai_boldness = 0.5
+            }
+            ai_value_modifier = {
+                ai_greed = -0.5
+            }
         }
         title:b_vilnius.title_province = {
             add_building = war_camps_02

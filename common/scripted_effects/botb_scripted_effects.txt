@@ -104,104 +104,104 @@ baltic_struggle_ending_faith_list_effect = {
 	}
 }
 
-bruno_event_firing = {
-	random = {
-		chance = 25
-		if = {
-			limit = {
-				title:d_prussia = {
-					any_de_jure_county = {
-						holder = {
-							is_independent_ruler = yes
-							faith = faith:baltic_pagan
-							has_title = title:d_prussia
+# bruno_event_firing = {
+# 	random = {
+# 		chance = 25
+# 		if = {
+# 			limit = {
+# 				title:d_prussia = {
+# 					any_de_jure_county = {
+# 						holder = {
+# 							is_independent_ruler = yes
+# 							faith = faith:baltic_pagan
+# 							has_title = title:d_prussia
 
-							NOR = {
-								completely_controls = title:k_lithuania
-								has_character_flag = baltic_flavor.0011
-								has_title = title:d_high_kriwe
-							}
-						}
-					}
-				}
-			}
-			title:d_prussia = {
-				random_de_jure_county = {
-					limit = {
-						holder = {
-							is_independent_ruler = yes
-							faith = faith:baltic_pagan
-							has_title = title:d_prussia
-							NOR = {
-								completely_controls = title:k_lithuania
-								has_character_flag = baltic_flavor.0011
-								has_title = title:d_high_kriwe
-							}
-						}
-					}
-					save_scope_as = spawn_county
-					holder = {
-						save_scope_as = netimer
-					}
-				}
-			}
-			create_character = {
-				age = { 30 50 }
-				location = scope:spawn_county.title_province
-				#Education
-				random_traits_list = {
-					count = 1
-					education_learning_1 = {
-						weight = { base = 10 }
-					}
-					education_learning_2 = {
-						weight = { base = 20 }
-					}
-					education_learning_3 = {
-						weight = { base = 30 }
-					}
-					education_learning_4 = {
-						weight = { base = 40 }
-					}
-				}
-				#Neutral Personality
-				random_traits_list = {
-					count = 1
-					zealous = {
-						weight = { base = 50 }
-					}
-					diligent = {
-						weight = { base = 30 }
-					}
-					gregarious = {
-						weight = { base = 20 }
-					}
-				}			
-				faith = faith:catholic
-				culture = culture:saxon
-				trait = devoted
-				random_traits_list = {
-					count = 2
-					compassionate = {}
-					chaste = {}
-					forgiving = {}
-				}
-				gender = male 
-				learning = {
-					min_template_high_skill
-					max_template_high_skill				
-				}
-				save_scope_as = bruno
-			}
-			scope:netimer = {
-				trigger_event = {
-					id = baltic_flavor.0011
-					days = {60 120}
-				}
-			}
+# 							NOR = {
+# 								completely_controls = title:k_lithuania
+# 								has_character_flag = baltic_flavor.0011
+# 								has_title = title:d_high_kriwe
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 			title:d_prussia = {
+# 				random_de_jure_county = {
+# 					limit = {
+# 						holder = {
+# 							is_independent_ruler = yes
+# 							faith = faith:baltic_pagan
+# 							has_title = title:d_prussia
+# 							NOR = {
+# 								completely_controls = title:k_lithuania
+# 								has_character_flag = baltic_flavor.0011
+# 								has_title = title:d_high_kriwe
+# 							}
+# 						}
+# 					}
+# 					save_scope_as = spawn_county
+# 					holder = {
+# 						save_scope_as = netimer
+# 					}
+# 				}
+# 			}
+# 			create_character = {
+# 				age = { 30 50 }
+# 				location = scope:spawn_county.title_province
+# 				#Education
+# 				random_traits_list = {
+# 					count = 1
+# 					education_learning_1 = {
+# 						weight = { base = 10 }
+# 					}
+# 					education_learning_2 = {
+# 						weight = { base = 20 }
+# 					}
+# 					education_learning_3 = {
+# 						weight = { base = 30 }
+# 					}
+# 					education_learning_4 = {
+# 						weight = { base = 40 }
+# 					}
+# 				}
+# 				#Neutral Personality
+# 				random_traits_list = {
+# 					count = 1
+# 					zealous = {
+# 						weight = { base = 50 }
+# 					}
+# 					diligent = {
+# 						weight = { base = 30 }
+# 					}
+# 					gregarious = {
+# 						weight = { base = 20 }
+# 					}
+# 				}			
+# 				faith = faith:catholic
+# 				culture = culture:saxon
+# 				trait = devoted
+# 				random_traits_list = {
+# 					count = 2
+# 					compassionate = {}
+# 					chaste = {}
+# 					forgiving = {}
+# 				}
+# 				gender = male 
+# 				learning = {
+# 					min_template_high_skill
+# 					max_template_high_skill				
+# 				}
+# 				save_scope_as = bruno
+# 			}
+# 			scope:netimer = {
+# 				trigger_event = {
+# 					id = baltic_flavor.0011
+# 					days = {60 120}
+# 				}
+# 			}
 				
 
 
-		}
-	}	
-}
+# 		}
+# 	}	
+# }

@@ -24,7 +24,9 @@ dreams_of_the_wolf = {
                 has_character_flag = a_dream_of_the_wolf_begins
                 has_character_flag = a_dream_of_the_wolf
                 has_character_flag = rejected_wolf_dream
-
+                has_variable = {
+                    name = lizdeika
+                }
             }
         }
     }
@@ -177,6 +179,7 @@ baltic_flavor_yearly = {
         chance_to_happen = 100
 
         100 = baltic_flavor.0001
+        20 = baltic_flavor.0011
     }
 }
 
@@ -188,6 +191,6 @@ yearly_global_pulse = {
 
 botb_yearly_global_pulse = {
     effect = {
-        bruno_event_firing = yes
+      #  bruno_event_firing = yes
     }
 }
