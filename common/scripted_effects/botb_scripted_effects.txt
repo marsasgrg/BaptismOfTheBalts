@@ -175,8 +175,8 @@ bruno_event_firing = {
 					weight = { base = 20 }
 				}
 			}			
-			faith = catholic
-			culture = saxon
+			faith = faith:catholic
+			culture = culture:saxon
 			random_traits_list = {
 				count = 2
 				compassionate = {}

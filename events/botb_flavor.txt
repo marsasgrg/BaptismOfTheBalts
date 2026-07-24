@@ -237,8 +237,7 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
         name = baltic_flavor.0011.c
         scope:bruno = {
             death = {
-                death_reason = death_martyrdom_killer
-                killer = root
+                death_reason = death_martyrdom
             }
         }
     }
@@ -274,11 +273,13 @@ baltic_flavor.0012 = { # Oops! Bruno gets martyred
                     faith = faith:catholic
                 }
             }
+            trigger_event = baltic_flavor.0013
             # notify netimer
         }
 
         scope:notify_for_bruno_murder_in_your_territory = {
             # notify about bruno murder
+            trigger_event = baltic_flavor.0014
         }
     }
 }
