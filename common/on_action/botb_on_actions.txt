@@ -178,8 +178,8 @@ baltic_flavor_yearly = {
     random_events = {
         chance_to_happen = 100
 
-        100 = baltic_flavor.0001
-        20 = baltic_flavor.0011
+        100 = baltic_flavor.0001 # Birutė
+        20 = baltic_flavor.0011 # Bruno
     }
 }
 
