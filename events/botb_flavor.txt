@@ -618,6 +618,12 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 change = scope:change
             }
         }
+        scope:purchase_offer = {
+            becomes_independent = {
+                change = scope:change
+            }
+        }
+        
         resolve_title_and_vassal_change = scope:change
         scope:county_to_purchase = {
             set_county_faith = scope:purchase_offer.faith
