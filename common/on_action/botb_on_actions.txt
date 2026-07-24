@@ -192,6 +192,25 @@ yearly_global_pulse = {
 
 botb_yearly_global_pulse = {
     effect = {
-      #  bruno_event_firing = yes
+        if = {
+            limit = {
+                NOR = {
+                    exists = struggle:baltic_struggle
+                    has_global_variable = baltic_struggle_finished
+                }
+                any_county_in_region = {
+                    region = baltic_struggle_region
+                    faith = {
+                        NOT = {
+                            has_doctrine = unreformed_faith_doctrine
+                        }
+                    } 
+                }
+            }
+        }
+        start_struggle = {
+            struggle_type = baltic_struggle
+            start_phase = struggle_baltic_baptism 
+        }
     }
 }

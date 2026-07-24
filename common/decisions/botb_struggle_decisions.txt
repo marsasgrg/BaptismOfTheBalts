@@ -109,7 +109,7 @@
             cynical = medium_stress_impact_gain
         }
         add_prestige = 2500
-        
+        set_global_variable = baltic_struggle_finished
         trigger_event = baltic_struggle.1001
         add_piety = 3000
         faith = {
@@ -238,6 +238,7 @@ baltic_struggle_old_ways_decision_ending = {
     effect = {
         
         
+        set_global_variable = baltic_struggle_finished
         # later - legends
 
         dynasty = {add_dynasty_prestige = 5000}
@@ -379,6 +380,7 @@ baltic_struggle_colonial_decision_ending = {
     effect = {
         
         
+        set_global_variable = baltic_struggle_finished
         
         # later - legends
 
