@@ -15,10 +15,17 @@ baltic_flavor.0001 = { #Birutė
                     scope:birute = {
                         is_female = no
                     }
+                    faith.religion = faith:baltic_pagan.religion
                 }
-                desc = baltic_flavor.0001.title_male
+                desc = baltic_flavor.0001.title_male_baltic
             }
-            desc = baltic_flavor.0001.title_female
+            triggered_desc = {
+                trigger = {
+                    faith.religion = faith:baltic_pagan.religion
+                }
+                desc = baltic_flavor.0001.title_female_baltic               
+            }
+            desc = baltic_flavor.0001.title_finnic
         }   
     }
     desc = {
@@ -42,11 +49,14 @@ baltic_flavor.0001 = { #Birutė
         NOT = {
             has_character_flag = baltic_flavor.0001
         }
-        faith.religion = faith:baltic_pagan.religion
+        OR = {
+            faith.religion = faith:baltic_pagan.religion
+            faith.religion = faith:finnish_pagan.religion
+        }
         is_landed = yes
         is_adult = yes
         any_held_county = {
-            faith.religion = faith:baltic_pagan.religion
+            faith = root.faith
         }
     }
     override_icon = {
@@ -58,7 +68,7 @@ baltic_flavor.0001 = { #Birutė
     immediate = {
         random_held_county = {
             limit = {
-                faith.religion = faith:baltic_pagan.religion
+                faith = root.faith
             }
             random_county_province = {
                 save_scope_as = event_province
