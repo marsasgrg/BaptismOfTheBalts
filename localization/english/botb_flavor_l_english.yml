@@ -29,3 +29,8 @@
     baltic_flavor.0014.desc:0 "I have received news that a fervent believer of [bruno.GetFaith().GetName()], [bruno.GetName()], has been murdered in my realm, in [bruno_murder_territory.GetNameNoTier()]. He was hit on the head by a pagan's club alongside many of his followers."
     baltic_flavor.0014.a:0 "Disgusting pagans!"
     baltic_flavor.0014.b:0 "Whatever."
+
+    baltic_flavor.0021.title:0 "[purchase_offer.GetFaith().GetAdherentNamePlural()] Want to Settle [county_to_purchase.GetNameNoTier()]"
+    baltic_flavor.0021.desc:0 "[purchase_offer.GetCulture().GetName()] believers in [purchase_offer.GetFaith().GetName()] have come to me, asking to buy [county_to_purchase.GetNameNoTier()]. They claim that once they acquire this piece of my land, they will settle it with people from their homeland, as well as convert the locals to their beliefs. They offer a quite sizable sum - @gold_icon!250."
+    baltic_flavor.0021.a:0 "Wow, that's a great deal!"
+    baltic_flavor.0021.b:0 "I will not give up this ancestral land to these people."

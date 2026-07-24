@@ -463,3 +463,178 @@ baltic_flavor.0014 = { # Notify Bruno kill site holder about Bruno
         name = baltic_flavor.0014.b
     }
 }
+
+baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
+
+    type = character_event
+
+    title = baltic_flavor.0021.title
+    desc = baltic_flavor.0021.desc
+
+    theme = stewardship_wealth_focus
+
+    left_portrait = {
+        character = root
+        animation = interested_left
+    }
+    right_portrait = {
+        character = scope:purchase_offer
+        animation = chaplain
+    }
+    trigger = {
+        NOT = {
+            has_character_flag = baltic_flavor.0021
+        }
+
+        faith = {
+            has_doctrine = unreformed_faith_doctrine
+        }
+        NOT = {
+            faith.religious_head = this
+        }
+
+        is_independent_ruler = yes
+
+        OR = {
+            AND = {
+                has_title = title:c_vidzeme
+                capital_county != title:c_vidzeme
+                title:c_vidzeme = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }
+            }
+            AND = {
+                has_title = title:c_memel
+                capital_county != title:c_memel
+                title:c_memel = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }
+            }
+            AND = {
+                has_title = title:c_reval
+                capital_county != title:c_reval
+                title:c_reval = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }
+            }
+        }
+    }
+
+    immediate = {
+        add_character_flag = baltic_flavor.0021
+        if = {
+            limit = {
+                has_title = title:c_reval
+                capital_county != title:c_reval
+                title:c_reval = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }                
+            }
+            title:c_reval = {
+                add_to_list = sellable_counties
+            }
+        }
+        if = {
+            limit = {
+                has_title = title:c_memel
+                capital_county != title:c_memel
+                title:c_memel = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }                
+            }
+            title:c_memel = {
+                add_to_list = sellable_counties
+            }
+        }
+        if = {
+            limit = {
+                has_title = title:c_vidzeme
+                capital_county != title:c_vidzeme
+                title:c_vidzeme = {
+                    faith = {
+                        has_doctrine = unreformed_faith_doctrine
+                    }
+                }                
+            }
+            title:c_vidzeme = {
+                add_to_list = sellable_counties
+            }
+        }
+        random_in_list = {
+            list = sellable_counties
+            save_scope_as = county_to_purchase
+        }
+        create_character = {
+            location = scope:county_to_purchase.title_province
+            template = bruno_catholic
+            save_scope_as = purchase_offer
+        }
+        hidden_effect = {
+            scope:purchase_offer = {
+                add_gold = 300
+            }
+        }
+    }
+
+    option = { # Accept
+        name = baltic_flavor.0021.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                scope:county_to_purchase = title:c_vidzeme
+                add = 100
+
+            }            
+            ai_value_modifier = {
+                ai_zeal = -1.5
+            }
+            ai_value_modifier = {
+                ai_greed = 1
+            }
+        }
+        scope:purchase_offer = {
+            pay_short_term_gold = {
+                target = root
+                gold = 250
+            }
+        }
+        create_title_and_vassal_change = {
+            type = granted
+            save_scope_as = change
+        }
+        scope:county_to_purchase = {
+            change_title_holder_include_vassals = {
+                holder = scope:purchase_offer
+                change = scope:change
+            }
+        }
+        resolve_title_and_vassal_change = scope:change
+        scope:county_to_purchase = {
+            set_county_faith = scope:purchase_offer.faith
+            set_county_culture = scope:purchase_offer.culture
+        }
+    }
+    option = { # Deny
+        name = baltic_flavor.0021.b
+        ai_chance = {
+            base = 200   
+            ai_value_modifier = {
+                ai_zeal = 1.5
+            }
+            ai_value_modifier = {
+                ai_greed = -1
+            }
+        }
+        remove_courtier_or_guest = scope:purchase_offer
+    }
+}
