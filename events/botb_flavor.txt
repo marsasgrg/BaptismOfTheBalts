@@ -100,10 +100,28 @@ baltic_flavor.0001 = { #Birutė
             id = baltic_flavor.0002
             days = {1 1}
         }
+        ai_chance = {
+            base = 200
+            ai_value_modifier = {
+                ai_sociability = 0.5
+            }
+            ai_value_modifier = {
+                ai_zeal = -2
+            }
+        }
     }
     option = {
         name = baltic_flavor.0001.b
         add_piety = 100
+        ai_chance = {
+            base = 100
+            ai_value_modifier = {
+                ai_sociability = -0.5
+            }
+            ai_value_modifier = {
+                ai_zeal = 2
+            }
+        }
     }
 }
 
@@ -137,6 +155,15 @@ baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
         animation = flirtation
     }
     option = {
+        ai_chance = {
+            base = 300
+            ai_value_modifier = {
+                ai_boldness = 2
+            }
+            ai_value_modifier = {
+                ai_zeal = -4
+            }
+        }
         trigger = {
             gender_marriable = {
                 TARGET = scope:birute
@@ -163,6 +190,15 @@ baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
     }
     
     option = {
+        ai_chance = {
+            base = 200
+            ai_value_modifier = {
+                ai_boldness = 1.5
+            }
+            ai_value_modifier = {
+                ai_zeal = -3
+            }
+        }
         trigger = {
             gender_marriable = {
                 TARGET = scope:birute
@@ -182,6 +218,15 @@ baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
         add_piety_level = -1
     }
     option = {
+        ai_chance = {
+            base = 100
+            ai_value_modifier = {
+                ai_honor = -1
+            }
+            ai_value_modifier = {
+                ai_zeal = 1
+            }
+        }
         name = baltic_flavor.0002.c
         add_courtier = scope:birute
         set_relation_lover = {
@@ -190,6 +235,15 @@ baltic_flavor.0002 = { # Cont. of baltic_flavor.0001
         add_piety = -100
     }
     option = {
+        ai_chance = {
+            base = 100
+            ai_value_modifier = {
+                ai_honor = -2
+            }
+            ai_value_modifier = {
+                ai_zeal = 2
+            }
+        }
         name = baltic_flavor.0002.d
     }
 
@@ -225,12 +279,22 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
            id = baltic_flavor.0012
            days = {7 14}
         }
+
+        ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_zeal = -2
+			}
+        }
     }
     option = { # Exile
         name = baltic_flavor.0011.b
         trigger_event = {
            id = baltic_flavor.0012
            days = {7 14}
+        }
+        ai_chance = {
+            base = 150
         }
     }
     option = { # Kill
@@ -239,6 +303,12 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
             death = {
                 death_reason = death_martyrdom
             }
+        }
+        ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_zeal = 3
+			}
         }
     }
 }
