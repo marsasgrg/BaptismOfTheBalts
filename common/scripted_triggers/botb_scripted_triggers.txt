@@ -51,10 +51,13 @@ botb_eligible_for_yearly_events = {
 }
 
 county_kingdom_is_valid_for_jadwiga = {
+	exists = kingdom.holder
+	kingdom != prev.kingdom
 	kingdom.holder != root
-	kingdom = holder.top_liege.primary_title
-	holder.top_liege.faith.religion = faith:catholic.religion
+	kingdom = kingdom.holder.primary_title
+	kingdom.holder.faith.religion = faith:catholic.religion
 	holder = {
+		is_independent_ruler = yes
 		is_married = no
 		NOT = {
 			any_child = { }

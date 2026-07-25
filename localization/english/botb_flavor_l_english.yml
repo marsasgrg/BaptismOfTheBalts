@@ -50,12 +50,18 @@
     baltic_flavor.0033.t:0 "[jagiello.GetName()] and [evil_diarch.GetName()] Demand My Hand!"
     baltic_flavor.0033.desc:0 "A strongly written demand has arrived from my dear diarch, [evil_diarch.GetFullName()] and the ruler of [jagiello.GetPrimaryTitle().GetNameNoTier()], [jagiello.GetFullName()]. They request me to marry [jagiello.GetName()], and abandon my dynastic ambitions in favor of [jagiello.GetHerHis()] dynasty. In return, [jagiello.GetName()] and [jagiello.GetPrimaryTitle().GetName()] will convert to [ROOT.Char.GetFaith().GetName()]. If this is not accepted, war may come to [ROOT.Char.GetPrimaryTitle().GetName()]."
     baltic_flavor.0033.a:0 "It seems I have to accept."
-    baltic_flavor.0033.b:0 "Let them come! I will maintain the dignity of [ROOT.Char.GetDynasty().GetName()]"
+    baltic_flavor.0033.b:0 "Let them come! I will maintain the dignity of House [ROOT.Char.GetDynasty().GetName()]!"
 
     baltic_flavor.0034.t:0 "[jadwiga.GetName()] Accepts!"
     baltic_flavor.0034.desc:0 "Reluctantly, [jadwiga.GetName()] has agreed to the request that I and [evil_diarch.GetFullName()] made - she will marry me, and I will convert to [jadwiga.GetFaith().GetName()]. All is well under the heavens."
-    baltic_flavor.0034.a:0 "Praise be to [jadwiga.GetFaith().HighGodName()]"
+    baltic_flavor.0034.desc_regent:0 "Reluctantly, [jadwiga.GetName()] has agreed to the request that I and [evil_diarch.GetFullName()] made - she will marry me, and I will convert to [jadwiga.GetFaith().GetName()]. All is well under the heavens."
+    baltic_flavor.0034.a:0 "Praise be to [jadwiga.GetFaith().HighGodName()]!"
 
     baltic_flavor.0035.t:0 "[jadwiga.GetName()] Rejects"
     baltic_flavor.0035.desc:0 "A laconic reply arrives from [jadwiga.GetFullName()] - she will not marry me. This denial of my wishes and the wishes of [evil_diarch.GetFullName()] is abhorrent."
+    baltic_flavor.0035.desc_regent:0 "A laconic reply arrives from [jadwiga.GetFullName()] - she will not marry me. This denial of my wishes and the wishes of [evil_diarch.GetFullName()] is abhorrent."
     baltic_flavor.0035.a:0 "I will take [jadwiga.GetPrimaryTitle().GetNameNoTier()] by any means neccesary!"
+
+    baltic_flavor.0036.t:0 "[evil_diarch.GetName()] Rejects"
+    baltic_flavor.0036.desc:0 "A laconic reply arrives from [evil_diarch.GetFullName()] - my offer has been rejected."
+    baltic_flavor.0036.a:0 "Damnations!"

@@ -663,6 +663,7 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
 	}
     trigger = {
         has_ep2_dlc_trigger = yes
+        gold >= 100
 		is_married = no
         NOT = {
             has_character_flag = baltic_flavor.0031
@@ -751,7 +752,7 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
                 ai_greed = 1
             }
         }
-        scope:evil_diarch = {
+        scope:evil_diarch ?= {
             trigger_event = baltic_flavor.0032
         }
         custom_tooltip = baltic_flavor.0031.will_send_offer
@@ -819,6 +820,9 @@ baltic_flavor.0032 = { # Jadwiga emulation - ask diarch
             ai_value_modifier = {
                 ai_greed = -1
             }
+        }
+        scope:jagiello = {
+            trigger_event = baltic_flavor.0036
         }
     }
 }
@@ -893,8 +897,8 @@ baltic_flavor.0033 = { # Jadwiga receives ultimatum
 		}
         scope:jagiello = {
             pay_short_term_gold = {
-                target = root
-                gold = 250
+                target = scope:evil_diarch
+                gold = 100
             }
         }
 
@@ -934,7 +938,17 @@ baltic_flavor.0034 = { # Jadwiga accepts!
     theme = diplomacy
 
     title = baltic_flavor.0034.t
-    desc = baltic_flavor.0034.desc
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    this = scope:evil_diarch
+                }
+                desc = baltic_flavor.0034.desc_regent
+            }
+            desc = baltic_flavor.0034.desc
+        }
+    }
     left_portrait = {
 		character = scope:jagiello
 		animation = personality_dishonorable
@@ -943,6 +957,34 @@ baltic_flavor.0034 = { # Jadwiga accepts!
 		character = scope:evil_diarch
 		animation = personality_dishonorable
 	}
+    immediate = {
+        show_as_tooltip = {
+            scope:jadwiga = {
+                scope:jagiello = {
+                    set_character_faith_with_conversion = scope:jadwiga.faith
+                }
+                create_grand_wedding_betrothal = {
+                    SPOUSE_1 = scope:jagiello
+                    SPOUSE_2 = scope:jadwiga
+                    HOST = scope:jagiello
+                    PROMISEE = scope:jadwiga
+                }
+                scope:jagiello = {
+                    pay_short_term_gold = {
+                        target = scope:evil_diarch
+                        gold = 100
+                    }
+                }
+
+                scope:jagiello = {
+                    trigger_event = baltic_flavor.0034
+                }
+                scope:evil_diarch = {
+                    trigger_event = baltic_flavor.0034
+                }
+            }
+        }
+    }
     option = {
         name = baltic_flavor.0034.a
     }
@@ -952,7 +994,18 @@ baltic_flavor.0035 = { # Jadwiga rejects!
     theme = diplomacy
 
     title = baltic_flavor.0035.t
-    desc = baltic_flavor.0035.desc
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    this = scope:evil_diarch
+                }
+                desc = baltic_flavor.0035.desc_regent
+            }
+            desc = baltic_flavor.0035.desc
+        }
+    }
+    
     left_portrait = {
 		character = scope:jagiello
 		animation = fear
@@ -961,7 +1014,46 @@ baltic_flavor.0035 = { # Jadwiga rejects!
 		character = scope:evil_diarch
 		animation = fear
 	}
+
+
+    immediate = {
+        show_as_tooltip = {
+            scope:jadwiga = {
+                every_held_title = {
+                    scope:jagiello = {
+                        add_pressed_claim = prev
+                    }
+                }
+                scope:jagiello = {
+                    trigger_event = baltic_flavor.0035
+                }
+                scope:evil_diarch = {
+                    trigger_event = baltic_flavor.0035
+                }
+            }
+        }
+    }
+
     option = {
         name = baltic_flavor.0035.a
+    }
+}
+
+baltic_flavor.0036 = { # Diarch rejects!
+    theme = diplomacy
+
+    title = baltic_flavor.0036.t
+    desc = baltic_flavor.0036.desc
+    left_portrait = {
+		character = scope:jagiello
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:evil_diarch
+		animation = personality_honorable
+	}
+
+    option = {
+        name = baltic_flavor.0036.a
     }
 }
