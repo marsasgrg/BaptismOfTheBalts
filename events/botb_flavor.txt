@@ -662,6 +662,7 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
 		animation = personality_dishonorable
 	}
     trigger = {
+		is_married = no
         NOT = {
             has_character_flag = baltic_flavor.0031
         }

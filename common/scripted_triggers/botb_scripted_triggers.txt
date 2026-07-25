@@ -55,6 +55,7 @@ county_kingdom_is_valid_for_jadwiga = {
 	kingdom = holder.top_liege.primary_title
 	holder.top_liege.faith.religion = faith:catholic.religion
 	holder = {
+		is_married = no
 		NOT = {
 			any_child = { }
 		}
@@ -66,10 +67,6 @@ county_kingdom_is_valid_for_jadwiga = {
 		sex_opposite_of = root
 		diarch ?= {
 			faith = prev.faith
-			OR = {
-				ai_zeal >= 20
-				ai_greed >= 20
-			}
 		}
 	}
 }`
