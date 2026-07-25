@@ -1035,7 +1035,19 @@ baltic_flavor.0035 = { # Jadwiga rejects!
     }
 
     option = {
-        name = baltic_flavor.0035.a
+        name = {
+            trigger = {
+                this = scope:evil_diarch
+            }
+            text = baltic_flavor.0035.a_regent 
+        } 
+        name = {
+            trigger = {
+                this != scope:evil_diarch
+            }
+            
+            text = baltic_flavor.0035.a
+        }
     }
 }
 
