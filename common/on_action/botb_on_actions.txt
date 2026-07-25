@@ -125,10 +125,11 @@ on_game_start = {
 
 botb_on_game_start = {
 	effect = {
-		# start_struggle = {
-        #     struggle_type = baltic_struggle
-        #     start_phase = struggle_baltic_baptism
-        # }
+        character:256040 = {
+            add_character_flag = do_not_generate_starting_family
+            add_trait = devoted
+            add_piety = 3000
+        }
 	}
 }
 

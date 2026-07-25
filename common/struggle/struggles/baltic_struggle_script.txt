@@ -7,6 +7,9 @@
         prussian
         # Baltofinnic indigenous
         estonian
+		# colonist
+		saxon
+		polish
     }
     faiths = {
         baltic_pagan
