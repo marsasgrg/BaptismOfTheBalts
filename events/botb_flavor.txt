@@ -696,6 +696,7 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
     }
 
     immediate = {
+        save_scope_as = jagiello
         add_character_flag = {
             flag = baltic_flavor.0031
             years = 10
@@ -749,6 +750,9 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
                 ai_greed = 1
             }
         }
+        scope:evil_diarch = {
+            trigger_event = baltic_flavor.0032
+        }
         custom_tooltip = baltic_flavor.0031.will_send_offer
     }
     option = {
@@ -763,6 +767,146 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
             }
         }
     }
-
-
 }
+
+
+baltic_flavor.0032 = { # Jadwiga emulation - ask diarch
+
+    # hidden = yes
+    theme = diplomacy_foreign_affairs_focus
+
+    title = baltic_flavor.0032.t
+    desc = baltic_flavor.0032.desc
+    left_portrait = {
+		character = scope:jagiello
+		animation = throne_room_writer
+	}
+	right_portrait = {
+		character = root
+		animation = personality_dishonorable
+	}
+
+    
+
+    option = {
+        name = baltic_flavor.0032.a
+        ai_chance = {
+            base = 150
+            ai_value_modifier = {
+                ai_zeal = -1
+            }
+            ai_value_modifier = {
+                ai_greed = -1
+            }
+            modifier = {
+                add = -100
+                dynasty = scope:jadwiga.dynasty
+            }
+        }
+        custom_tooltip = baltic_flavor.0032.will_send_ultimatum
+        scope:jadwiga = {
+            trigger_event = baltic_flavor.0033
+        }
+    }
+    option = {
+        name = baltic_flavor.0032.b
+        ai_chance = {
+            base = 0
+            ai_value_modifier = {
+                ai_zeal = -1
+            }
+            ai_value_modifier = {
+                ai_greed = -1
+            }
+        }
+    }
+}
+
+baltic_flavor.0033 = { # Jadwiga receives ultimatum
+    # hidden = yes
+    theme = diplomacy
+
+    title = baltic_flavor.0033.t
+    desc = baltic_flavor.0033.desc
+    left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:evil_diarch
+		animation = personality_dishonorable
+	}
+
+    
+
+    option = {
+        name = baltic_flavor.0033.a
+        ai_chance = {
+            base = 200
+            ai_value_modifier = {
+                ai_zeal = 1
+            }
+            ai_value_modifier = {
+                ai_boldness = -1.5
+            }
+            modifier = {
+                add = -100
+                any_player = {
+                    dynasty = root.dynasty
+                }
+            }
+        }
+
+        if = {
+			limit = {
+				exists = betrothed
+			}
+			break_betrothal = betrothed
+			if = {
+				limit = {
+					has_been_promised_grand_wedding = yes
+				}
+				break_grand_wedding_betrothal_effect = yes
+			}
+		}
+        scope:jagiello = {
+            if = {
+                limit = {
+                    exists = betrothed
+                }
+                break_betrothal = betrothed
+                if = {
+                    limit = {
+                        has_been_promised_grand_wedding = yes
+                    }
+                    break_grand_wedding_betrothal_effect = yes
+                }
+		    }
+        }
+        set_grand_wedding_betrothal_variables = {
+			SPOUSE_1 = root
+			SPOUSE_2 = scope:jagiello
+			HOST = scope:jagiello
+			PROMISEE = scope:jadwiga
+		}
+        
+    }
+    option = {
+        name = baltic_flavor.0033.b
+        ai_chance = {
+            base = 0
+            ai_value_modifier = {
+                ai_zeal = -1
+            }
+            ai_value_modifier = {
+                ai_boldness = 1.5
+            }
+        }
+        every_held_title = {
+            scope:jagiello = {
+                add_pressed_claim = prev
+            }
+        }
+    }    
+}
+

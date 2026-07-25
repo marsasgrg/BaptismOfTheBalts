@@ -69,4 +69,4 @@ county_kingdom_is_valid_for_jadwiga = {
 			faith = prev.faith
 		}
 	}
-}`
+}
