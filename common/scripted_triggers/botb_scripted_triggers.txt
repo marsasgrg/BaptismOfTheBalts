@@ -49,3 +49,27 @@ botb_eligible_for_yearly_events = {
 		}
 	}
 }
+
+county_kingdom_is_valid_for_jadwiga = {
+	kingdom.holder != root
+	kingdom = holder.top_liege.primary_title
+	holder.top_liege.faith.religion = faith:catholic.religion
+	holder = {
+		NOT = {
+			any_child = { }
+		}
+		exists = diarch
+		is_faith_dominant_gender = no
+		age > 10
+		age < 30
+		has_diarchy_active_parameter = diarchy_type_is_entrenched_regency
+		sex_opposite_of = root
+		diarch ?= {
+			faith = prev.faith
+			OR = {
+				ai_zeal >= 20
+				ai_greed >= 20
+			}
+		}
+	}
+}`

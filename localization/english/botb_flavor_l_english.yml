@@ -31,6 +31,12 @@
     baltic_flavor.0014.b:0 "Whatever."
 
     baltic_flavor.0021.title:0 "[purchase_offer.GetFaith().GetAdherentNamePlural()] Want to Settle [county_to_purchase.GetNameNoTier()]"
-    baltic_flavor.0021.desc:0 "[purchase_offer.GetCulture().GetName()] believers in [purchase_offer.GetFaith().GetName()] have come to me, asking to buy [county_to_purchase.GetNameNoTier()]. They claim that once they acquire this piece of my land, they will settle it with people from their homeland, as well as convert the locals to their beliefs. They offer a quite sizable sum - @gold_icon!250."
+    baltic_flavor.0021.desc:0 "[purchase_offer.GetCulture().GetName()] believers in [purchase_offer.GetFaith().GetName()] have come to me, asking to buy [county_to_purchase.GetNameNoTier()]. They claim that once they acquire this piece of my land, they will settle it with people from their homeland, as well as convert the locals to their beliefs. They offer a quite sizable sum - @gold_icon!#P 250#!."
     baltic_flavor.0021.a:0 "Wow, that's a great deal!"
     baltic_flavor.0021.b:0 "I will not give up this ancestral land to these people."
+
+    baltic_flavor.0031.t:0 "[potential_gainable_title.GetNameNoTier()] for Baptism"
+    baltic_flavor.0031.desc:0 "My advisors have spotted an opportunity - the realm of [potential_gainable_title.GetNameNoTier()] is led by a young ruler dependent on a regent. [jadwiga.GetHerHis()|U] name is [jadwiga.GetFullName()], while the regent is [evil_diarch.GetFullName()]. We believe the regent would be willing to, for a sum of gold and our conversion to [jadwiga.GetFaith().GetName()], force [jadwiga.GetName()] to marry us, thus destining the entire  [potential_gainable_title.GetName()] for our control - see, [jadwiga.GetName()] is childless."
+    baltic_flavor.0031.a:0 "This will bring me power!"
+    baltic_flavor.0031.b:0 "I will not betray my faith from greed!"
+    baltic_flavor.0031.will_send_offer:0 "An offer will be sent to [evil_diarch.GetName()]"

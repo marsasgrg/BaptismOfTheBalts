@@ -182,6 +182,7 @@ baltic_flavor_yearly = {
         100 = baltic_flavor.0001 # Birutė
         25 = baltic_flavor.0011 # Bruno
         50 = baltic_flavor.0021 # purchase holding
+        1000 = baltic_flavor.0031 # Jadwiga
     }
 }
 

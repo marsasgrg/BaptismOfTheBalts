@@ -4,6 +4,7 @@
 # 001X - St. Bruno
 # 002X - purchase of Riga, Talinn or Memel if baptism has not begun yet
 # 003X - Jadwiga
+# 004X - Meinhard content
 
 baltic_flavor.0001 = { #Birutė
     type = character_event
@@ -643,4 +644,124 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
         }
         remove_courtier_or_guest = scope:purchase_offer
     }
+}
+
+baltic_flavor.0031 = { # Jadwiga emulation - select potential
+
+    # hidden = yes
+    theme = diplomacy_foreign_affairs_focus
+
+    title = baltic_flavor.0031.t
+    desc = baltic_flavor.0031.desc
+    left_portrait = {
+		character = root
+		animation = throne_room_writer
+	}
+	right_portrait = {
+		character = scope:evil_diarch
+		animation = personality_dishonorable
+	}
+    trigger = {
+        NOT = {
+            has_character_flag = baltic_flavor.0031
+        }
+
+        faith = {
+            has_doctrine = unreformed_faith_doctrine
+        }
+        NOT = {
+            faith.religious_head = this
+        }
+
+        is_independent_ruler = yes
+
+        OR = {
+            has_primary_title = title:k_lithuania
+            has_primary_title = title:k_livonia
+            has_primary_title = title:k_esthonia
+        }
+        any_character_struggle = {
+            this = struggle:baltic_struggle
+            involvement = involved
+        }
+        primary_title = {
+            any_de_jure_county = {
+                any_title_to_title_neighboring_and_across_water_county = {
+                    county_kingdom_is_valid_for_jadwiga = yes
+                }
+            }
+        }
+
+    }
+
+    immediate = {
+        add_character_flag = {
+            flag = baltic_flavor.0031
+            years = 10
+        }
+        primary_title = {
+            every_de_jure_county = {
+                every_title_to_title_neighboring_and_across_water_county = {
+                    if = {
+                        limit = {
+                            county_kingdom_is_valid_for_jadwiga = yes
+                        }
+                        holder.top_liege = {
+                            add_to_list = potential_targets
+                        }
+                    }
+                }
+                
+            }
+        }
+        random_in_list = {
+            list = potential_targets
+            weight = {
+                base = 1
+                modifier = {
+                    add = 999
+                    root.primary_title = title:k_lithuania
+                    primary_title = title:k_poland
+                }
+            }
+
+            save_scope_as = jadwiga
+            
+            primary_title = {
+                save_scope_as = potential_gainable_title
+            }
+            
+            diarch = {
+                save_scope_as = evil_diarch
+            }
+        }   
+    }
+
+    option = {
+        name = baltic_flavor.0031.a
+        ai_chance = {
+            base = 150
+            ai_value_modifier = {
+                ai_zeal = -1
+            }
+            ai_value_modifier = {
+                ai_greed = 1
+            }
+        }
+        custom_tooltip = baltic_flavor.0031.will_send_offer
+    }
+    option = {
+        name = baltic_flavor.0031.b
+        ai_chance = {
+            base = 0
+            ai_value_modifier = {
+                ai_zeal = 1
+            }
+            ai_value_modifier = {
+                ai_greed = -1
+            }
+        }
+    }
+
+
 }
