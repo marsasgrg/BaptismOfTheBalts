@@ -1,6 +1,7 @@
 ﻿baltic_struggle_region = {
     kingdoms = {
         k_lithuania
+        k_livonia
         k_esthonia
     }
 }

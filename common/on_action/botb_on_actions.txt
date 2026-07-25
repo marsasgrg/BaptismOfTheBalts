@@ -241,6 +241,19 @@ botb_on_convert_county = {
                 struggle_type = baltic_struggle
                 start_phase = struggle_baltic_baptism 
             }
+            every_county_in_region = {
+                region = baltic_struggle_region
+                faith = {
+                    struggle:baltic_struggle = {
+                        set_faith_as_involved = prev
+                    }
+                }
+                culture = {
+                    struggle:baltic_struggle = {
+                        set_culture_as_involved = prev
+                    }
+                }
+            }
         }
     }
 }

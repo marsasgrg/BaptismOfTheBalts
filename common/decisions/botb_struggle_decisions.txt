@@ -50,6 +50,7 @@
                 is_struggle_phase = struggle_baltic_negotiation
                 root = {
                     completely_controls = title:k_lithuania
+                    completely_controls = title:k_livonia
                     completely_controls = title:k_esthonia
                 }
             }
@@ -177,6 +178,7 @@ baltic_struggle_old_ways_decision_ending = {
                 is_struggle_phase = struggle_baltic_negotiation
                 root = {
                     completely_controls = title:k_lithuania
+                    completely_controls = title:k_livonia
                     completely_controls = title:k_esthonia
                 }
             }
@@ -331,6 +333,7 @@ baltic_struggle_colonial_decision_ending = {
                 is_struggle_phase = struggle_baltic_conquest
                 root = {
                     completely_controls = title:k_lithuania
+                    completely_controls = title:k_livonia
                     completely_controls = title:k_esthonia
                 }
             }

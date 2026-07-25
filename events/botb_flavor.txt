@@ -283,6 +283,7 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
         capital_county.kingdom = {
             OR = {
                 this = title:k_lithuania
+                this = title:k_livonia
                 this = title:k_esthonia
             }
         }
@@ -294,8 +295,7 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
             }
         }
         NOR = {
-            completely_controls = title:k_lithuania
-            completely_controls = title:k_esthonia
+            completely_controls = capital_county.kingdom
             faith.religious_head = this
         }
     }
