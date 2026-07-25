@@ -40,3 +40,22 @@
     baltic_flavor.0031.a:0 "This will bring me power!"
     baltic_flavor.0031.b:0 "I will not betray my faith from greed!"
     baltic_flavor.0031.will_send_offer:0 "An offer will be sent to [evil_diarch.GetName()]"
+
+    baltic_flavor.0032.t:0 "[jagiello.GetPrimaryTitle().GetNameNoTierPossessive()] Baptism for [potential_gainable_title.GetNameNoTier()]"
+    baltic_flavor.0032.desc:0 "An offer has arrived from [jagiello.GetPrimaryTitle().GetNameNoTier()] - the local ruler, [jagiello.GetFullName()] wants to baptise himself and his realm for one simple thing in return - he wishes to marry our dear ruler I have power over, [jadwiga.GetFullName()]. Obviously, this would be a [GetActivityType('activity_wedding').GetName()] and I would receive great bags of gold."
+    baltic_flavor.0032.a:0 "This deal is great!"
+    baltic_flavor.0032.b:0 "I will not betray my realm from greed!"
+    baltic_flavor.0032.will_send_ultimatum:0 "An ultimatum will be sent to [jadwiga.GetName()]"
+
+    baltic_flavor.0033.t:0 "[jagiello.GetName()] and [evil_diarch.GetName()] Demand My Hand!"
+    baltic_flavor.0033.desc:0 "A strongly written demand has arrived from my dear diarch, [evil_diarch.GetFullName()] and the ruler of [jagiello.GetPrimaryTitle().GetNameNoTier()], [jagiello.GetFullName()]. They request me to marry [jagiello.GetName()], and abandon my dynastic ambitions in favor of [jagiello.GetHerHis()] dynasty. In return, [jagiello.GetName()] and [jagiello.GetPrimaryTitle().GetName()] will convert to [ROOT.Char.GetFaith().GetName()]. If this is not accepted, war may come to [ROOT.Char.GetPrimaryTitle().GetName()]."
+    baltic_flavor.0033.a:0 "It seems I have to accept."
+    baltic_flavor.0033.b:0 "Let them come! I will maintain the dignity of [ROOT.Char.GetDynasty().GetName()]"
+
+    baltic_flavor.0034.t:0 "[jadwiga.GetName()] Accepts!"
+    baltic_flavor.0034.desc:0 "Reluctantly, [jadwiga.GetName()] has agreed to the request that I and [evil_diarch.GetFullName()] made - she will marry me, and I will convert to [jadwiga.GetFaith().GetName()]. All is well under the heavens."
+    baltic_flavor.0034.a:0 "Praise be to [jadwiga.GetFaith().HighGodName()]"
+
+    baltic_flavor.0035.t:0 "[jadwiga.GetName()] Rejects"
+    baltic_flavor.0035.desc:0 "A laconic reply arrives from [jadwiga.GetFullName()] - she will not marry me. This denial of my wishes and the wishes of [evil_diarch.GetFullName()] is abhorrent."
+    baltic_flavor.0035.a:0 "I will take [jadwiga.GetPrimaryTitle().GetNameNoTier()] by any means neccesary!"
