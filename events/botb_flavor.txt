@@ -291,8 +291,8 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
         highest_held_title_tier = tier_duchy
         faith = {
             OR = {
-                this = faith:baltic_pagan
-                this = faith:finnish_pagan
+                religion = faith:baltic_pagan.religion
+                religion = faith:finnish_pagan.religion
             }
         }
         NOR = {
@@ -326,7 +326,7 @@ baltic_flavor.0011 = { # St. Bruno arrives in Prussia
 
     option = { # Embrace beliefs
         name = baltic_flavor.0011.a
-        set_character_faith_with_conversion = scope:bruno.faith
+        set_character_rite_with_conversion = scope:bruno.rite
         add_piety = -250
         trigger_event = {
            id = baltic_flavor.0012
@@ -487,8 +487,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
             has_character_flag = baltic_flavor.0021
         }
 
-        faith = {
-            has_doctrine = unreformed_faith_doctrine
+        rite = {
+            rite_has_doctrine = unreformed_faith_doctrine
         }
         NOT = {
             faith.religious_head = this
@@ -501,8 +501,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_vidzeme
                 capital_county != title:c_vidzeme
                 title:c_vidzeme = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }
             }
@@ -510,8 +510,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_memel
                 capital_county != title:c_memel
                 title:c_memel = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }
             }
@@ -519,8 +519,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_reval
                 capital_county != title:c_reval
                 title:c_reval = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }
             }
@@ -534,8 +534,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_reval
                 capital_county != title:c_reval
                 title:c_reval = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }                
             }
@@ -548,8 +548,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_memel
                 capital_county != title:c_memel
                 title:c_memel = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }                
             }
@@ -562,8 +562,8 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 has_title = title:c_vidzeme
                 capital_county != title:c_vidzeme
                 title:c_vidzeme = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }                
             }
@@ -627,7 +627,7 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
         
         resolve_title_and_vassal_change = scope:change
         scope:county_to_purchase = {
-            set_county_faith = scope:purchase_offer.faith
+            set_county_rite = scope:purchase_offer.rite
             set_county_culture = scope:purchase_offer.culture
         }
     }
@@ -669,8 +669,8 @@ baltic_flavor.0031 = { # Jadwiga emulation - select potential
             has_character_flag = baltic_flavor.0031
         }
 
-        faith = {
-            has_doctrine = unreformed_faith_doctrine
+        rite = {
+            rite_has_doctrine = unreformed_faith_doctrine
         }
         NOT = {
             faith.religious_head = this
@@ -875,7 +875,7 @@ baltic_flavor.0033 = { # Jadwiga receives ultimatum
 			}
 		}
         scope:jagiello = {
-            set_character_faith_with_conversion = scope:jadwiga.faith
+            set_character_rite_with_conversion = scope:jadwiga.rite
             if = {
                 limit = {
                     exists = betrothed
@@ -961,7 +961,7 @@ baltic_flavor.0034 = { # Jadwiga accepts!
         show_as_tooltip = {
             scope:jadwiga = {
                 scope:jagiello = {
-                    set_character_faith_with_conversion = scope:jadwiga.faith
+                    set_character_rite_with_conversion = scope:jadwiga.rite
                 }
                 create_grand_wedding_betrothal = {
                     SPOUSE_1 = scope:jagiello

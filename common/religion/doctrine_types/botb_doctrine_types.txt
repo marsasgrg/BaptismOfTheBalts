@@ -2,7 +2,8 @@
 	piety_cost = {
 		value = faith_doctrine_cost_low
 	}
-
+	doctrine_group_type = perkunas_destiny
+	icon = "special_doctrine_default"
 	parameters = {
 		divine_destiny_holy_war_cost_reduction = yes
         conquest_cb_enabled = yes

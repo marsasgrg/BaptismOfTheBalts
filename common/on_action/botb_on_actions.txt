@@ -222,12 +222,9 @@ botb_on_convert_county = {
     effect = {
         if = {
             limit = {
-                scope:old_faith = {
-                    has_doctrine = unreformed_faith_doctrine
-                }
                 NOT = {
-                    faith = {
-                        has_doctrine = unreformed_faith_doctrine
+                    rite = {
+                        rite_has_doctrine = unreformed_faith_doctrine
                     }
                 }
                 title_province = {

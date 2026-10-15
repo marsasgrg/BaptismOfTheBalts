@@ -1,13 +1,14 @@
 ﻿# 256040 - St. Meinhard if he ever needs moving
 meinhard_adopted_son = {
     name = "Ringaudas"
-	religion = "baltic_pagan"
+	rite = "baltic_pagan"
 	culture = latgalian
     1161.1.1 = {
         birth = yes
     }
     1177.6.15 = {
-        set_character_faith_history = faith:catholic 
+        set_character_faith = faith:catholic
+        set_character_rite = rite:roman_rite 
         change_first_name = "Johann"
         adopt_effect = {
             CHILD = character:meinhard_adopted_son

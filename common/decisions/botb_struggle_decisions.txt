@@ -11,8 +11,8 @@
 		# Independent
 		top_liege = this
         NOT = {
-            faith = {
-                has_doctrine = unreformed_faith_doctrine
+            rite = {
+                rite_has_doctrine = unreformed_faith_doctrine
             }
         }
        
@@ -71,7 +71,7 @@
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.3
-                faith = root.faith 
+                rite = root.rite 
             }
             any_county_in_region = {
                 region = baltic_struggle_region
@@ -79,9 +79,9 @@
                 
                 custom_description = {
                     text = held_or_adherent_to_faith
-                    object = root.faith
+                    object = root.rite
                     held_or_adherent_to_faith = {
-                        FAITH = root.faith
+                        FAITH = root.rite
                     }
                 }
 
@@ -145,8 +145,8 @@ baltic_struggle_old_ways_decision_ending = {
 		# Independent
 		top_liege = this
         
-        faith = {
-            has_doctrine = unreformed_faith_doctrine
+        rite = {
+            rite_has_doctrine = unreformed_faith_doctrine
         }
     
        
@@ -205,13 +205,13 @@ baltic_struggle_old_ways_decision_ending = {
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.5
-                faith = root.faith 
+                rite = root.rite 
             }
             any_county_in_region = {
                 region = baltic_struggle_region
                 percent > 0.95
-                faith = {
-                    has_doctrine = unreformed_faith_doctrine
+                rite = {
+                    rite_has_doctrine = unreformed_faith_doctrine
                 }
             }
             any_county_in_region = {
@@ -256,7 +256,8 @@ baltic_struggle_old_ways_decision_ending = {
             remove_doctrine = unreformed_faith_doctrine
 
             add_doctrine = perkunas_destiny_doctrine
-            
+        }
+        faith = {    
             religious_head ?= {
                 add_prestige = 1000
                 add_piety = 1000
@@ -288,8 +289,8 @@ baltic_struggle_colonial_decision_ending = {
 		# Independent
 		top_liege = this
         NOT = {
-            faith = {
-                has_doctrine = unreformed_faith_doctrine
+            rite = {
+                rite_has_doctrine = unreformed_faith_doctrine
             }
         }
        

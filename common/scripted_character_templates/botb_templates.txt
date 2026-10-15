@@ -3,7 +3,7 @@
 	
 	dynasty = none
 	culture = this.culture
-	faith = this.faith
+	rite = this.rite
 
 	
 	random_traits = no
@@ -106,7 +106,7 @@ bruno_catholic = {
 			weight = { base = 20 }
 		}
 	}			
-	faith = faith:catholic
+	rite = rite:roman_rite
 	culture = culture:saxon
 	trait = devoted
 	random_traits_list = {
@@ -153,7 +153,7 @@ bruno_orthodox = {
 			weight = { base = 20 }
 		}
 	}			
-	faith = faith:orthodox
+	rite = rite:slavic_rite
 	culture = culture:russian
 	trait = devoted
 	random_traits_list = {

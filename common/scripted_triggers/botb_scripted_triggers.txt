@@ -8,9 +8,9 @@
 
 held_or_adherent_to_faith = {
 	OR = {
-		faith = $FAITH$
+		rite = $FAITH$
 		holder = {
-			faith = $FAITH$
+			rite = $FAITH$
 		}
 	}
 }

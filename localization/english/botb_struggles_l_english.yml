@@ -5,7 +5,7 @@
   # baltic_struggle_started_ago_50: "$baltic_struggle_started_ago_first_half$ 50 $baltic_struggle_started_ago_second_half$"
   # baltic_struggle_started_ago_100: "$baltic_struggle_started_ago_first_half$ 100 $baltic_struggle_started_ago_second_half$"
   YEARS_SINCE_STRUGGLE_GREATER_THAN: "[STRUGGLE.GetName] started more than $VALUE|V0$ years ago #weak (Currently [STRUGGLE.MakeScope.ScriptValue('years_since_struggle_start')])#!"
-  HELD_OR_ADHERENT_TO_FAITH: "The county believes in [FAITH.GetName()] or is controlled by a [FAITH.GetAdherentName()]"
+  HELD_OR_ADHERENT_TO_FAITH: "The county believes in [RITE.GetName()] or is controlled by a [RITE.GetAdherentName()]"
   HELD_OR_ADHERENT_TO_CULTURE: "The county is of your culture or is controlled by your culture"
   
 
@@ -26,36 +26,36 @@
   baltic_struggle_new_ways_decision_ending: "Triumph of the New Ways"
   baltic_struggle_new_ways_decision_ending_confirm: "Perhaps it\'s better this way..."
   baltic_struggle_new_ways_decision_ending_tooltip: "Bring new ways to your people"
-  baltic_struggle_new_ways_decision_ending_desc: "New beliefs of [GetPlayer().GetFaith().GetName()] have gained prominence among my people. It\'s time to entrench them."
+  baltic_struggle_new_ways_decision_ending_desc: "New beliefs of [GetPlayer().GetRite().GetName()] have gained prominence among my people. It\'s time to entrench them."
   baltic_struggle_all_rulers_weaker: "All involved independent rulers must be weaker than you at their max military strength, and hold less land in the Baltic"
   any_county_in_region_percent:0 "$PARAMETERS$ of [GEOGRAPHICAL_REGION.GetName] counties in the relevant region:"
   baltic_struggle_region: "Baltic"
   baltic_struggle.1001.t: "Victory of the New Ways" 
-  baltic_struggle.1001.desc: "The righteous beliefs of [ROOT.Char.GetFaith().GetName()] have triumphed in the Baltic region, all thanks to me. Believers flock to me and my messengers. This victory will be known for centuries."
-  baltic_struggle.1001.a: "In the name of [ROOT.Char.GetFaith().HighGodName()]!"
+  baltic_struggle.1001.desc: "The righteous beliefs of [ROOT.Char.GetRite().GetName()] have triumphed in the Baltic region, all thanks to me. Believers flock to me and my messengers. This victory will be known for centuries."
+  baltic_struggle.1001.a: "In the name of [ROOT.Char.GetRite().HighGodName()]!"
 
   baltic_struggle.1002.t: "Victory of the Old Ways" 
-  baltic_struggle.1002.desc: "The beliefs of [ROOT.Char.GetFaith().GetName()] have maintained their hold on the Baltic region, all thanks to me. The invaders have failed."
-  baltic_struggle.1002.a: "As [ROOT.Char.GetFaith().HighGodName()] intended!"
+  baltic_struggle.1002.desc: "The beliefs of [ROOT.Char.GetRite().GetName()] have maintained their hold on the Baltic region, all thanks to me. The invaders have failed."
+  baltic_struggle.1002.a: "As [ROOT.Char.GetRite().HighGodName()] intended!"
   
   baltic_struggle_old_ways_decision_ending: "Unfaltering Old Ways"
   baltic_struggle_old_ways_decision_ending_confirm: "My ancestors will smile upon me!"
   baltic_struggle_old_ways_decision_ending_tooltip: "Kick out the so-called new ways"
-  baltic_struggle_old_ways_decision_ending_desc: "Only the old beliefs of [GetPlayer().GetFaith().GetName()] could ever gain prominence among my people. The world will know this."
+  baltic_struggle_old_ways_decision_ending_desc: "Only the old beliefs of [GetPlayer().GetRite().GetName()] could ever gain prominence among my people. The world will know this."
 
 
-  baltic_struggle.1011.t: "Victory of [struggle_ender.GetFaith.GetName] in the Baltic"
+  baltic_struggle.1011.t: "Victory of [struggle_ender.GetRite.GetName] in the Baltic"
   baltic_struggle.1011.opening.involved:0 "Though it comes from another realm, deliverance from the uncertainty that has engulfed our region for many years may now be at hand..."
   baltic_struggle.1011.opening:0 "Word of recent developments on the coasts of Baltic sea has reached our court, promising an end to the conflicts that have plagued the region."
   baltic_struggle.1011.desc:0 "\n\n[struggle_ender.GetName], who now controls the majority of the region, has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion by the religious differences of the region.\n\n"
-  baltic_struggle.1011.closing.combined:0 "[struggle_ender.GetSheHe|U] has proclaimed the Baltic lands to belong to [struggle_ender.GetFaith.HighGodName] and [struggle_ender.GetFaith.HighGodName] alone..."
+  baltic_struggle.1011.closing.combined:0 "[struggle_ender.GetSheHe|U] has proclaimed the Baltic lands to belong to [struggle_ender.GetRite.HighGodName] and [struggle_ender.GetRite.HighGodName] alone..."
   baltic_struggle.1011.a:0 "This is not over."
   baltic_struggle.1011.b:0 "Most interesting."
 
   baltic_struggle.0501.a:0 "Take hold of the Baltic!"
   baltic_struggle.0501.t:1 "The $baltic_struggle$"
   baltic_struggle.0501.desc:1 "The Baltic region is in turmoil, a conflict born of religious differences. Outsiders covet the land and the great powers of foregin beliefs seek to sway its people. But those who live and die on its soil will ultimately determine its fate.\n\n"
-  baltic_struggle.0501.desc.involved:0 "I will not let slip my vision for my homeland. By [ROOT.Char.GetFaith.HighGodName], House [ROOT.Char.GetHouse.GetNameNoTooltip] will weather the storm and see my will fulfilled.\n\n"
+  baltic_struggle.0501.desc.involved:0 "I will not let slip my vision for my homeland. By [ROOT.Char.GetRite.HighGodName], House [ROOT.Char.GetHouse.GetNameNoTooltip] will weather the storm and see my will fulfilled.\n\n"
   baltic_struggle.0501.desc.interloper:0 "The time has come for me to take hold of the situation and my destiny. I see all the pieces laid out on the board. I know the way forward, and there will be no stopping House [ROOT.Char.GetHouse.GetNameNoTooltip].\n\n"
   baltic_struggle.0501.desc.mottocall:0 "[ROOT.Char.GetHouse.GetMotto]!"
 
@@ -75,5 +75,5 @@
   savior_of_the_baltic: "Savior of the Balts"
   baltic_struggle.1003.t:0 "Baltic Extinction"
   baltic_struggle.1003.desc: "We the [ROOT.Char.GetCulture().GetName()] people have now taken control over most of the Baltic region and expelled the original inhabitants. Cities burn, and the ashes are settled by us."
-  baltic_struggle.1003.a: "I am sure [ROOT.Char.GetFaith().HighGodName()] will forgive me for this..."
+  baltic_struggle.1003.a: "I am sure [ROOT.Char.GetRite().HighGodName()] will forgive me for this..."
   
