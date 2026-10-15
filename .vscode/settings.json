@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "*.txt": "paradox",
-        "*.gui": "paradox-gui",
-        "*.mod": "paradox-mod",
-        "**/localization/**/*.yml": "paradox-loc"
-    }
-}
