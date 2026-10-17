@@ -603,6 +603,19 @@ baltic_flavor.0021 = { # Catholics wish to Purchase Riga/Talinn/Memel
                 ai_greed = 1
             }
         }
+        scope:county_to_purchase.title_province = {
+            if = {
+                limit = {
+                    OR = {
+                        has_holding_type = tribal_holding
+                        has_holding_type = nomad_holding
+                        has_holding_type = herder_holding
+                    }                 
+                }
+                holding_pre_feudalize_effect = yes
+                set_holding_type = castle_holding  
+            }   
+        }
         scope:purchase_offer = {
             pay_short_term_gold = {
                 target = root
