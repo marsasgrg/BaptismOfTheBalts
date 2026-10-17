@@ -1,4 +1,4 @@
-k_lithuania = {
+﻿k_lithuania = {
 	867.1.1 = { change_development_level = 2 }
 	1066.1.1 = { change_development_level = 5 }
 	1178.1.1 = { change_development_level = 8 }
@@ -2417,6 +2417,7 @@ c_siauliai = {
 d_high_kriwe = {
     799.1.1 = {
         holder = kriwe_1
+		government = ecclesiastical_government
     }
     845.1.1 = {
         holder = kriwe_2
@@ -2439,7 +2440,7 @@ c_torun = {
 
     799.1.1 = {
         holder = kriwe_1
-		government = theocracy_government
+		government = ecclesiastical_government
     }
     845.1.1 = {
         holder = kriwe_2

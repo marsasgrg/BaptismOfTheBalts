@@ -1,0 +1,16 @@
+﻿DiocesePrefix = {
+	type = province
+
+	text = {
+		setup_scope = { save_scope_as = ThisLocation }
+		localization_key = clerical_region_duchy_vidilist
+		trigger = {
+			county.holder.rite.faith.religion = faith:baltic_pagan.religion
+		}
+	}
+
+	text = {
+		localization_key = d_et_archdiocese_prefix
+		fallback = yes
+	}
+}

@@ -1,0 +1,18 @@
+﻿
+baltic_pagan = {
+	faith = baltic_pagan
+
+	color = { 0.6 0.4 0.3 }
+
+	tenets = {
+		tenet_sacred_childbirth
+		tenet_ancestor_worship
+		tenet_sanctity_of_nature
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+        ancient_hierarchy_doctrine
+		doctrine_clerical_succession_spiritual_fixed_appointment
+	}
+}

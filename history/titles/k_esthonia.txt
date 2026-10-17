@@ -1,4 +1,4 @@
-k_esthonia = {
+﻿k_esthonia = {
 	867.1.1 = { change_development_level = 2 }
 	1066.1.1 = { change_development_level = 5 }
 	1178.1.1 = { change_development_level = 9 }
@@ -374,6 +374,7 @@ c_vidzeme = {
 	}
 	1177.1.1 = { # St. Meinhard
 		holder = 256040
+		government = ecclesiastical_government
 		liege = 0
 	}
 	1187.1.1 = {

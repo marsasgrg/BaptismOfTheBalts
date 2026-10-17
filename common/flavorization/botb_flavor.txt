@@ -1,0 +1,57 @@
+﻿kriwe_title = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 301
+	titles = { d_high_kriwe }
+
+	flavourization_rules = { 
+		top_liege = no
+	}
+}
+
+clerical_region_duchy_vidilist = {
+	type = title
+	tier = duchy
+	priority = 101
+	governments = { ecclesiastical_government }
+
+	religions = {
+		baltic_religion
+	}
+
+	flavourization_rules = { 
+		target_character = yes
+		top_liege = no
+		only_holder = yes
+	}
+
+	special_title = clerical_region
+}
+
+duke_theocracy_male_baltic_religion_clerical_region = {
+	type = character
+	gender = male
+	special = clerical_region_holder
+	tier = duchy
+	priority = 28
+	governments = { theocracy_government ecclesiastical_government }
+	religions = { baltic_religion }
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+duke_theocracy_female_baltic_religion_clerical_region = {
+	type = character
+	gender = female
+	special = clerical_region_holder
+	tier = duchy
+	priority = 28
+	governments = { theocracy_government ecclesiastical_government }
+	religions = { baltic_religion }
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}

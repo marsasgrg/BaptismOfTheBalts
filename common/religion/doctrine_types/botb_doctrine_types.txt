@@ -17,3 +17,20 @@
 		accolade_glory_gain_mult = 0.1
 	}
 }
+
+ancient_hierarchy_doctrine = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+	}
+	doctrine_group_type = ancient_religious_hierarchy
+	icon = "doctrine_spiritual_head"
+	parameters = {
+		has_clerical_regions = yes
+	}
+    clergy_modifier = {
+		monthly_prestige = 1
+	}
+	character_modifier = {
+		monthly_piety = 0.5
+	}
+}

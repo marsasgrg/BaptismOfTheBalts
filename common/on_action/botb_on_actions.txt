@@ -256,3 +256,24 @@ botb_on_convert_county = {
         }
     }
 }
+
+on_faith_created = {
+    on_actions = {
+        botb_on_faith
+    }
+}
+
+botb_on_faith = {
+    effect = {
+        if = {
+            limit = {
+                main_rite = {
+                    rite_has_doctrine = ancient_hierarchy_doctrine
+                }
+            }
+            main_rite = {
+                remove_rite_doctrine = ancient_hierarchy_doctrine
+            }
+        }
+    }
+}
