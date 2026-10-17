@@ -28,5 +28,7 @@ d_et_pokaini_region = {
 d_et_riga_region = {
     duchies = {
         d_livonia
+        d_latgalians
+        d_esthonia
     }
 }
