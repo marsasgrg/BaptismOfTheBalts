@@ -1,9 +1,9 @@
 ﻿kriwe_title = {
 	type = character
 	special = holder
-	tier = duchy
+	tier = kingdom
 	priority = 301
-	titles = { d_high_kriwe }
+	titles = { k_high_kriwe }
 
 	flavourization_rules = { 
 		top_liege = no
