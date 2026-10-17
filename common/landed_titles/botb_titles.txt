@@ -1,7 +1,7 @@
 ﻿@always_primary_score = 1000
 @never_primary_score = -1000
 
-k_high_kriwe = {
+d_high_kriwe = {
     capital = c_torun
 	landless = yes
 	definite_form = yes
@@ -13,7 +13,7 @@ k_high_kriwe = {
 	}
 
 	#color = { 150 90 30 }
-	color = { 3 102 16 }
+	color = { 153 100 80 }
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
