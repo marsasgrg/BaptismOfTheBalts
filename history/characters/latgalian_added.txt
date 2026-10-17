@@ -1,0 +1,30 @@
+﻿
+pokaini_1 = {
+	name = "Balodis"
+	dynasty = 9530
+	rite = baltic_pagan
+	culture = latgalian
+	father = 194107
+	trait = bastard
+	830.1.1 = {
+		birth = yes
+	}
+	945.1.1 = {
+		death = yes
+	}
+}
+
+pokaini_4 = {
+	name = "Erasts"
+	dynasty = 100373
+	rite = baltic_pagan
+	culture = latgalian
+	father = 143132
+	trait = bastard
+	1096.11.10 = {
+		birth = yes
+	}
+	1188.1.1 = {
+		death = yes
+	}
+}

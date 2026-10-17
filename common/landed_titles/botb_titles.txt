@@ -33,7 +33,7 @@ d_et_romowe = {
 
 d_et_braslau = { 
 	color = { 226 43 43 }
-	capital = c_torun
+	capital = c_braslau
 
 	landless = yes
 	always_follows_primary_heir = yes
@@ -45,7 +45,7 @@ d_et_braslau = {
 
 d_et_pokaini = { 
 	color = { 42 68 214 }
-	capital = c_torun
+	capital = c_zemigalians
 
 	landless = yes
 	always_follows_primary_heir = yes
@@ -57,7 +57,7 @@ d_et_pokaini = {
 
 d_et_riga = { 
 	color = { 87 119 119 }
-	capital = c_torun
+	capital = c_vidzeme
 
 	landless = yes
 	always_follows_primary_heir = yes

@@ -40,7 +40,20 @@ d_et_braslau = { # lithuanian clerical region
 }
 
 d_et_pokaini = { # curonian clerical region
-    
+    866.1.1 = {
+        holder = pokaini_1
+        government = ecclesiastical_government
+        clerical_region = d_et_pokaini_region
+    }
+    945.1.1 = {
+        holder = pokaini_2
+    }
+    1009.2.14 = {
+        holder = pokaini_3
+    }
+    1106.1.1 = {
+        holder = pokaini_4
+    }
 }
 
 d_et_riga = { # rigan catholic clerical region

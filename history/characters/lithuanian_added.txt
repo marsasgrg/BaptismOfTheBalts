@@ -151,3 +151,32 @@ braslau_4 = {
 		death = yes
 	}
 }
+
+pokaini_2 = {
+	name = "Kunos"
+	dynasty = 9116
+	rite = baltic_pagan
+	culture = lithuanian
+	father = 82152
+	trait = bastard
+	921.1.1 = {
+		birth = yes
+	}
+	1009.2.14 = { # bruno refrens?
+		death = yes
+	}
+}
+pokaini_3 = {
+	name = "Vytautas"
+	dynasty = 9116
+	rite = baltic_pagan
+	culture = lithuanian
+	father = 82170
+	trait = bastard
+	990.1.1 = {
+		birth = yes
+	}
+	1106.1.1 = {
+		death = yes
+	}
+}

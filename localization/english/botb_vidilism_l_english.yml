@@ -14,4 +14,14 @@
   clerical_region_duchy_vidilist: "Archvaidilate"
   duke_theocracy_male_baltic_religion_clerical_region: "[CHARACTER.Custom('GetActualBishopTitle')]"
   duke_theocracy_female_baltic_religion_clerical_region: "[CHARACTER.Custom('GetActualBishopTitle')]"
-  NEW_ECCLESIASTICAL_TITLE: "[region_capital.Custom('DiocesePrefix')] of [region_capital.GetNameNoTooltip|U]"
+  NEW_ECCLESIASTICAL_TITLE: "[region_capital.GetNameNoTooltip|U]"
+
+  d_et_romowe: "Romowe"
+  d_et_romowe_adj: "Romowe"
+  d_et_braslau: "Breslau"
+  d_et_braslau_adj: "Breslau"
+  d_et_pokaini: "Pokaini"
+  d_et_pokaini_adj: "Pokaini"
+  d_et_riga: "Riga"
+  d_et_riga_adj: "Riga"
+  

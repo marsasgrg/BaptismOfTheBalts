@@ -16,6 +16,6 @@
 
 }
 
-d_et_romowe = d_high_kriwe
+d_et_romowe = d_prussia
 d_et_braslau = d_lithuanians
 d_et_pokaini = d_courland
