@@ -5,3 +5,28 @@
         k_esthonia
     }
 }
+
+d_et_romowe_region = {
+    duchies = {
+        d_prussia
+        d_masuria
+    }
+}
+
+d_et_braslau_region = {
+    duchies = {
+        d_lithuanians
+        d_samogitia
+    }
+}
+
+d_et_pokaini_region = {
+    duchies = {
+        d_courland
+    }
+}
+d_et_riga_region = {
+    duchies = {
+        d_livonia
+    }
+}

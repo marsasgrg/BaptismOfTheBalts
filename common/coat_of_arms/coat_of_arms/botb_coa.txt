@@ -1,4 +1,4 @@
-d_high_kriwe={
+﻿d_high_kriwe={
 	pattern="pattern_vertical_split_01.dds"
 	color1=green
 	color2=green
@@ -15,3 +15,7 @@ d_high_kriwe={
 	}
 
 }
+
+d_et_romowe = d_high_kriwe
+d_et_braslau = d_lithuanians
+d_et_pokaini = d_courland

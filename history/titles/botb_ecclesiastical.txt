@@ -1,0 +1,52 @@
+﻿#search d_et_eauze for exmaples
+d_et_romowe = { # prussian clerical region
+    799.1.1 = {
+        holder = kriwe_1
+		government = ecclesiastical_government
+        clerical_region = d_et_romowe_region
+    }
+    845.1.1 = {
+        holder = kriwe_2
+    }
+    926.1.1 = {
+        holder = kriwe_3
+    }
+    1002.1.1 = {
+        holder = kriwe_4
+    }
+    1067.1.1 = {
+        holder = kriwe_5
+    }
+    1140.1.1 = {
+        holder = kriwe_6
+    }
+}
+
+d_et_braslau = { # lithuanian clerical region
+    866.1.1 = {
+        holder = braslau_1
+        government = ecclesiastical_government
+        clerical_region = d_et_braslau_region
+    }
+    953.8.8 = {
+        holder = braslau_2
+    }
+    1015.6.7 = {
+        holder = braslau_3
+    }
+    1111.11.11 = {
+        holder = braslau_4
+    }
+}
+
+d_et_pokaini = { # curonian clerical region
+    
+}
+
+d_et_riga = { # rigan catholic clerical region
+	1177.1.1 = { # St. Meinhard
+		holder = 256040
+		government = ecclesiastical_government
+		clerical_region = d_et_riga_region
+	}
+}

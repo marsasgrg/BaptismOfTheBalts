@@ -1,4 +1,5 @@
 ﻿@always_primary_score = 1000
+@never_primary_score = -1000
 
 d_high_kriwe = {
     capital = c_torun
@@ -16,4 +17,52 @@ d_high_kriwe = {
 	no_automatic_claims = yes
 	always_follows_primary_heir = yes
 	destroy_if_invalid_heir = yes
+}
+
+d_et_romowe = { 
+	color = { 3 102 16 }
+	capital = c_torun
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_et_braslau = { 
+	color = { 226 43 43 }
+	capital = c_torun
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_et_pokaini = { 
+	color = { 42 68 214 }
+	capital = c_torun
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_et_riga = { 
+	color = { 87 119 119 }
+	capital = c_torun
+
+	landless = yes
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+
+
+	ai_primary_priority = { add = @never_primary_score }
 }

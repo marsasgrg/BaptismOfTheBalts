@@ -90,3 +90,64 @@ kriwe_6 = {
 
 
 }
+
+
+braslau_1 = {
+	name = "Manvydas"
+	dynasty = 9116
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 194115
+    trait = bastard
+	850.6.4 = {
+		birth = yes
+	}
+	953.8.8 = {
+		death = yes
+	}
+}
+
+braslau_2 = {
+	name = "Palemon"
+	dynasty = 9116
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 82152
+    trait = bastard
+	930.7.6 = {
+		birth = yes
+	}
+	1015.6.7 = {
+		death = yes
+	}
+}
+braslau_3 = {
+	name = "Algimantas"
+	dynasty = 9116
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 82176
+	mother = 82177
+    trait = devoted
+	998.9.8 = {
+		birth = yes
+	}
+	1111.11.11 = {
+		death = yes
+	}
+}
+braslau_4 = {
+	name = "Algimantas"
+	dynasty = 9116
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 82200
+	mother = 82202
+    trait = devoted
+	1094.9.11 = {
+		birth = yes
+	}
+	1188.8.8 = {
+		death = yes
+	}
+}
