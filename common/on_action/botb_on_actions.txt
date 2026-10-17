@@ -52,6 +52,15 @@ botb_game_start = {
             add_trait = palemonid
             apply_palemonic_lineage_to_kids = yes
         }
+        title:d_high_kriwe.holder = {
+            if = {
+                limit = {
+                    highest_held_title_tier = tier_duchy
+                }
+                set_primary_title_to = title:d_high_kriwe
+
+            }
+        }
     }
 }
 
