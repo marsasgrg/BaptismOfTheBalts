@@ -18,6 +18,9 @@ d_et_braslau_region = {
         d_lithuanians
         d_samogitia
     }
+    counties = {
+        c_grodno
+    }
 }
 
 d_et_pokaini_region = {
