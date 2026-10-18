@@ -65,6 +65,7 @@
 	dynasty = 12469
 	rite = "roman_rite"
 	culture = saxon
+	trait = education_learning_5
 	dna = "bookmark_botb_meinhard"
 	history_override_priority = 1
 	1136.1.1 = {
