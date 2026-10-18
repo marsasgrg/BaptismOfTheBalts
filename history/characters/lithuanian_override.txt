@@ -15,11 +15,15 @@
 	1150.1.1 = {
 		birth = "1150.1.1"
 	}
-    1177.1.1 = {
+    1167.1.1 = {
         add_pressed_claim = title:d_lithuanians
         add_pressed_claim = title:d_samogitia
         add_pressed_claim = title:k_lithuania
-        
+        set_relation_nemesis = {
+            target = character:82198
+            reason = rival_usurper
+        }
+
     }
 	1200.1.2 = {
 		death = "1200.1.2"
