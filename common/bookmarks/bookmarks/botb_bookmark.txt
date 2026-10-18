@@ -11,7 +11,7 @@
     character = {
         name = "bookmark_botb_algimantas"
         dynasty = 9116
-        dynasty_splendor_level = 1
+        dynasty_splendor_level = 3
         type = male
         birth = 1151.1.1
         title = d_lithuanians
@@ -21,6 +21,22 @@
         difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
         history_id = 82198
         position = {1120 500}
-        animation = personality_rational 
+        animation = personality_rational
+    }
+    
+    character = {
+        name = "bookmark_botb_gediminaitis"
+        dynasty = 11
+        dynasty_splendor_level = 3
+        type = male
+        birth = 1150.1.1
+        title = d_laamp_three_pillars
+        government = landless_adventurer_government
+        culture = lithuanian
+        religion = baltic_pagan
+        difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+        history_id = 228012
+        position = {200 500}
+        animation = personality_bold 
     }
 }

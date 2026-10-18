@@ -5,10 +5,17 @@
 	culture = "lithuanian"
 	trait = bastard_founder
 	father = 82194
+    
     history_override_priority = 1
 	1150.1.1 = {
 		birth = "1150.1.1"
 	}
+    1177.1.1 = {
+        add_pressed_claim = title:d_lithuanians
+        add_pressed_claim = title:d_samogitia
+        add_pressed_claim = title:k_lithuania
+        
+    }
 	1200.1.2 = {
 		death = "1200.1.2"
 	}

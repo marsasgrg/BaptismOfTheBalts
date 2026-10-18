@@ -1,0 +1,15 @@
+﻿d_laamp_three_pillars = {
+	1166.1.1 = {
+		liege = 0
+		holder = 228012
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+    1200.1.2 = {
+        holder = 0
+    }
+}

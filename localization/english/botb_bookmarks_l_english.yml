@@ -2,7 +2,10 @@
     bm_1178_botb: "Baptism of the Balts"
     bm_1178_botb_desc: "The Baltic region is one of the last bastions of paganism in Europe. However, the idyllic peace of the Kriwe and his vaidila subordinates is coming to an end - a wave of zealous believers is coming from the west and the east to preach their God Jesus. #bold Only time will tell whether the old ways or the new will triumph... #!"
 
-    #Jarl Haesteinn
     bookmark_botb_algimantas:0 "High Chieftain Algimantas"
     bookmark_botb_algimantas_subheading: "$BOOKMARK_SUBHEADING_HIGH_CHIEFTAIN$"
     bookmark_botb_algimantas_desc:0 "According to legend, once upon a time a ship sailed out from Pontus, filled with roman nobles fleeing the terror of a cruel emperor. Now, more than a millenium later, the descendants of one of these nobles - Palemon - rule a significant part of Lithuania.\nAlthough he does not speak a single word of latin, worships Perkūnas and looks just like any other Lithuanian, $bookmark_botb_algimantas$ considers himself worthy of Palemon's legacy - and only time will tell if he is right.\n\n#bold Will the bloodline of Palemon survive the wind of changes? #!"
+
+    bookmark_botb_gediminaitis:0 "Gediminas"
+    bookmark_botb_gediminaitis_subheading: "Rightful Heir of Lithuania"
+    bookmark_botb_gediminaitis_desc:0 "No, not that one. This Gediminas is only a mere adventurer seeking to reclaim the lands of his father Liubartas, which were taken by his brother $bookmark_botb_algimantas$ due to the fact Gediminas is a mere bastard. \n History would prove Gediminas right, as his descendants - Mindaugas, another \[the more important\] Gediminas and many more were great rulers of Lithuania, but that is for the future. The question now is: \n\n #bold Will you lead his descendants to create a strong Lithuania. #!"

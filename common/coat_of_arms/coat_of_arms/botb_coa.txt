@@ -20,3 +20,5 @@ d_et_romowe = d_prussia
 d_et_braslau = d_lithuanians
 d_et_pokaini = d_courland
 house_gediminid = d_lithuanians
+d_laamp_three_pillars = d_lithuanians
+11 = d_lithuanians
