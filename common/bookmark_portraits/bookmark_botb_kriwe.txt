@@ -1,4 +1,4 @@
-﻿# Auto generated file, do not edit manually. Created using console command dump_bookmark_portrait_for
+# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:kriwe_6
 bookmark_botb_kriwe={
 	type=male
@@ -54,7 +54,7 @@ bookmark_botb_kriwe={
  		gene_bs_eye_upper_lid_size={ "eye_upper_lid_size_pos" 96 "eye_upper_lid_size_neg" 24 }
  		gene_bs_forehead_brow_curve={ "forehead_brow_curve_neg" 41 "forehead_brow_curve_pos" 27 }
  		gene_bs_forehead_brow_forward={ "forehead_brow_forward_neg" 0 "forehead_brow_forward_pos" 31 }
- 		gene_bs_forehead_brow_inner_height={ "forehead_brow_inner_height_neg" 31 "forehead_brow_inner_height_neg" 8 }
+ 		gene_bs_forehead_brow_inner_height={ "forehead_brow_inner_height_pos" 102 "forehead_brow_inner_height_neg" 8 }
  		gene_bs_forehead_brow_outer_height={ "forehead_brow_outer_height_neg" 18 "forehead_brow_outer_height_neg" 49 }
  		gene_bs_forehead_brow_width={ "forehead_brow_width_pos" 45 "forehead_brow_width_pos" 77 }
  		gene_bs_jaw_def={ "jaw_def_neg" 7 "jaw_def_neg" 56 }
@@ -91,14 +91,14 @@ bookmark_botb_kriwe={
  		face_detail_nose_ridge_def={ "nose_ridge_def_neg" 20 "nose_ridge_def_pos" 171 }
  		face_detail_nose_tip_def={ "nose_tip_def" 247 "nose_tip_def" 89 }
  		face_detail_temple_def={ "temple_def" 92 "temple_def" 224 }
- 		expression_brow_wrinkles={ "brow_wrinkles_02" 2 "brow_wrinkles_04" 249 }
+ 		expression_brow_wrinkles={ "brow_wrinkles_02" 159 "brow_wrinkles_04" 249 }
  		expression_eye_wrinkles={ "eye_wrinkles_02" 255 "eye_wrinkles_01" 21 }
  		expression_forehead_wrinkles={ "forehead_wrinkles_01" 101 "forehead_wrinkles_03" 200 }
- 		expression_other={ "cheek_wrinkles_both_01" 0 "cheek_wrinkles_both_01" 0 }
+ 		expression_other={ "cheek_wrinkles_both_01" 34 "cheek_wrinkles_both_01" 0 }
  		complexion={ "complexion_6" 184 "complexion_3" 151 }
  		gene_height={ "normal_height" 116 "normal_height" 177 }
  		gene_bs_body_type={ "body_fat_head_fat_medium" 120 "body_fat_head_fat_medium" 133 }
- 		gene_bs_body_shape={ "body_shape_rectangle_full" 114 "body_shape_rectangle_half" 26 }
+ 		gene_bs_body_shape={ "body_shape_rectangle_full" 124 "body_shape_rectangle_half" 26 }
  		gene_bs_bust={ "bust_clothes" 64 "bust_default" 95 }
  		gene_age={ "old_2" 248 "old_3" 38 }
  		gene_eyebrows_shape={ "avg_spacing_avg_thickness" 98 "far_spacing_avg_thickness" 178 }
@@ -123,9 +123,8 @@ bookmark_botb_kriwe={
  		cloaks={ "no_cloak" 84 "no_cloak" 0 }
  		clothes_hoods={ "hoods" 153 "no_clothes_hood" 0 }
  		gene_balding_hair_effect={ "baldness_stage_1" 255 "no_baldness" 0 }
- 		gene_cloak={ "cloak_additive" 255 "cloak_additive" 0 }
  }
-	entity={ 979141817 979141817 }
+	entity={ 2268070609 2268070609 }
 	tags={ {
 			hash=2125534279
 			invert=no

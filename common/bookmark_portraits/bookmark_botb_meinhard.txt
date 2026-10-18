@@ -1,4 +1,4 @@
-﻿# Auto generated file, do not edit manually. Created using console command dump_bookmark_portrait_for
+# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:256040
 bookmark_botb_meinhard={
 	type=male
@@ -98,7 +98,7 @@ bookmark_botb_meinhard={
  		complexion={ "complexion_1" 142 "complexion_1" 142 }
  		gene_height={ "normal_height" 119 "normal_height" 119 }
  		gene_bs_body_type={ "body_fat_head_fat_medium" 102 "body_fat_head_fat_medium" 128 }
- 		gene_bs_body_shape={ "body_shape_apple_full" 66 "body_shape_apple_full" 0 }
+ 		gene_bs_body_shape={ "body_shape_apple_full" 56 "body_shape_apple_full" 0 }
  		gene_bs_bust={ "bust_clothes" 102 "bust_shape_1_full" 128 }
  		gene_age={ "old_4" 194 "old_4" 194 }
  		gene_eyebrows_shape={ "avg_spacing_lower_thickness" 146 "avg_spacing_lower_thickness" 146 }

@@ -59,3 +59,34 @@
 		death = "1213.1.1"
 	}
 }
+
+256040 = {		#Saint Meinhard, first Bishop of Riga
+	name = "Meinhard"
+	dynasty = 12469
+	rite = "roman_rite"
+	culture = saxon
+	dna = "bookmark_botb_meinhard"
+	history_override_priority = 1
+	1136.1.1 = {
+		birth = yes
+	}
+	1196.10.11 = {
+		death = yes
+	}
+}
+
+125975 = {
+	name = "Leszek"
+	dynasty = 699
+	rite = "roman_rite"
+	culture = "polish"
+	father = 125973
+	dna = "bookmark_botb_leszek"
+	history_override_priority = 1
+	1162.1.1 = {
+		birth = "1162.1.1"
+	}
+	1186.1.1 = {
+		death = "1186.1.1"
+	}
+}

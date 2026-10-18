@@ -66,6 +66,9 @@ botb_game_start = {
                 set_house = house:house_gediminid
             }
         }
+        character:256040 = {
+            add_courtier = character:meinhard_adopted_son
+        }
     }
 }
 

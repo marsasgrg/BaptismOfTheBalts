@@ -96,6 +96,7 @@ kriwe_6 = {
 	rite = "baltic_pagan"
 	culture = "lithuanian"
 	trait = bastard
+	dna = "bookmark_botb_kriwe"
 	1116.1.1 = {
 		birth = yes
 	}

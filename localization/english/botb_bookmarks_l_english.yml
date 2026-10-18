@@ -16,7 +16,7 @@
 
     bookmark_botb_meinhard:0 "Archbishop Meinhard"
     bookmark_botb_meinhard_subheading: "Archbishop of Riga"
-    bookmark_botb_meinhard_desc:0 "Meinhard arrived in these lands from Saxony a few years ago, and acquired a piece of land through clever deals. Now, he has become the Archbishop of Riga, aiming to spread Catholicism among the Balts. In this task, he is helped by his adopted Latgalian son, Johann - perhaps he will even be a worthy heir to the bishopric - who knows these lands as good as anyone can kknow them. The question is yours to answer:\n#bold Will you use this to baptise the Balts with fire or with water? #! \n\n#color_porple Historicity note: the events of Meinhard's life have been moved back a decade or so, and Johann is ahistorical, both for the purpose of fun gameplay #!"
+    bookmark_botb_meinhard_desc:0 "Meinhard arrived in these lands from Saxony a few years ago, and acquired a piece of land through clever deals. Now, he has become the Archbishop of Riga, aiming to spread Catholicism among the Balts. In this task, he is helped by his adopted Latgalian son, Johann - perhaps he will even be a worthy heir to the bishopric - who knows these lands as good as anyone can kknow them. The question is yours to answer:\n#bold Will you use this to baptise the Balts with fire or with water? #! \n\n#color_porple Historicity note: the events of Meinhard's life have been moved back a decade or so, and Johann is ahistorical, both for the purpose of fun gameplay. Riga was not elevated to archbishopric until the middle of the 13th century, but there is no way to represent non-archbishop bishops in CK3... #!"
     BOOKMARK_RELATION_ADOPTED_SON:"Adopted Son"
     bookmark_botb_meinhard_alt_johann: "$Johann$"
 

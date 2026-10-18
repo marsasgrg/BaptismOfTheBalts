@@ -36,7 +36,7 @@
         religion = baltic_pagan
         difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
         history_id = 228012
-        position = {380 500}
+        position = {360 500}
         animation = personality_bold 
     }
 
@@ -52,7 +52,7 @@
         religion = baltic_pagan
         difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
         history_id = kriwe_6
-        position = {660 660}
+        position = {160 660}
         animation = personality_zealous 
     }
 
@@ -66,7 +66,8 @@
         religion = roman_rite
         difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
         history_id = 256040
-        position = {700 700}
+        dynasty = 12469
+        position = {500 250}
         animation = personality_compassionate
         
         character = {
@@ -77,6 +78,7 @@
 			birth = 1161.1.1
 			culture = latgalian
 			history_id = meinhard_adopted_son
+            animation = personality_dishonorable
 		}
     }
 
@@ -84,16 +86,16 @@
     character = {
         name = "bookmark_botb_leszek"
         dynasty = 699
-        dynasty_splendor_level = 1
+        dynasty_splendor_level = 3
         type = male
         birth = 1162.1.1
         title = d_mazovia
         government = feudal_government
         culture = polish
         religion = roman_rite
-        difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+        difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
         history_id = 125975
-        position = {800 800}
-        animation = personality_dishonorable
+        position = {850 800}
+        animation = personality_greedy
     }
 }

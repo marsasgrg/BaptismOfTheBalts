@@ -10,7 +10,7 @@ meinhard_adopted_son = {
     learning = 15
     trait = intellect_good_1
     trait = devoted
-
+    dna = "bookmark_botb_meinhard_alt_johann"
     1161.1.1 = {
         birth = yes
     }

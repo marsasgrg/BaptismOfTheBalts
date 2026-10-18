@@ -1,7 +1,7 @@
-﻿# Auto generated file, do not edit manually. Created using console command dump_bookmark_portrait_for
+# Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
 # History database id:228012
 bookmark_botb_gediminaitis={
-		type=male
+	type=male
 	id=55207
 	random_seed=1214243119
 	age=0.280000
@@ -98,7 +98,7 @@ bookmark_botb_gediminaitis={
  		complexion={ "complexion_6" 202 "complexion_6" 202 }
  		gene_height={ "normal_height" 120 "normal_height" 120 }
  		gene_bs_body_type={ "body_fat_head_fat_medium" 126 "body_fat_head_fat_medium" 122 }
- 		gene_bs_body_shape={ "body_shape_pear_half" 147 "body_shape_pear_half" 51 }
+ 		gene_bs_body_shape={ "body_shape_pear_half" 168 "body_shape_pear_half" 51 }
  		gene_bs_bust={ "bust_clothes" 99 "bust_shape_3_full" 156 }
  		gene_age={ "old_4" 43 "old_4" 43 }
  		gene_eyebrows_shape={ "far_spacing_avg_thickness" 161 "far_spacing_avg_thickness" 161 }
@@ -163,3 +163,4 @@ bookmark_botb_gediminaitis={
 		}
  }
 }
+
