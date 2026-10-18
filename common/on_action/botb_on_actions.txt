@@ -82,11 +82,25 @@ on_game_start = {
 
 botb_on_game_start = {
 	effect = {
-        character:256040 = {
+        title:d_high_kriwe.holder = {
             add_character_flag = do_not_generate_starting_family
             add_trait = devoted
-            add_piety = 3000
+            add_piety = 500
         }
+        if = {
+            limit = {
+                game_start_date >= 1167.1.1
+            }
+            character:256040 = {
+                add_character_flag = do_not_generate_starting_family
+                add_trait = devoted
+                add_piety = 3000
+            }
+            title:d_laamp_three_pillars.holder = {
+                add_realm_law_skip_effects = camp_purpose_legitimists
+            }
+        }
+        
 	}
 }
 
