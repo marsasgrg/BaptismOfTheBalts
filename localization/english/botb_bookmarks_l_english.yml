@@ -9,3 +9,17 @@
     bookmark_botb_gediminaitis:0 "Lord Gediminas"
     bookmark_botb_gediminaitis_subheading: "Rightful Heir of Lithuania"
     bookmark_botb_gediminaitis_desc:0 "No, not that one. This Gediminas is only a mere adventurer seeking to reclaim the patrimony of his dynasty, which were taken by his brother $bookmark_botb_algimantas$ due to the fact Gediminas is a mere bastard.\n\nHistory would prove Gediminas right, as his descendants - Mindaugas, another (the more important) Gediminas and many more were great rulers of Lithuania, but that is for the future. The question now is: \n#bold Will you lead his descendants to create a strong Lithuania? #!"
+
+    bookmark_botb_kriwe:0 "Kriwe Lizdeika"
+    bookmark_botb_kriwe_subheading: "High Kriwe of Vidilism"
+    bookmark_botb_kriwe_desc:0 "For centuries, the Great Romowe has drawn pilgrims from all lands lived in by balts, as it is the greatest holy site of their native religion. The institution of High Kriwe has been a leading figure in the Baltic beliefs. However, all good times eventually come to an end - vultures from the south and west are looking to tear the balts apart, starting with Prussia. \n\n#bold Will the Romowe continue to stand in future centuries? #!"
+
+    bookmark_botb_meinhard:0 "Archbishop Meinhard"
+    bookmark_botb_meinhard_subheading: "Archbishop of Riga"
+    bookmark_botb_meinhard_desc:0 "Meinhard arrived in these lands from Saxony a few years ago, and acquired a piece of land through clever deals. Now, he has become the Archbishop of Riga, aiming to spread Catholicism among the Balts. In this task, he is helped by his adopted Latgalian son, Johann - perhaps he will even be a worthy heir to the bishopric - who knows these lands as good as anyone can kknow them. The question is yours to answer:\n#bold Will you use this to baptise the Balts with fire or with water? #! \n\n#color_porple Historicity note: the events of Meinhard's life have been moved back a decade or so, and Johann is ahistorical, both for the purpose of fun gameplay #!"
+    BOOKMARK_RELATION_ADOPTED_SON:"Adopted Son"
+    bookmark_botb_meinhard_alt_johann: "$Johann$"
+
+    bookmark_botb_leszek:0 "Duke Leszek"
+    bookmark_botb_leszek_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
+    bookmark_botb_leszek_desc:0 "The Mazovians have always been in conflict with the belligerent Prussians, and Leszek is no different. Now that the balts are the last pagans in Europe, the conflict has only intensified - in fact, inconclusive holy wars happen often. 50 years later from now, one of Leszek's kinsmen will invite the fearsome Teutonic knights into the Baltic to help with his wars - however, they soon proved to be a threat not only for Prussia and Lithuania, but in fact for Poland as well... \n\n#bold Will you send his dynasty on this bloodthirsty path? Or perhaps the Balts are better as allies? #!"

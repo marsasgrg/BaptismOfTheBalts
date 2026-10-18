@@ -22,7 +22,19 @@ d_et_pokaini = d_courland
 house_gediminid = d_lithuanians
 d_laamp_three_pillars = d_lithuanians
 11 = d_lithuanians
-
+9126 = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_bear_passant.dds"
+		color1 = "red"
+		color2 = "red"
+		color3 = "black"
+		instance = { position = { 0.50 0.50 } scale = { 0.85 0.9 }  }
+	}
+}
+c_yatvyagi = 9126
 palemonid_inverted = {
 	pattern = "pattern_solid.dds"
 	color1 = "red"

@@ -3,6 +3,14 @@ meinhard_adopted_son = {
     name = "Ringaudas"
 	rite = "baltic_pagan"
 	culture = latgalian
+    trait = education_intrigue_4
+    trait = deceitful
+    trait = zealous
+    trait = callous
+    learning = 15
+    trait = intellect_good_1
+    trait = devoted
+
     1161.1.1 = {
         birth = yes
     }
