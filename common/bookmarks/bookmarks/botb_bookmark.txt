@@ -1,0 +1,26 @@
+﻿bm_1178_botb = {
+    start_date = 1178.10.1
+    is_playable = yes
+    recommended = yes
+    group = bm_group_1178
+    
+    weight = {
+        value = 1001
+    }
+
+    character = {
+        name = "bookmark_botb_algimantas"
+        dynasty = 9116
+        dynasty_splendor_level = 1
+        type = male
+        birth = 1151.1.1
+        title = d_lithuanians
+        government = tribal_government
+        culture = lithuanian
+        religion = baltic_pagan
+        difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+        history_id = 82198
+        position = {600 300}
+        animation = personality_rational 
+    }
+}
