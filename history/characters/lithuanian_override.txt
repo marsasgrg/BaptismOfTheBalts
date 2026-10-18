@@ -1,6 +1,7 @@
 ﻿228012 = {
 	name = "Gediminas"
 	dynasty_house = house_gediminid
+    dna = "bookmark_botb_gediminaitis"
 	rite = "baltic_pagan"
 	culture = "lithuanian"
 	trait = bastard_founder
