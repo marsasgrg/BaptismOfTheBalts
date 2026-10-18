@@ -1,0 +1,45 @@
+﻿228012 = {
+	name = "Gediminas"
+	dynasty_house = house_gediminid
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	trait = bastard_founder
+	father = 82194
+    history_override_priority = 1
+	1150.1.1 = {
+		birth = "1150.1.1"
+	}
+	1200.1.2 = {
+		death = "1200.1.2"
+	}
+}
+
+125308 = {
+	name = "Dravenis"
+	dynasty_house = house_gediminid
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 228012
+    history_override_priority = 1
+	1170.1.1 = {
+		birth = "1170.1.1"
+	}
+	1230.1.1 = {
+		death = "1230.1.1"
+	}
+}
+
+125300 = {
+	name = "Rimgaudas"
+	dynasty_house = house_gediminid
+	rite = "baltic_pagan"
+	culture = "lithuanian"
+	father = 228012
+    history_override_priority = 1
+	1175.1.1 = {
+		birth = "1175.1.1"
+	}
+	1213.1.1 = {
+		death = "1213.1.1"
+	}
+}

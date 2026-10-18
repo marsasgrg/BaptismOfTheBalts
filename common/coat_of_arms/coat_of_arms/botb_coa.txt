@@ -19,3 +19,4 @@
 d_et_romowe = d_prussia
 d_et_braslau = d_lithuanians
 d_et_pokaini = d_courland
+house_gediminid = d_lithuanians

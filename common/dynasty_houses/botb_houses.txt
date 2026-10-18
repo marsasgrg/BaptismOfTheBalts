@@ -1,0 +1,4 @@
+﻿house_gediminid = { 
+	name = "dynn_Gediminaitis"
+	dynasty = 9116
+}

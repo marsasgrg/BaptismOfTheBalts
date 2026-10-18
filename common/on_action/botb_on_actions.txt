@@ -61,6 +61,11 @@ botb_game_start = {
 
             }
         }
+        dynasty:11 = {
+            every_dynasty_member = {
+                set_house = character:228012.house
+            }
+        }
     }
 }
 
