@@ -36,7 +36,7 @@
         religion = baltic_pagan
         difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
         history_id = 228012
-        position = {200 500}
+        position = {400 500}
         animation = personality_bold 
     }
 }

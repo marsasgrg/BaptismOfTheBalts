@@ -4,6 +4,10 @@
 	rite = "baltic_pagan"
 	culture = "lithuanian"
 	trait = bastard_founder
+    trait = ambitious
+    trait = diligent
+    trait = brave
+    trait = education_martial_4
 	father = 82194
     
     history_override_priority = 1
