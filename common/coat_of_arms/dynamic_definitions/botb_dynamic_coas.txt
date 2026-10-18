@@ -1,0 +1,8 @@
+﻿k_lithuania = {
+    item = {
+        trigger = {
+            holder.house = character:194113.house
+        }
+        coat_of_arms = palemonid_inverted
+    }
+}
