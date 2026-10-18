@@ -47,7 +47,8 @@
 	show_disabled = yes
 	
 	cost_gold = 500
-
+	max_garrison = 500
+	
 	character_modifier = {
 		monthly_piety_gain_mult = 0.15
 		monthly_dynasty_prestige_mult = 0.05
@@ -60,10 +61,13 @@
 		tax_mult = 0.2
 		development_growth_factor = 0.2
 		development_growth = 0.2
+		levy_size = 0.2
 	}
 	
 	province_modifier = {
 		monthly_income = 2
+		fort_level = 3
+		garrison_size = 0.5
 	}
 
 	on_complete = {
