@@ -727,35 +727,27 @@ c_konigsberg = {
 	}
 }
 
-
+#EDITED
 c_allenstein = {
-	750.1.1 = {
-		holder = 194076
-		liege = d_prussia
-		government = tribal_government
+    799.1.1 = {
+        holder = kriwe_1
+		government = ecclesiastical_government
+    }
+    845.1.1 = {
+        holder = kriwe_2
+    }
+    926.1.1 = {
+        holder = kriwe_3
+    }
+    1002.1.1 = {
+        holder = kriwe_4
+    }
+    1067.1.1 = {
+        holder = kriwe_5
+    }
+    1140.1.1 = {
+        holder = kriwe_6
 	}
-	799.1.1 = {
-		holder = 194077
-	}
-	822.1.1 = {
-		holder = 194078
-	}
-	867.1.1 = {
-		holder = 167744
-	}
-	
-	
-	
-	1066.1.1 = {
-		holder = 28019
-	}
-	1120.1.1 = {
-		holder = 144672
-	}	
-	1170.1.1 = {
-		holder = 228019
-	}
-	
 	#Golden Bull of Rimini
 	
 	1225.1.1 = {
@@ -988,41 +980,55 @@ c_bartenstein = {
 		holder = 474000 #Dietrich von Altenburg
 	}
 }
-
+ #EDITED
 d_masuria = {
+
+	799.1.1 = {
+        holder = kriwe_1
+		government = ecclesiastical_government
+    }
+    845.1.1 = {
+        holder = kriwe_2
+    }
+	
 	867.1.1 = { change_development_level = 2 }
+    926.1.1 = {
+        holder = kriwe_3
+    }
+    1002.1.1 = {
+        holder = kriwe_4
+    }
 	1066.1.1 = { change_development_level = 6 }
+    1067.1.1 = {
+        holder = kriwe_5
+    }
+    1140.1.1 = {
+        holder = kriwe_6
+	}
 	1178.1.1 = { change_development_level = 20 }
 }
 
 
-
+# EDITED
 c_osterode = {
-	750.1.1 = {
-		holder = 194076
-		liege = d_prussia
-		government = tribal_government
-	}
-	799.1.1 = {
-		holder = 194077
-	}
-	822.1.1 = {
-		holder = 194078
-	}
-	867.1.1 = {
-		holder = 167744
-	}
-	
-	
-	
-	1066.1.1 = {
-		holder = 28019
-	}
-	1120.1.1 = {
-		holder = 144672
-	}	
-	1170.1.1 = {
-		holder = 228019
+    799.1.1 = {
+        holder = kriwe_1
+		government = ecclesiastical_government
+    }
+    845.1.1 = {
+        holder = kriwe_2
+    }
+    926.1.1 = {
+        holder = kriwe_3
+    }
+    1002.1.1 = {
+        holder = kriwe_4
+    }
+    1067.1.1 = {
+        holder = kriwe_5
+    }
+    1140.1.1 = {
+        holder = kriwe_6
 	}
 	
 	#Golden Bull of Rimini
@@ -1085,33 +1091,26 @@ c_osterode = {
 
 }
 
-
+# EDITED
 c_angerburg = {
-	750.1.1 = {
-		holder = 194076
-		liege = d_prussia
-		government = tribal_government
-	}
-	799.1.1 = {
-		holder = 194077
-	}
-	822.1.1 = {
-		holder = 194078
-	}
-	867.1.1 = {
-		holder = 167744
-	}
-	
-	
-	
-	1066.1.1 = {
-		holder = 28022
-	}
-	1120.1.1 = {
-		holder = 144672
-	}	
-	1170.1.1 = {
-		holder = 228019
+    799.1.1 = {
+        holder = kriwe_1
+		government = ecclesiastical_government
+    }
+    845.1.1 = {
+        holder = kriwe_2
+    }
+    926.1.1 = {
+        holder = kriwe_3
+    }
+    1002.1.1 = {
+        holder = kriwe_4
+    }
+    1067.1.1 = {
+        holder = kriwe_5
+    }
+    1140.1.1 = {
+        holder = kriwe_6
 	}
 	
 	#Golden Bull of Rimini
@@ -2436,6 +2435,7 @@ d_high_kriwe = {
     }
 }
 
+#EDITED
 c_torun = {
 
     799.1.1 = {
