@@ -28,6 +28,5 @@
 	doctrines = {
 		unreformed_faith_doctrine
 		ancient_hierarchy_doctrine
-		doctrine_clerical_succession_spiritual_fixed_appointment
 	}
 }
