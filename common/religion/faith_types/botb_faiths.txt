@@ -4,7 +4,7 @@
 		religion = baltic_religion
 		color = { 0.6 0.4 0.3 }
 		icon = baltic
-        religious_head = d_high_kriwe
+        religious_head = k_high_kriwe
 		reformed_icon = baltic_reformed
 	}
 

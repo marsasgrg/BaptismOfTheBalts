@@ -52,12 +52,12 @@ botb_game_start = {
             add_trait = palemonid
             apply_palemonic_lineage_to_kids = yes
         }
-        title:d_high_kriwe.holder = {
+        title:k_high_kriwe.holder = {
             if = {
                 limit = {
-                    highest_held_title_tier = tier_duchy
+                    highest_held_title_tier = tier_kingdom
                 }
-                set_primary_title_to = title:d_high_kriwe
+                set_primary_title_to = title:k_high_kriwe
 
             }
         }
@@ -85,7 +85,7 @@ on_game_start = {
 
 botb_on_game_start = {
 	effect = {
-        title:d_high_kriwe.holder = {
+        title:k_high_kriwe.holder = {
             add_character_flag = do_not_generate_starting_family
             add_trait = devoted
             add_piety = 500

@@ -2,7 +2,7 @@
 	type = character
 	special = holder
 	priority = 301
-	titles = { d_high_kriwe }
+	titles = { k_high_kriwe }
 
 	flavourization_rules = { 
 		top_liege = no

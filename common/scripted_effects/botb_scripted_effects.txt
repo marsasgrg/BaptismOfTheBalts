@@ -119,7 +119,7 @@ baltic_struggle_ending_faith_list_effect = {
 # 							NOR = {
 # 								completely_controls = title:k_lithuania
 # 								has_character_flag = baltic_flavor.0011
-# 								has_title = title:d_high_kriwe
+# 								has_title = title:k_high_kriwe
 # 							}
 # 						}
 # 					}
@@ -135,7 +135,7 @@ baltic_struggle_ending_faith_list_effect = {
 # 							NOR = {
 # 								completely_controls = title:k_lithuania
 # 								has_character_flag = baltic_flavor.0011
-# 								has_title = title:d_high_kriwe
+# 								has_title = title:k_high_kriwe
 # 							}
 # 						}
 # 					}

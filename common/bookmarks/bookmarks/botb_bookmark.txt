@@ -46,7 +46,7 @@
         dynasty_splendor_level = 1
         type = male
         birth = 1116.1.1
-        title = d_high_kriwe
+        title = k_high_kriwe
         government = ecclesiastical_government
         culture = lithuanian
         religion = baltic_pagan
