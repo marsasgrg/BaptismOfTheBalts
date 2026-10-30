@@ -9,6 +9,17 @@
 	}
 }
 
+3214 = {	#YLAVIA
+	culture = prussian
+	religion = baltic_pagan
+	holding = church_holding
+}
+3212 = {	#ALNASTEINI
+	culture = prussian
+	rite = baltic_pagan
+	holding = church_holding
+}
+
 108 = {	# 108 - RIGA
 	
 	# Misc
