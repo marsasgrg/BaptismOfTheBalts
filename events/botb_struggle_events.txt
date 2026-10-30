@@ -48,7 +48,10 @@ baltic_struggle.0501 = {
 
 	cooldown = { years = 100 }
 	immediate = {
-		
+		save_scope_value_as = {
+			name = start
+			value = yes
+		}
 		add_character_flag = baltic_struggle_intro_event_flag
 	}
 	widgets = {
