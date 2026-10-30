@@ -3,6 +3,15 @@
 baltic_struggle.0501 = {
 	type = character_event
 	window = fullscreen_event
+	widgets = {
+        widget = {
+			gui = "event_window_widget_struggle_info"
+			container = "dynamic_content_widget"
+			controller = struggle_info
+			setup_scope = { struggle:baltic_struggle = { save_scope_as = struggle } }
+        }
+    }
+	queue_icon = "gfx/interface/icons/situation_types/christian_church.dds"
 	title = baltic_struggle.0501.t
 	desc = {
 		desc = baltic_struggle.0501.desc
