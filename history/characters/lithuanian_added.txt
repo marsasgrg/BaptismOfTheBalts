@@ -5,6 +5,7 @@
 	culture = lithuanian
 	father = 194113
 	trait = bastard
+	trait = education_learning_5
 	775.1.1 = {
 		birth = yes
 	}
@@ -24,6 +25,7 @@ kriwe_2 = {
 	culture = lithuanian
 	father = 6893
 	trait = bastard
+	trait = education_learning_4
 	828.1.1 = {
 		birth = yes
 	}
@@ -42,6 +44,7 @@ kriwe_3 = {
 	rite = "baltic_pagan"
 	culture = "lithuanian"
 	trait = bastard
+	trait = education_learning_4
 	900.1.1 = {
 		birth = yes
 	}
@@ -59,6 +62,7 @@ kriwe_4 = {
 	culture = "lithuanian"
 	father = 82166 #Montvilas son of Gimbutas
 	trait = bastard
+	trait = education_learning_4
 	971.1.1 = {
 		birth = yes
 	}
@@ -77,6 +81,7 @@ kriwe_5 = {
 	culture = "lithuanian"
 	father = 82175 #Zivinbudas son of Vykintas
 	trait = bastard
+	trait = education_learning_4
 	1040.1.1 = {
 		birth = yes
 	}	
@@ -96,6 +101,7 @@ kriwe_6 = {
 	rite = "baltic_pagan"
 	culture = "lithuanian"
 	trait = bastard
+	trait = education_learning_4
 	dna = "bookmark_botb_kriwe"
 	1116.1.1 = {
 		birth = yes
@@ -119,6 +125,7 @@ braslau_1 = {
 	culture = "lithuanian"
 	father = 194115
     trait = bastard
+	trait = education_learning_4
 	850.6.4 = {
 		birth = yes
 	}
@@ -134,6 +141,7 @@ braslau_2 = {
 	culture = "lithuanian"
 	father = 82152
     trait = bastard
+	trait = education_learning_3
 	930.7.6 = {
 		birth = yes
 	}
@@ -149,6 +157,7 @@ braslau_3 = {
 	father = 82176
 	mother = 82177
     trait = devoted
+	trait = education_learning_3
 	998.9.8 = {
 		birth = yes
 	}
@@ -164,6 +173,7 @@ braslau_4 = {
 	father = 82200
 	mother = 82202
     trait = devoted
+	trait = education_learning_3
 	1094.9.11 = {
 		birth = yes
 	}
@@ -179,6 +189,7 @@ pokaini_2 = {
 	culture = lithuanian
 	father = 82152
 	trait = bastard
+	trait = education_learning_3
 	921.1.1 = {
 		birth = yes
 	}
@@ -193,6 +204,7 @@ pokaini_3 = {
 	culture = lithuanian
 	father = 82170
 	trait = bastard
+	trait = education_learning_3
 	990.1.1 = {
 		birth = yes
 	}

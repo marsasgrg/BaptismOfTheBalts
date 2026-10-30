@@ -6,6 +6,7 @@ pokaini_1 = {
 	culture = latgalian
 	father = 194107
 	trait = bastard
+	trait = education_learning_4
 	830.1.1 = {
 		birth = yes
 	}
@@ -21,6 +22,7 @@ pokaini_4 = {
 	culture = latgalian
 	father = 143132
 	trait = bastard
+	trait = education_learning_3
 	1096.11.10 = {
 		birth = yes
 	}
