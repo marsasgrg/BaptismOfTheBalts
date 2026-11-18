@@ -10,6 +10,7 @@ d_et_romowe_region = {
     duchies = {
         d_prussia
         d_masuria
+        d_sudovia
     }
 }
 
@@ -26,6 +27,7 @@ d_et_braslau_region = {
 d_et_pokaini_region = {
     duchies = {
         d_courland
+        d_semigallia
     }
 }
 d_et_riga_region = {
