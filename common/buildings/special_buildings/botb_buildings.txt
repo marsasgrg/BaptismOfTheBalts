@@ -1,0 +1,127 @@
+﻿holy_site_great_romowe = {
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = legends_of_the_dead }
+			desc = building_funeral_effect_desc
+		}
+	}
+	
+	asset = {
+		type = pdxmesh
+		name = "building_special_cathedral_pagan_mesh"
+	}
+
+	
+	construction_time = very_slow_construction_time
+
+	type_icon = "special_buildings/cathedral_pagan.dds"
+	
+	can_construct_potential = {
+		always = yes
+	}
+	
+	can_construct = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_crop_rotation
+			}
+		}
+	}
+	
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 500
+	max_garrison = 500
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.15
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_piety_gain_per_knight_add = 0.1
+		knight_effectiveness_mult = 0.2
+		monthly_county_control_growth_factor = 0.05
+	}
+	
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.2
+		development_growth = 0.2
+		levy_size = 0.2
+	}
+	
+	province_modifier = {
+		monthly_income = 2
+		fort_level = 3
+		garrison_size = 0.5
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+
+	market_modifier = {
+		trade_good_incense_sell_price_mult = special_building_need_sell_price
+	}
+	trade_good_need = {
+		trade_good = trade_good_incense
+		amount = special_building_need_amount
+		can_be_filled_multiple_times = 5
+
+		modifiers = {
+			county_modifier = {
+				prosperity_growth_factor = special_building_need_prosperity_high
+			}
+		}
+	}
+
+	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
+	market_rite_modifier = {
+		parameter = can_go_on_pilgrimage
+		trade_good_incense_sell_price_mult = holy_site_pilgrim_sell_price_mult
+		trade_good_oil_sell_price_mult = holy_site_pilgrim_sell_price_mult
+		trade_good_honey_sell_price_mult = holy_site_pilgrim_sell_price_mult
+		trade_good_ceramics_sell_price_mult = holy_site_pilgrim_sell_price_mult
+	}
+	market_rite_modifier = {
+		parameter = mandatory_pilgrimage
+		trade_good_incense_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_oil_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_honey_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_ceramics_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+	}
+	market_rite_modifier = {
+		parameter = mandatory_hajj
+		trade_good_incense_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_oil_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_honey_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+		trade_good_ceramics_sell_price_mult = holy_site_mandatory_pilgrimage_sell_price_mult
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+		ai_special_district_modifier = { LEVEL = 1 }
+	}
+}

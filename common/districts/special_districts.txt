@@ -1,0 +1,10 @@
+﻿holy_site_great_romowe_district = {
+	primary_building = holy_site_great_romowe
+	
+	#Fallback
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/fp1_tribal_temple.dds"
+	}
+
+	type = special
+}
