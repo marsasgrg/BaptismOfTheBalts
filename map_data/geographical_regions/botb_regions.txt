@@ -10,7 +10,6 @@ d_et_romowe_region = {
     duchies = {
         d_prussia
         d_masuria
-        d_sudovia
     }
 }
 
@@ -18,6 +17,7 @@ d_et_braslau_region = {
     duchies = {
         d_lithuanians
         d_samogitia
+        d_sudovia
     }
     counties = {
         c_grodno
